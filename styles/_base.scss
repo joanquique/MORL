@@ -2,8 +2,8 @@
 $color-primario: #0466b0;
 $color-secundario: #fff;
 
-// Tipografía
-$font-family: "Noto Sans", Arial, sans-serif;
+//Tipografia
+$font-family: "Noto sans", Arial, sans-serif;
 
 // Animación de entrada de modal
 @keyframes slideIn {
@@ -19,25 +19,18 @@ $font-family: "Noto Sans", Arial, sans-serif;
 
 // Estilos para dispositivos móviles con un ancho máximo de 600px
 @media (max-width: 600px) {
-
-    .banner {
+    .banner, header {
         padding: 50px 0; 
     }
 
-    .texto-bienvenida {
-        padding: 5px;
-    }
-
-    header {
+    .texto-bienvenida, nav {
         padding: 5px 0; 
     }
 
-    nav {
-        .logo{ 
-            padding-left: 10px;
-            width: 60px; 
-            height: auto; 
-        }
+    nav .logo {
+        padding-left: 10px;
+        width: 60px; 
+        height: auto; 
     }
 
     .login {
@@ -48,7 +41,7 @@ $font-family: "Noto Sans", Arial, sans-serif;
         font-size: 14px;
         cursor: pointer;
         transition: background-color 0.3s ease;
-    
+
         &:hover {
             background-color: darken($color-primario, 10%);
         }
@@ -69,6 +62,17 @@ $font-family: "Noto Sans", Arial, sans-serif;
             max-width: 20rem;
             display: block;
             margin: auto;
+        }
+
+        p {
+            padding: 15px;
+        }
+        footer {
+            p {
+                margin: 5px 0;
+                font-size: 12px;
+                padding: 4px;
+            }
         }
     }
 }

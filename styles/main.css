@@ -9,13 +9,10 @@
   }
 }
 @media (max-width: 600px) {
-  .banner {
+  .banner, header {
     padding: 50px 0;
   }
-  .texto-bienvenida {
-    padding: 5px;
-  }
-  header {
+  .texto-bienvenida, nav {
     padding: 5px 0;
   }
   nav .logo {
@@ -46,6 +43,14 @@
     max-width: 20rem;
     display: block;
     margin: auto;
+  }
+  body p {
+    padding: 15px;
+  }
+  body footer p {
+    margin: 5px 0;
+    font-size: 12px;
+    padding: 4px;
   }
 }
 .busqueda-boton {
@@ -174,29 +179,25 @@ small {
 }
 
 body {
-  font-family: "Noto Sans", Arial, sans-serif;
+  font-family: "Noto sans", Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
 
 .banner {
-  background-image: url("../img/banner_morl.jpg");
-  background-size: cover;
-  background-position: center;
+  background: url("../img/banner_morl.jpg") center/cover;
   color: #fff;
   text-align: center;
   padding: 3rem 0;
   height: 8rem;
 }
-.banner h1 {
+.banner h1, .banner .texto-bienvenida {
   animation: slideIn 1s ease-in-out;
 }
-
-.texto-bienvenida {
+.banner .texto-bienvenida {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 20px;
   border-radius: 10px;
-  animation: slideIn 1s ease-in-out;
 }
 
 header {
@@ -204,12 +205,11 @@ header {
   color: #fff;
   padding: 15px 0;
 }
-
-nav {
+header nav {
   display: flex;
   align-items: center;
 }
-nav ul {
+header nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -218,30 +218,29 @@ nav ul {
   align-items: center;
   flex-grow: 1;
 }
-nav ul li {
+header nav ul li {
   margin-right: 20px;
 }
-nav ul li a {
+header nav ul li a {
   padding: 9px 13px;
   color: #fff;
   text-decoration: none;
   border: none;
   border-radius: 500px;
   background-color: #0466b0;
-  color: #fff;
   cursor: pointer;
-  transition: transform 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
-nav ul li a:hover {
+header nav ul li a:hover {
   background-color: #03497e;
   transform: scale(1.1);
 }
-nav .logo {
+header nav .logo {
   padding-left: 10px;
   width: 70px;
   height: auto;
 }
-nav .cart {
+header nav .cart {
   padding-right: 40px;
   filter: invert(1);
   width: 40px;
@@ -252,15 +251,15 @@ nav .cart {
 main {
   padding: auto;
 }
-main .descripcion h2 {
+main h2 {
   text-align: center;
   font-weight: 500;
 }
-main .descripcion p {
-  padding: 0 25px;
+main p {
+  padding: 0 8rem;
   text-align: justify;
 }
-main .descripcion img {
+main img {
   width: 40rem;
   display: block;
   margin: auto;
@@ -273,6 +272,6 @@ footer {
   padding: 10px 0;
 }
 footer p {
-  margin: 10px 0 10px;
+  margin: 10px 0;
   font-size: 13px;
 }/*# sourceMappingURL=main.css.map */

@@ -1,106 +1,102 @@
-body { // Estilos generales
+// Estilos generales
+body {
     font-family: $font-family;
     margin: 0;
     padding: 0;
 }
 
-.banner { // Estilos del banner 
-    background-image: url('../img/banner_morl.jpg'); 
-    background-size: cover; 
-    background-position: center; 
-    color: $color-secundario; 
+// Estilos del banner
+.banner {
+    background: url('../img/banner_morl.jpg') center/cover;
+    color: $color-secundario;
     text-align: center;
     padding: 3rem 0;
     height: 8rem;
-    h1 {
-        animation: slideIn 1s ease-in-out; // Animación de desvanecimiento
+    h1, .texto-bienvenida {
+        animation: slideIn 1s ease-in-out;
+    }
+    .texto-bienvenida {
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 20px;
+        border-radius: 10px;
     }
 }
 
-.texto-bienvenida { // Texto de banner
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    border-radius: 10px;
-    animation: slideIn 1s ease-in-out;
-}
-
-header { // Encabezado
+// Encabezado
+header {
     background-color: $color-primario;
     color: $color-secundario;
     padding: 15px 0;
-}
-
-nav { // Listado de enlaces
-    display: flex;
-    align-items: center; 
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
+    nav {
         display: flex;
-        justify-content: center;
         align-items: center;
-        flex-grow: 1;
-        li {
-            margin-right: 20px;
-            a {
-                padding: 9px 13px;
-                color: $color-secundario;
-                text-decoration: none;
-                border: none;
-                border-radius: 500px;
-                background-color: $color-primario;
-                color: $color-secundario;
-                cursor: pointer;
-                transition: transform 0.3s ease;
-                &:hover {
-                    background-color: darken($color-primario, 10%);
-                    transform: scale(1.1);
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
+            li {
+                margin-right: 20px;
+                a {
+                    padding: 9px 13px;
+                    color: $color-secundario;
+                    text-decoration: none;
+                    border: none;
+                    border-radius: 500px;
+                    background-color: $color-primario;
+                    cursor: pointer;
+                    transition: background-color 0.3s ease, transform 0.3s ease;
+                    &:hover {
+                        background-color: darken($color-primario, 10%);
+                        transform: scale(1.1);
+                    }
                 }
             }
         }
-    }
-    .logo {
-        padding-left: 10px;
-        width: 70px; 
-        height: auto; 
-    }
-    .cart {
-        padding-right: 40px;
-        filter: invert(1);
-        width: 40px; 
-        height: auto; 
-        cursor: pointer;
+        .logo {
+            padding-left: 10px;
+            width: 70px;
+            height: auto;
+        }
+        .cart {
+            padding-right: 40px;
+            filter: invert(1);
+            width: 40px;
+            height: auto;
+            cursor: pointer;
+        }
     }
 }
 
-main { // Contenedor principal
+// Contenedor principal
+main {
     padding: auto;
-    .descripcion {
-        h2 {
-            text-align: center;
-            font-weight: 500;
-        }
-        p {
-            padding: 0 25px;
-            text-align: justify;
-        }
-        img {
-            width: 40rem;
-            
-            display: block;
-            margin: auto;
-        }
+    h2 {
+        text-align: center;
+        font-weight: 500;
+    }
+    p {
+        padding: 0 8rem;
+        text-align: justify;
+    }
+    img {
+        width: 40rem;
+        display: block;
+        margin: auto;
     }
 }
 
-footer { // Pie de página
+// Pie de página
+footer {
     background-color: $color-primario;
     color: $color-secundario;
     text-align: center;
     padding: 10px 0;
     p {
-        margin: 10px 0 10px;
+        margin: 10px 0;
         font-size: 13px;
     }
 }
