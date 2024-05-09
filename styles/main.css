@@ -252,16 +252,16 @@ nav .cart {
 main {
   padding: auto;
 }
-main h2 {
+main .descripcion h2 {
   text-align: center;
   font-weight: 500;
 }
-main p {
+main .descripcion p {
   padding: 0 25px;
   text-align: justify;
 }
-main img {
-  width: 52rem;
+main .descripcion img {
+  width: 40rem;
   display: block;
   margin: auto;
 }
