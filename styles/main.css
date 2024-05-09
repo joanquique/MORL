@@ -1,0 +1,263 @@
+@charset "UTF-8";
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+@keyframes slide-down {
+  from {
+    transform: translateY(100%);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(200%);
+    opacity: 0;
+  }
+}
+@media (max-width: 600px) {
+  .banner {
+    padding: 50px 0;
+  }
+  .texto-bienvenida {
+    padding: 5px;
+  }
+  header {
+    padding: 5px 0;
+  }
+  nav .logo {
+    padding-left: 10px;
+    width: 60px;
+    height: auto;
+  }
+  .login {
+    padding: 4px 6px;
+    border-radius: 500px;
+    background-color: #0466b0;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .login:hover {
+    background-color: #03497e;
+  }
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  nav ul li {
+    margin: 10px;
+  }
+}
+.busqueda-boton {
+  padding-bottom: 10px;
+}
+.busqueda-boton form input[type=text] {
+  padding: 10px;
+  border: 1px solid #0466b0;
+  border-radius: 20px;
+  margin-right: 10px;
+  width: 200px;
+  font-size: 14px;
+}
+.busqueda-boton form button[type=submit] {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 500px;
+  background-color: #0466b0;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+}
+.busqueda-boton form button[type=submit]:hover {
+  background-color: #03497e;
+  scale: 1.1;
+}
+
+.login {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 500px;
+  background-color: #0466b0;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.login:hover {
+  background-color: #03497e;
+  scale: 1.1;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  animation: slideIn 0.5s ease forwards;
+}
+
+.modal.slide-out {
+  animation-name: slide-down;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 400px;
+  border-radius: 20px;
+}
+
+#email, #password {
+  padding: 8px;
+  border: 2px solid #0466b0;
+  border-radius: 50px;
+  width: 250px;
+  font-size: 14px;
+  margin: 15px auto;
+  display: block;
+  text-align: center;
+}
+
+.submit {
+  padding: 8px 12px;
+  border: none;
+  width: 200px;
+  border-radius: 500px;
+  background-color: #0466b0;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  margin: 40px auto;
+  display: block;
+  text-align: center;
+}
+.submit:hover {
+  background-color: #03497e;
+  scale: 1.1;
+}
+
+.text-sign-up, .text-sign-in {
+  margin: 10px auto; /* Centrar horizontalmente */
+  display: block; /* Asegurar que los elementos ocupen todo el ancho disponible */
+  text-align: center;
+}
+
+.text-sign-in {
+  font-weight: 600;
+  padding: 20px;
+}
+
+/* Estilos para el botón de cerrar */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  transition: transform 0.3s ease; /* Agregar transición */
+}
+
+/* Estilos para el botón de cerrar al hacer hover */
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  transform: scale(1.2); /* Efecto de escala al hacer hover */
+}
+
+small {
+  display: block;
+  text-align: center;
+  opacity: 0.6;
+}
+
+body {
+  font-family: "Noto Sans", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.banner {
+  background-image: url("../img/banner_morl.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 3rem 0;
+  height: 8rem;
+}
+.banner h1 {
+  animation: slide-up 1s ease-in-out;
+}
+
+.texto-bienvenida {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  animation: slide-up 1s ease-in-out;
+}
+
+header {
+  background-color: #0466b0;
+  color: #fff;
+  padding: 15px 0;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+nav ul li {
+  margin-right: 20px;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0 0.2rem 0 0.2rem;
+}
+nav .logo {
+  padding-left: 10px;
+  width: 100px;
+  height: auto;
+}
+nav .cart {
+  padding-right: 40px;
+  width: 40px;
+  height: auto;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+main {
+  padding: auto;
+}
+
+footer {
+  background-color: #0466b0;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}/*# sourceMappingURL=main.css.map */

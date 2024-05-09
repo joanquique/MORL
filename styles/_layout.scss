@@ -1,0 +1,76 @@
+body { // Estilos generales
+    font-family: $font-family;
+    margin: 0;
+    padding: 0;
+}
+
+.banner { // Estilos del banner 
+    background-image: url('../img/banner_morl.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    color: $color-secundario; 
+    text-align: center;
+    padding: 3rem 0;
+    height: 8rem;
+    h1 {
+        animation: slide-up 1s ease-in-out; // Animación de desvanecimiento
+    }
+}
+
+.texto-bienvenida { // Texto de banner
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    animation: slide-up 1s ease-in-out;
+}
+
+header { // Encabezado
+    background-color: $color-primario;
+    color: $color-secundario;
+    padding: 15px 0;
+}
+
+nav { // Listado de enlaces
+    display: flex;
+    align-items: center; 
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+        li {
+            margin-right: 20px;
+            a {
+                color: $color-secundario;
+                text-decoration: none;
+                padding: 0 0.2rem 0 0.2rem;
+            }
+        }
+    }
+    .logo {
+        padding-left: 10px;
+        width: 100px; 
+        height: auto; 
+    }
+    .cart {
+        padding-right: 40px;
+        width: 40px; 
+        height: auto; 
+        opacity: 0.7;
+        cursor: pointer;
+    }
+}
+
+main { // Contenedor principal
+    padding: auto;
+}
+
+footer { // Pie de página
+    background-color: $color-primario;
+    color: $color-secundario;
+    text-align: center;
+    padding: 10px 0;
+}

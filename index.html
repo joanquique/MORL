@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>MORL</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header> <!-- Barra de navegación -->
+        <nav class="busqueda-boton">
+            <ul>
+                <li>
+                    <form action="#" method="GET">
+                        <input type="text" name="q" placeholder="Buscar productos...">
+                        <button type="submit">Buscar</button>
+                    </form>
+                </li>
+                <li>
+                    <button class="login" id="loginButton">Iniciar sesión</button>
+                </li>
+            </ul>
+        </nav>
+        <nav>
+            <a href="index.html"><img class="logo" src="img/morl_logo.jpg"></a>
+            <ul>
+                <!-- <li><a href="index.html">Inicio</a></li> -->
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Sucursales</a></li>
+            </ul>  
+            <img class="cart" src="img/shopping-cart.svg">          
+        </nav>
+    </header>
+
+    <div class="modal" id="modal"> <!-- Modal -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p class="text-sign-in">Inicio de sesión</p>
+            <form id="loginForm">
+                <!-- Campos de login -->
+                <input type="email" id="email" placeholder="Correo electrónico">
+                <input type="password" id="password" placeholder="Contraseña">
+                <button type="submit" class="submit">Iniciar sesión</button>
+            </form>
+            <p class="text-sign-up">¿No tienes una cuenta? <a href="#" id="registerLink">Regístrate aquí</a></p>
+            <small>&copy; 2024 MORL</small>
+        </div>
+    </div>
+    <main> <!-- Contenido principal -->
+        <div class="banner">
+            <div class="texto-bienvenida">
+                <h1>Bienvenido a MORL</h1>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <!-- Pie de página -->
+        <p>Derechos de autor &copy; 2024 MORL</p>
+    </footer>
+    <script src="js/modal.js"></script>
+</body>
+</html>
