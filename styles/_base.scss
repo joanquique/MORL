@@ -75,4 +75,23 @@ $font-family: "Noto sans", Arial, sans-serif;
             }
         }
     }
+    .item {
+        width: calc(50% - 20px);
+    }
+}
+
+@mixin banner-estilos($background-image) {
+    background: $background-image center/cover;
+    color: $color-secundario;
+    text-align: center;
+    padding: 3rem 0;
+    height: 8rem;
+    h1, .texto-bienvenida {
+        animation: slideIn 1s ease-in-out;
+    }
+    .texto-bienvenida {
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 20px;
+        border-radius: 10px;
+    }
 }
