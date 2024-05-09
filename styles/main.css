@@ -189,14 +189,14 @@ body {
   height: 8rem;
 }
 .banner h1 {
-  animation: slide-up 1s ease-in-out;
+  animation: slideIn 1s ease-in-out;
 }
 
 .texto-bienvenida {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 20px;
   border-radius: 10px;
-  animation: slide-up 1s ease-in-out;
+  animation: slideIn 1s ease-in-out;
 }
 
 header {
