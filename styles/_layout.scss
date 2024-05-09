@@ -76,6 +76,19 @@ nav { // Listado de enlaces
 
 main { // Contenedor principal
     padding: auto;
+    h2 {
+        text-align: center;
+        font-weight: 500;
+    }
+    p {
+        padding: 0 25px;
+        text-align: justify;
+    }
+    img {
+        width: 52rem;
+        display: block;
+        margin: auto;
+    }
 }
 
 footer { // Pie de página

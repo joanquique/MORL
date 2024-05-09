@@ -32,10 +32,12 @@ $font-family: "Noto Sans", Arial, sans-serif;
         padding: 5px 0; 
     }
 
-    nav .logo {
-        padding-left: 10px;
-        width: 60px; 
-        height: auto; 
+    nav {
+        .logo{ 
+            padding-left: 10px;
+            width: 60px; 
+            height: auto; 
+        }
     }
 
     .login {
@@ -59,6 +61,14 @@ $font-family: "Noto Sans", Arial, sans-serif;
             li {
                 margin: 10px;
             }
+        }
+    }
+
+    body {
+        img {
+            max-width: 20rem;
+            display: block;
+            margin: auto;
         }
     }
 }

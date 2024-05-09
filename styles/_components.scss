@@ -58,10 +58,6 @@
     animation: slideIn 0.5s ease forwards;
 }
 
-.modal.slide-out {
-    animation-name: slide-down;
-}
-
 // Contenido del modal
 .modal-content {
     background-color: #fefefe;
@@ -106,8 +102,8 @@
 
 // Textos de modal
 .text-sign-up, .text-sign-in {
-    margin: 10px auto; /* Centrar horizontalmente */
-    display: block; /* Asegurar que los elementos ocupen todo el ancho disponible */
+    margin: 10px auto; // Centrar horizontalmente 
+    display: block; 
     text-align: center;
 }
 
@@ -117,26 +113,25 @@
 }
 
 // Botón cerrar
-/* Estilos para el botón de cerrar */
 .close {
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
-    transition: transform 0.3s ease; /* Agregar transición */
+    transition: transform 0.3s ease;
 }
 
-/* Estilos para el botón de cerrar al hacer hover */
+// Estilos para el botón de cerrar al hacer hover
 .close:hover,
 .close:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
-    transform: scale(1.2); /* Efecto de escala al hacer hover */
+    transform: scale(1.2);
 }
 
 small {
-    display: block; // Asegurar que los elementos ocupen todo el ancho disponible 
+    display: block; 
     text-align: center;
     opacity: 0.6;
 }
