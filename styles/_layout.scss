@@ -44,22 +44,32 @@ nav { // Listado de enlaces
         li {
             margin-right: 20px;
             a {
+                padding: 9px 13px;
                 color: $color-secundario;
                 text-decoration: none;
-                padding: 0 0.2rem 0 0.2rem;
+                border: none;
+                border-radius: 500px;
+                background-color: $color-primario;
+                color: $color-secundario;
+                cursor: pointer;
+                transition: transform 0.3s ease;
+                &:hover {
+                    background-color: darken($color-primario, 10%);
+                    transform: scale(1.1);
+                }
             }
         }
     }
     .logo {
         padding-left: 10px;
-        width: 100px; 
+        width: 70px; 
         height: auto; 
     }
     .cart {
         padding-right: 40px;
+        filter: invert(1);
         width: 40px; 
         height: auto; 
-        opacity: 0.7;
         cursor: pointer;
     }
 }
@@ -73,4 +83,8 @@ footer { // Pie de página
     color: $color-secundario;
     text-align: center;
     padding: 10px 0;
+    p {
+        margin: 10px 0 10px;
+        font-size: 13px;
+    }
 }
