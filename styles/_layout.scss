@@ -184,8 +184,40 @@ footer {
     color: $color-secundario;
     text-align: center;
     padding: 10px 0;
+    display: flex;
+    flex-wrap: nowrap; /* Evita que los elementos se envuelvan */
+    justify-content: space-between; /* Alinea los elementos al inicio, centro y final del contenedor */
+    
     p {
         margin: 10px 0;
         font-size: 13px;
+        display: flex;
+        align-items: center; /* Centra verticalmente los elementos */
+    }
+
+    .icon {
+        width: 20px;
+        margin-right: 5px; /* Ajusta el espacio entre el ícono y el texto */
+        filter: invert(1);
+    }
+
+    /* Ajusta el ancho de cada párrafo */
+    p:nth-child(1) {
+        flex-basis: 30%; /* Ajusta el ancho del primer párrafo */
+        text-align: left; /* Alinea el texto a la izquierda */
+    }
+
+    p:nth-child(2) {
+        flex-basis: 30%; /* Ajusta el ancho del segundo párrafo */
+        text-align: center; /* Alinea el texto al centro */
+    }
+
+    p:nth-child(3),
+    p:nth-child(4) {
+        flex-basis: 30%; /* Ajusta el ancho de los últimos dos párrafos */
+        text-align: right; /* Alinea el texto a la derecha */
     }
 }
+
+
+

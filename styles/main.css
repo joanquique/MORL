@@ -356,8 +356,32 @@ footer {
   color: #fff;
   text-align: center;
   padding: 10px 0;
+  display: flex;
+  flex-wrap: nowrap; /* Evita que los elementos se envuelvan */
+  justify-content: space-between; /* Alinea los elementos al inicio, centro y final del contenedor */
+  /* Ajusta el ancho de cada párrafo */
 }
 footer p {
   margin: 10px 0;
   font-size: 13px;
+  display: flex;
+  align-items: center; /* Centra verticalmente los elementos */
+}
+footer .icon {
+  width: 20px;
+  margin-right: 5px; /* Ajusta el espacio entre el ícono y el texto */
+  filter: invert(1);
+}
+footer p:nth-child(1) {
+  flex-basis: 30%; /* Ajusta el ancho del primer párrafo */
+  text-align: left; /* Alinea el texto a la izquierda */
+}
+footer p:nth-child(2) {
+  flex-basis: 30%; /* Ajusta el ancho del segundo párrafo */
+  text-align: center; /* Alinea el texto al centro */
+}
+footer p:nth-child(3),
+footer p:nth-child(4) {
+  flex-basis: 30%; /* Ajusta el ancho de los últimos dos párrafos */
+  text-align: right; /* Alinea el texto a la derecha */
 }/*# sourceMappingURL=main.css.map */
