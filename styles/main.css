@@ -320,14 +320,14 @@ main img {
   font-weight: bold;
 }
 .items .item p {
-  padding: 20px;
-  margin-top: 10px;
+  padding: 20px 5px 10px;
+  margin: 7px 0;
   font-size: 0.9em;
   color: #666;
 }
 .items .item .precio {
   display: block;
-  margin: 5px 0 5px;
+  margin: 5px 0 20px;
   text-align: center;
   font-size: 1.1em;
   font-weight: bold;
