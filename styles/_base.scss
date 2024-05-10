@@ -72,6 +72,8 @@ $font-family: "Noto sans", Arial, sans-serif;
                 margin: 5px 0;
                 font-size: 12px;
                 padding: 4px;
+                flex-basis: auto; /* Restaura el ancho automático para los elementos de la lista */
+                text-align: left;
             }
         }
     }

@@ -52,6 +52,8 @@
     margin: 5px 0;
     font-size: 12px;
     padding: 4px;
+    flex-basis: auto; /* Restaura el ancho automático para los elementos de la lista */
+    text-align: left;
   }
   .item {
     width: calc(50% - 20px);
@@ -283,6 +285,7 @@ main img {
   width: 40rem;
   display: block;
   margin: auto;
+  padding: 25px;
 }
 
 /* Estilos para la sección de productos */
@@ -365,23 +368,24 @@ footer p {
   margin: 10px 0;
   font-size: 13px;
   display: flex;
-  align-items: center; /* Centra verticalmente los elementos */
+  align-items: center;
+  padding: 10px;
 }
 footer .icon {
   width: 20px;
-  margin-right: 5px; /* Ajusta el espacio entre el ícono y el texto */
+  margin-right: 5px;
   filter: invert(1);
 }
 footer p:nth-child(1) {
-  flex-basis: 30%; /* Ajusta el ancho del primer párrafo */
-  text-align: left; /* Alinea el texto a la izquierda */
+  flex-basis: 30%;
+  text-align: left;
 }
 footer p:nth-child(2) {
-  flex-basis: 30%; /* Ajusta el ancho del segundo párrafo */
-  text-align: center; /* Alinea el texto al centro */
+  flex-basis: 30%;
+  text-align: center;
 }
 footer p:nth-child(3),
 footer p:nth-child(4) {
-  flex-basis: 30%; /* Ajusta el ancho de los últimos dos párrafos */
-  text-align: right; /* Alinea el texto a la derecha */
+  flex-basis: 30%;
+  text-align: right;
 }/*# sourceMappingURL=main.css.map */
