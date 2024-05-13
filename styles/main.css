@@ -357,7 +357,6 @@ main img {
 footer {
   background-color: #0466b0;
   color: #fff;
-  text-align: center;
   padding: 10px 0;
   display: flex;
   flex-wrap: nowrap; /* Evita que los elementos se envuelvan */
@@ -365,27 +364,24 @@ footer {
   /* Ajusta el ancho de cada párrafo */
 }
 footer p {
-  margin: 10px 0;
+  margin: 5px 0;
   font-size: 13px;
   display: flex;
   align-items: center;
-  padding: 10px;
+  padding: 5px;
+}
+footer p .copyright {
+  text-align: left;
+}
+footer p .address {
+  text-align: center;
+}
+footer p .contact {
+  text-align: right;
+  padding-right: 10px;
 }
 footer .icon {
   width: 20px;
-  margin-right: 5px;
+  margin-right: 10px;
   filter: invert(1);
-}
-footer p:nth-child(1) {
-  flex-basis: 30%;
-  text-align: left;
-}
-footer p:nth-child(2) {
-  flex-basis: 30%;
-  text-align: center;
-}
-footer p:nth-child(3),
-footer p:nth-child(4) {
-  flex-basis: 30%;
-  text-align: right;
 }/*# sourceMappingURL=main.css.map */

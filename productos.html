@@ -36,6 +36,20 @@
             <img class="cart" src="img/shopping-cart.svg">          
         </nav>
     </header>
+    <div class="modal" id="modal"> <!-- Modal -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p class="text-sign-in">Inicio de sesión</p>
+            <form id="loginForm">
+                <!-- Campos de login -->
+                <input type="email" id="email" placeholder="Correo electrónico">
+                <input type="password" id="password" placeholder="Contraseña">
+                <button type="submit" class="submit">Iniciar sesión</button>
+            </form>
+            <p class="text-sign-up">¿No tienes una cuenta? <a href="#" id="registerLink">Regístrate aquí</a></p>
+            <small>&copy; 2024 MORL</small>
+        </div>
+    </div>
     <main>
         <div class="banner-items">
             <div class="texto-bienvenida">
@@ -130,14 +144,15 @@
         </div>
     </main>
     <footer><!-- Pie de página -->
-        <p>Derechos de autor &copy; 2024 MORL</p>
-        <p>Schumann 202 Gustavo A. Madero, CDMX</p>
-        <p><img class="icon" src="img/phone-call.svg">
+        <p class="copyright">Derechos de autor &copy; 2024 MORL</p>
+        <p class="address">Schumann 202 Gustavo A. Madero, CDMX</p>
+        <p class="contact"><img class="icon" src="img/phone-call.svg">
             (55) 8112-5748 | Lunes- Viernes
         </p>
-        <p><img class="icon" src="img/mail.svg">
+        <p class="contact"><img class="icon" src="img/mail.svg">
             ventas@morl.com.mx
         </p>
     </footer>
+    <script src="js/modal.js"></script>
 </body>
 </html>

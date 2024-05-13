@@ -183,42 +183,51 @@ main {
 footer {
     background-color: $color-primario;
     color: $color-secundario;
-    text-align: center;
     padding: 10px 0;
     display: flex;
     flex-wrap: nowrap; /* Evita que los elementos se envuelvan */
     justify-content: space-between; /* Alinea los elementos al inicio, centro y final del contenedor */
     
     p {
-        margin: 10px 0;
+        margin: 5px 0;
         font-size: 13px;
         display: flex;
         align-items: center; 
-        padding: 10px;
+        padding: 5px;
+        .copyright {
+            text-align: left;
+        }
+        .address {
+            text-align: center;
+        }
+        .contact {
+            text-align: right;
+            padding-right: 10px;
+        }
     }
-
-    .icon {
+        
+        .icon {
         width: 20px;
-        margin-right: 5px; 
+        margin-right: 10px; 
         filter: invert(1);
     }
 
     /* Ajusta el ancho de cada párrafo */
-    p:nth-child(1) {
-        flex-basis: 30%; 
-        text-align: left; 
-    }
+    // p:nth-child(1) {
+    //     flex-basis: 30%; 
+    //     text-align: left; 
+    // }
 
-    p:nth-child(2) {
-        flex-basis: 30%; 
-        text-align: center; 
-    }
+    // p:nth-child(2) {
+    //     flex-basis: 30%; 
+    //     text-align: center; 
+    // }
 
-    p:nth-child(3),
-    p:nth-child(4) {
-        flex-basis: 30%; 
-        text-align: right; 
-    }
+    // p:nth-child(3),
+    // p:nth-child(4) {
+    //     flex-basis: 30%; 
+    //     text-align: right; 
+    // }
 }
 
 
