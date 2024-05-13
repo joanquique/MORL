@@ -380,15 +380,4 @@ footer .icon {
 footer .mail {
   color: #fff;
   text-decoration-line: none;
-}
-@media (max-width: 768px) {
-  footer .copyright, footer .address, footer .contact {
-    display: block;
-  }
-  footer .copyright li, footer .address li, footer .contact li {
-    text-align: left; /* Alineamos el texto a la izquierda en dispositivos móviles */
-  }
-  footer .copyright .contact, footer .address .contact, footer .contact .contact {
-    text-align: left; /* Alineamos el texto de contacto a la izquierda en dispositivos móviles */
-  }
 }/*# sourceMappingURL=main.css.map */

@@ -216,19 +216,6 @@ footer {
         color: #fff;
         text-decoration-line: none;
     }
-
-    @media (max-width: 768px) {
-        .copyright, .address, .contact {
-            display: block;
-            li {
-                text-align: left; /* Alineamos el texto a la izquierda en dispositivos móviles */
-            }
-
-            .contact {
-                text-align: left; /* Alineamos el texto de contacto a la izquierda en dispositivos móviles */
-            }
-        }
-    }
 }
 
 
