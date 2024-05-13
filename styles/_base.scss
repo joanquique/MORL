@@ -67,15 +67,6 @@ $font-family: "Noto sans", Arial, sans-serif;
         p {
             padding: 15px;
         }
-        footer {
-            p {
-                margin: 5px 0;
-                font-size: 12px;
-                padding: 4px;
-                flex-basis: auto; /* Restaura el ancho automático para los elementos de la lista */
-                text-align: left;
-            }
-        }
     }
     .item {
         width: calc(50% - 20px);

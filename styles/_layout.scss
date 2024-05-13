@@ -205,11 +205,29 @@ footer {
             padding-right: 10px;
         }
     }
-        
-        .icon {
+         
+    .icon {
         width: 20px;
         margin-right: 10px; 
         filter: invert(1);
+    }
+
+    .mail {
+        color: #fff;
+        text-decoration-line: none;
+    }
+
+    @media (max-width: 768px) {
+        .copyright, .address, .contact {
+            display: block;
+            li {
+                text-align: left; /* Alineamos el texto a la izquierda en dispositivos móviles */
+            }
+
+            .contact {
+                text-align: left; /* Alineamos el texto de contacto a la izquierda en dispositivos móviles */
+            }
+        }
     }
 }
 

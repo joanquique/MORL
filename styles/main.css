@@ -48,13 +48,6 @@
   body p {
     padding: 15px;
   }
-  body footer p {
-    margin: 5px 0;
-    font-size: 12px;
-    padding: 4px;
-    flex-basis: auto; /* Restaura el ancho automático para los elementos de la lista */
-    text-align: left;
-  }
   .item {
     width: calc(50% - 20px);
   }
@@ -383,4 +376,19 @@ footer .icon {
   width: 20px;
   margin-right: 10px;
   filter: invert(1);
+}
+footer .mail {
+  color: #fff;
+  text-decoration-line: none;
+}
+@media (max-width: 768px) {
+  footer .copyright, footer .address, footer .contact {
+    display: block;
+  }
+  footer .copyright li, footer .address li, footer .contact li {
+    text-align: left; /* Alineamos el texto a la izquierda en dispositivos móviles */
+  }
+  footer .copyright .contact, footer .address .contact, footer .contact .contact {
+    text-align: left; /* Alineamos el texto de contacto a la izquierda en dispositivos móviles */
+  }
 }/*# sourceMappingURL=main.css.map */
