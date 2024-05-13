@@ -361,7 +361,6 @@ footer {
   display: flex;
   flex-wrap: nowrap; /* Evita que los elementos se envuelvan */
   justify-content: space-between; /* Alinea los elementos al inicio, centro y final del contenedor */
-  /* Ajusta el ancho de cada párrafo */
 }
 footer p {
   margin: 5px 0;
