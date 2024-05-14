@@ -1,12 +1,9 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <title>MORL - Principal</title>
+    <title>Registro de Usuario</title>
     <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
@@ -35,7 +32,6 @@
             <img class="cart" src="img/shopping-cart.svg">          
         </nav>
     </header>
-
     <div class="modal" id="modal"> <!-- Modal -->
         <div class="modal-content">
             <span class="close">&times;</span>
@@ -53,26 +49,42 @@
             <small>&copy; 2024 MORL</small>
         </div>
     </div>
-    <main> <!-- Contenido principal -->
-        <div class="banner">
+    <main>
+        <div class="banner-sign-up">
             <div class="texto-bienvenida">
-                <h1>Bienvenido a MORL</h1>
+                <h1>Aquí empezamos nuestra historia</h1>
             </div>
         </div>
-        <h2>Título de descripción</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad itaque exercitationem libero soluta ipsam expedita dolorum fugiat quaerat corporis rerum mollitia, quas inventore tempora consectetur hic laudantium optio eius quos.</p>
-        <img src="img/AC.jpg">
+        <div class="container">
+            <h2>Registro de Nuevo Usuario</h2>
+            <form action="#" method="POST" class="registration-form">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="correo">Correo Electrónico:</label>
+                    <input type="email" id="correo" name="correo" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="passwrd" name="passwrd" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono">
+                </div>
+                <div class="form-group">
+                    <label for="direccion">Dirección:</label>
+                    <textarea id="direccion" name="direccion"></textarea>
+                </div>
+                <div class="terms">
+                    <input type="checkbox" required>  Al registrarte, aceptas los Términos y Condiciones y las Políticas de Privacidad de Datos Personales.
+                </div>
+                <button class="submit" type="submit">Registrarse</button>
+            </form>
+        </div>
     </main>
-    <footer><!-- Pie de página -->
-        <p>Derechos de autor &copy; 2024 MORL</p>
-        <p>Schumann 202 Gustavo A. Madero, CDMX</p>
-        <p><img class="icon" src="img/phone-call.svg">
-            (55) 8112-5748 | Lunes- Viernes
-        </p>
-        <p><img class="icon" src="img/mail.svg">
-            <a class="mail" href="mailto:ventas@morl.com.mx">ventas@morl.com.mx</a>
-        </p>
-    </footer>
     <script src="js/modal.js"></script>
 </body>
 </html>
