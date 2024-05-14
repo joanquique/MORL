@@ -242,7 +242,9 @@ main {
                 transform: scale(1.1); /* Corrección aquí */
             }
         }
-        
+        img:hover {
+            transform: scale(1.9); /* Ajustar el nivel de zoom deseado */
+        }
     }
 }
 // Pie de página

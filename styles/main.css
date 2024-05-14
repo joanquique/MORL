@@ -416,6 +416,9 @@ main button:hover {
   background-color: #03497e;
   transform: scale(1.1); /* Corrección aquí */
 }
+.items .item img:hover {
+  transform: scale(1.9); /* Ajustar el nivel de zoom deseado */
+}
 
 footer {
   background-color: #0466b0;
