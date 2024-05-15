@@ -81,11 +81,11 @@
   padding: 8px 12px;
   border: none;
   border-radius: 500px;
-  background-color: #101d70;
+  background-color: #145483;
   color: #fff;
   font-size: 14px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: all 0.2s linear;
 }
 .login:hover {
   background-color: #03497e;
@@ -132,7 +132,7 @@
 }
 
 .terms {
-  padding: 15px;
+  padding: 5%;
   text-align: justify;
 }
 
@@ -410,7 +410,7 @@ main button:hover {
   color: #fff;
   font-size: 1em;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: all 0.2s linear;
 }
 .items .item .boton-comprar:hover {
   background-color: #03497e;

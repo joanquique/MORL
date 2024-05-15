@@ -32,11 +32,11 @@
     padding: 8px 12px;
     border: none;
     border-radius: 500px;
-    background-color: #101d70;
+    background-color: #145483;
     color: $color-secundario;
     font-size: 14px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    @include transition-all;
 
     &:hover {
         background-color: darken($color-primario, 10%);
@@ -86,8 +86,8 @@
     text-align: center;
 }
 
-.terms {
-    padding: 15px;
+.terms { // Terminos y condiciones
+    padding: 5%;
     text-align: justify;
 }
 
@@ -142,7 +142,7 @@
     transform: scale(1.2);
 }
 
-small {
+small { // Pie de pagina de modal copyright
     display: block; 
     text-align: center;
     opacity: 0.6;
