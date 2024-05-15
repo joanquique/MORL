@@ -74,6 +74,7 @@
   color: #fff;
   font-size: 14px;
   cursor: pointer;
+  transition: all 0.2s linear;
 }
 .busqueda-boton form button[type=submit]:hover {
   background-color: #03497e;
@@ -151,6 +152,7 @@
   margin: 20px auto 30px;
   display: block;
   text-align: center;
+  transition: all 0.2s linear;
 }
 .submit:hover {
   background-color: #03497e;
@@ -446,7 +448,7 @@ main button:hover {
   text-align: center;
   font-size: 1.1em;
   font-weight: bold;
-  color: #1fc124; /* Color primario */
+  color: #1fc124;
 }
 .items .item .boton-comprar {
   margin: 15px auto;
@@ -455,7 +457,7 @@ main button:hover {
   padding: 8px 15px;
   border: none;
   border-radius: 50px;
-  background-color: #0466b0; /* Color primario */
+  background-color: #0466b0;
   color: #fff;
   font-size: 1em;
   cursor: pointer;
@@ -463,10 +465,10 @@ main button:hover {
 }
 .items .item .boton-comprar:hover {
   background-color: #03497e;
-  transform: scale(1.1); /* Corrección aquí */
+  transform: scale(1.1);
 }
 .items .item img:hover {
-  transform: scale(1.9); /* Ajustar el nivel de zoom deseado */
+  transform: scale(1.9);
 }
 
 footer {

@@ -255,7 +255,7 @@ main {
             text-align: center;
             font-size: 1.1em;
             font-weight: bold;
-            color: #1fc124; /* Color primario */
+            color: #1fc124; 
         }
         
         /* Estilos para el botón de comprar */
@@ -266,7 +266,7 @@ main {
             padding: 8px 15px;
             border: none;
             border-radius: 50px;
-            background-color: #0466b0; /* Color primario */
+            background-color: #0466b0; 
             color: #fff;
             font-size: 1em;
             cursor: pointer;
@@ -274,11 +274,11 @@ main {
         
             &:hover {
                 background-color: darken($color-primario, 10%);
-                transform: scale(1.1); /* Corrección aquí */
+                transform: scale(1.1);
             }
         }
         img:hover {
-            transform: scale(1.9); /* Ajustar el nivel de zoom deseado */
+            transform: scale(1.9); 
         }
     }
 }
