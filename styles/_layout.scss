@@ -7,7 +7,7 @@ body {
 
 // Estilos del banner
 .banner {
-    background: url('../img/banner_morl.jpg') center/cover;
+    background: url('../img/banner-about-us.jpg') center/cover;
     color: $color-secundario;
     text-align: center;
     padding: 3rem 0;
@@ -54,8 +54,8 @@ body {
     }
 }
 
-.banner-about-of {
-    background: url('../img/banner-about-us.jpg') center/cover;
+.banner-about-of { 
+    background: url('../img/banner_morl.jpg') center/cover;
     color: $color-secundario;
     text-align: center;
     padding: 3rem 0;
@@ -127,6 +127,11 @@ main {
         font-weight: 400;
     }
 
+    h3 {
+        text-align: center;
+        font-weight: 600;
+    }
+
     .encabezado {
         font-weight: 500;
         background-color: $color-primario;
@@ -136,28 +141,20 @@ main {
         margin: 10px 10px;
         display: flex;
         align-items: center;
-        text-align: center;
+        align-self: center;
+        justify-content: center;
     }
 
     p {
         padding: 0 8%;
         text-align: justify;
+        margin-top: 30px;
     }
     img {
         width: 40rem;
         display: block;
         margin: auto;
         padding: 25px;
-    }
-
-    h2 .encabezado{
-        text-align: center;
-        font-weight: 500;
-    }
-
-    h3 .title{
-        text-align: center;
-        //font-weight: 500;
     }
 
     .container {
@@ -187,13 +184,12 @@ main {
         padding: 8px;
         border: 2px solid $color-primario;
         border-radius: 50px;
-        width: 90%; /* Usamos porcentaje en lugar de medidas fijas */
-        //max-width: 400px; /* Establecemos un ancho máximo para evitar que los campos se agranden demasiado */
+        width: 90%; 
         font-size: 14px;
         margin: 15px auto;
         display: block;
         text-align: center;
-        box-sizing: border-box; /* Aseguramos que el padding no afecte el ancho total */
+        box-sizing: border-box; 
     }
     
     button {
@@ -297,10 +293,11 @@ footer {
     
     p {
         margin: 5px 0;
-        font-size: 13px;
+        font-size: 12px;
         display: flex;
         align-items: center; 
         padding: 5px;
+        box-sizing: border-box;
         .copyright {
             text-align: left;
         }

@@ -141,6 +141,20 @@
     cursor: pointer;
     transform: scale(1.2);
 }
+    
+.icon {
+    width: 20px;
+    margin-right: 10px; 
+    filter: invert(1);
+}
+
+.mail {
+    color: #fff;
+    text-decoration-line: none;
+    display: flex;
+    align-items: center;
+}
+
 
 small { // Pie de pagina de modal copyright
     display: block; 

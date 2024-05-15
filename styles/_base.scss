@@ -68,11 +68,20 @@ $font-family: "Montserrat", Arial, sans-serif;
             padding: 15px;
         }
     }
+
     .item {
         width: calc(50% - 20px);
     }
+
+    footer {
+        box-sizing: border-box;
+    }
 }
 
+// Transición de botones 
+@mixin transition-all {
+    transition: all 0.2s linear;
+}
 // @mixin banner-estilos($background-image) {
 //     background: $background-image center/cover;
 //     color: $color-secundario;
@@ -89,10 +98,6 @@ $font-family: "Montserrat", Arial, sans-serif;
 //     }
 // }
 
-// Transición de botones 
-@mixin transition-all {
-    transition: all 0.2s linear;
-}
 
 // .mi-banner {
 //     @include banner-estilos('../img/banner_items.jpg');
