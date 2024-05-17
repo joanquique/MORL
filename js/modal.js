@@ -2,7 +2,6 @@
 var modal = document.getElementById("modal");
 var loginButton = document.getElementById("loginButton");
 var closeButton = document.getElementsByClassName("close")[0];
-var registerLink = document.getElementById("registerLink");
 
 // Mostrar el modal cuando se haga clic en el botón de iniciar sesión
 loginButton.onclick = function() {

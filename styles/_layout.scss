@@ -7,67 +7,19 @@ body {
 
 // Estilos del banner
 .banner {
-    background: url('../img/banner-about-us.jpg') center/cover;
-    color: $color-secundario;
-    text-align: center;
-    padding: 3rem 0;
-    height: 8rem;
-    h1, .texto-bienvenida {
-        animation: slideIn 0.9s cubic-bezier(0, 0, 0, 1);
-    }
-    .texto-bienvenida {
-        background-color: rgba(0, 0, 0, 0.5);
-        padding: 20px;
-        border-radius: 10px;
-    }
+    @include banner-style(url('../img/banner-about-us.jpg'));
 }
 
 .banner-items {
-    background: url('../img/banner_items.jpg') center/cover;
-    color: $color-secundario;
-    text-align: center;
-    padding: 3rem 0;
-    height: 8rem;
-    h1, .texto-bienvenida {
-        animation: slideIn 1s cubic-bezier(0, 0, 0, 1);
-    }
-    .texto-bienvenida {
-        background-color: rgba(0, 0, 0, 0.5);
-        padding: 20px;
-        border-radius: 10px;
-    }
+    @include banner-style(url('../img/banner_items.jpg'));
 }
 
 .banner-sign-up {
-    background: url('../img/banner-sign-up.jpg') center/cover;
-    color: $color-secundario;
-    text-align: center;
-    padding: 3rem 0;
-    height: 8rem;
-    h1, .texto-bienvenida {
-        animation: slideIn 1s cubic-bezier(0, 0, 0, 1);
-    }
-    .texto-bienvenida {
-        background-color: rgba(0, 0, 0, 0.5);
-        padding: 20px;
-        border-radius: 10px;
-    }
+    @include banner-style(url('../img/banner-sign-up.jpg'));
 }
 
-.banner-about-of { 
-    background: url('../img/banner_morl.jpg') center/cover;
-    color: $color-secundario;
-    text-align: center;
-    padding: 3rem 0;
-    height: 8rem;
-    h1, .texto-bienvenida {
-        animation: slideIn 1s cubic-bezier(0, 0, 0, 1);
-    }
-    .texto-bienvenida {
-        background-color: rgba(0, 0, 0, 0.5);
-        padding: 20px;
-        border-radius: 10px;
-    }
+.banner-about-of {
+    @include banner-style(url('../img/banner_morl.jpg'));
 }
 
 // Encabezado
@@ -104,12 +56,12 @@ header {
                 }
             }
         }
-        .logo {
+        .logo-morl {
             padding-left: 10px;
             width: 70px;
             height: auto;
         }
-        .cart {
+        .cart-logo {
             padding-right: 30px;
             filter: invert(1);
             width: 40px;
