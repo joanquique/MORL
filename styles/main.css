@@ -236,7 +236,7 @@ body {
   height: 8rem;
 }
 .banner h1, .banner .texto-bienvenida {
-  animation: slideIn 1s cubic-bezier(0, 0, 0, 1);
+  animation: slideIn 1.3s cubic-bezier(0, 0, 0, 1);
 }
 .banner .texto-bienvenida {
   background-color: rgba(0, 0, 0, 0.5);
@@ -252,7 +252,7 @@ body {
   height: 8rem;
 }
 .banner-items h1, .banner-items .texto-bienvenida {
-  animation: slideIn 1s cubic-bezier(0, 0, 0, 1);
+  animation: slideIn 1.3s cubic-bezier(0, 0, 0, 1);
 }
 .banner-items .texto-bienvenida {
   background-color: rgba(0, 0, 0, 0.5);
@@ -268,7 +268,7 @@ body {
   height: 8rem;
 }
 .banner-sign-up h1, .banner-sign-up .texto-bienvenida {
-  animation: slideIn 1s cubic-bezier(0, 0, 0, 1);
+  animation: slideIn 1.3s cubic-bezier(0, 0, 0, 1);
 }
 .banner-sign-up .texto-bienvenida {
   background-color: rgba(0, 0, 0, 0.5);
@@ -284,7 +284,7 @@ body {
   height: 8rem;
 }
 .banner-about-of h1, .banner-about-of .texto-bienvenida {
-  animation: slideIn 1s cubic-bezier(0, 0, 0, 1);
+  animation: slideIn 1.3s cubic-bezier(0, 0, 0, 1);
 }
 .banner-about-of .texto-bienvenida {
   background-color: rgba(0, 0, 0, 0.5);

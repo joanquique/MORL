@@ -4,12 +4,12 @@ var loginButton = document.getElementById("loginButton");
 var closeButton = document.getElementsByClassName("close")[0];
 
 // Mostrar el modal cuando se haga clic en el botón de iniciar sesión
-loginButton.onclick = function() {
+loginButton.onclick = () => {
     modal.style.display = "block";
 }
 
 // Ocultar el modal cuando se haga clic en el botón de cerrar
-closeButton.onclick = function() {
+closeButton.onclick = () => {
     modal.style.display = "none"; 
 }
 
