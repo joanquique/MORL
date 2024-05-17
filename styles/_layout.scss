@@ -13,7 +13,7 @@ body {
     padding: 3rem 0;
     height: 8rem;
     h1, .texto-bienvenida {
-        animation: slideIn 1s ease-in-out;
+        animation: slideIn 0.9s cubic-bezier(0, 0, 0, 1);
     }
     .texto-bienvenida {
         background-color: rgba(0, 0, 0, 0.5);
@@ -29,7 +29,7 @@ body {
     padding: 3rem 0;
     height: 8rem;
     h1, .texto-bienvenida {
-        animation: slideIn 1s ease-in-out;
+        animation: slideIn 1s cubic-bezier(0, 0, 0, 1);
     }
     .texto-bienvenida {
         background-color: rgba(0, 0, 0, 0.5);
@@ -45,7 +45,7 @@ body {
     padding: 3rem 0;
     height: 8rem;
     h1, .texto-bienvenida {
-        animation: slideIn 1s ease-in-out;
+        animation: slideIn 1s cubic-bezier(0, 0, 0, 1);
     }
     .texto-bienvenida {
         background-color: rgba(0, 0, 0, 0.5);
@@ -61,7 +61,7 @@ body {
     padding: 3rem 0;
     height: 8rem;
     h1, .texto-bienvenida {
-        animation: slideIn 1s ease-in-out;
+        animation: slideIn 1s cubic-bezier(0, 0, 0, 1);
     }
     .texto-bienvenida {
         background-color: rgba(0, 0, 0, 0.5);
@@ -136,7 +136,7 @@ main {
         font-weight: 500;
         background-color: $color-primario;
         border-radius: 20px;
-        color: #fff;
+        color: $color-secundario;
         height: 60px;
         margin: 10px 10px;
         display: flex;
@@ -160,7 +160,7 @@ main {
     .container {
         max-width: 600px;
         margin: 50px auto;
-        background-color: #fff;
+        background-color: $color-secundario;
         padding: 20px;
         border-radius: 8px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -194,7 +194,7 @@ main {
     
     button {
         background-color: $color-primario;
-        color: #fff;
+        color: $color-secundario;
         border: none;
         padding: 10px 20px;
         border-radius: 4px;
@@ -266,11 +266,11 @@ main {
             padding: 8px 15px;
             border: none;
             border-radius: 50px;
-            background-color: #0466b0; 
-            color: #fff;
+            background-color: $color-primario; 
+            color: $color-secundario;
             font-size: 1em;
             cursor: pointer;
-            @include transition-all;
+            @extend %transition-button;
         
             &:hover {
                 background-color: darken($color-primario, 10%);
@@ -298,16 +298,6 @@ footer {
         align-items: center; 
         padding: 5px;
         box-sizing: border-box;
-        .copyright {
-            text-align: left;
-        }
-        .address {
-            text-align: center;
-        }
-        .contact {
-            text-align: right;
-            padding-right: 10px;
-        }
     }
          
     .icon {
@@ -317,7 +307,7 @@ footer {
     }
 
     .mail {
-        color: #fff;
+        color: $color-secundario;
         text-decoration-line: none;
     }
 }
