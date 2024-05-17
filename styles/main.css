@@ -59,6 +59,20 @@
   transition: all 0.2s linear;
 }
 
+main #nombre, main #correo,
+main #passwrd, main #direccion,
+main #telefono {
+  padding: 8px;
+  border: 2px solid #0466b0;
+  border-radius: 50px;
+  width: 90%;
+  font-size: 14px;
+  margin: 15px auto;
+  display: block;
+  text-align: center;
+  box-sizing: border-box;
+}
+
 .busqueda-boton {
   padding-bottom: 10px;
 }
@@ -377,18 +391,6 @@ main .form-group {
 }
 main label {
   font-weight: bold;
-}
-main #nombre, main #correo, main #passwrd,
-main #direccion, main #telefono {
-  padding: 8px;
-  border: 2px solid #0466b0;
-  border-radius: 50px;
-  width: 90%;
-  font-size: 14px;
-  margin: 15px auto;
-  display: block;
-  text-align: center;
-  box-sizing: border-box;
 }
 main button {
   background-color: #0466b0;

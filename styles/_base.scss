@@ -83,6 +83,19 @@ $font-family: "Montserrat", Arial, sans-serif;
     transition: all 0.2s linear;
 }
 
+//Estilos de inputs
+%input-styles {
+    padding: 8px;
+    border: 2px solid $color-primario;
+    border-radius: 50px;
+    width: 90%;
+    font-size: 14px;
+    margin: 15px auto;
+    display: block;
+    text-align: center;
+    box-sizing: border-box;
+}
+
 //Estilo de banners
 @mixin banner-style($background-image) {
     background: $background-image center/cover;

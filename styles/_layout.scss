@@ -131,17 +131,10 @@ main {
         font-weight: bold;
     }
 
-    #nombre, #correo, #passwrd,
-    #direccion, #telefono {
-        padding: 8px;
-        border: 2px solid $color-primario;
-        border-radius: 50px;
-        width: 90%; 
-        font-size: 14px;
-        margin: 15px auto;
-        display: block;
-        text-align: center;
-        box-sizing: border-box; 
+    #nombre, #correo,
+    #passwrd, #direccion,
+    #telefono {
+        @extend %input-styles;
     }
     
     button {
