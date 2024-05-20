@@ -61,7 +61,7 @@
     box-sizing: border-box;
   }
 }
-.items .item-single .boton-ficha, .items .item-single .boton-comprar, .items .item .boton-info, .items .item .boton-comprar, .submit, .login, .busqueda-boton form button[type=submit] {
+.items .item .boton-info, .items .item-single .boton-ficha, .submit, .login, .busqueda-boton form button[type=submit], .items .item .boton-comprar, .items .item-single .boton-comprar {
   transition: all 0.2s linear;
 }
 
@@ -77,6 +77,63 @@ main #telefono {
   display: block;
   text-align: center;
   box-sizing: border-box;
+}
+
+.items .item, .items .item-single {
+  width: 300px;
+  margin-bottom: 30px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  /* Estilos para el título del producto */
+  /* Estilos para la descripción del producto */
+  /* Estilos para el precio del producto */
+  /* Estilos para el botón de comprar */
+}
+.items .item h3, .items .item-single h3 {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.items .item p, .items .item-single p {
+  padding: 20px 5px 10px;
+  margin: 7px 0;
+  font-size: 0.9em;
+  color: #666;
+}
+.items .item .precio, .items .item-single .precio {
+  display: block;
+  margin: 5px 0 20px;
+  text-align: center;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #1fc124;
+}
+.items .item .boton-comprar, .items .item-single .boton-comprar {
+  margin: 15px auto;
+  display: flex;
+  justify-content: center;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 50px;
+  background-color: #0466b0;
+  color: #fff;
+  font-size: 1em;
+  cursor: pointer;
+}
+.items .item .boton-comprar:hover, .items .item-single .boton-comprar:hover {
+  background-color: #03497e;
+  transform: scale(1.1);
+}
+.items .item .btn-link, .items .item-single .btn-link {
+  text-decoration: none;
+}
+.items .item .img-item:hover, .items .item-single .img-item:hover {
+  transform: scale(1.6);
 }
 
 .busqueda-boton {
@@ -445,135 +502,14 @@ main .img-product, main .product-description {
   margin-top: 20px;
   /* Estilos para cada producto */
 }
-.items .item {
-  width: 300px;
-  margin-bottom: 30px;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  background-color: #f9f9f9;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-  /* Estilos para la imagen del producto */
-  /* Estilos para el título del producto */
-  /* Estilos para la descripción del producto */
-  /* Estilos para el precio del producto */
-  /* Estilos para el botón de comprar */
-}
-.items .item .img-item {
-  width: 100%;
-  max-width: 15rem;
-  border-radius: 5px;
-  height: auto;
-}
-.items .item h3 {
-  text-align: center;
-  margin-top: 10px;
-  font-size: 1.2em;
-  font-weight: bold;
-}
-.items .item p {
-  padding: 20px 5px 10px;
-  margin: 7px 0;
-  font-size: 0.9em;
-  color: #666;
-}
-.items .item .precio {
-  display: block;
-  margin: 5px 0 20px;
-  text-align: center;
-  font-size: 1.1em;
-  font-weight: bold;
-  color: #1fc124;
-}
-.items .item .boton-comprar {
-  margin: 15px auto;
-  display: flex;
-  justify-content: center;
-  padding: 8px 15px;
-  border: none;
-  border-radius: 50px;
-  background-color: #0466b0;
-  color: #fff;
-  font-size: 1em;
-  cursor: pointer;
-}
-.items .item .boton-comprar:hover {
-  background-color: #03497e;
-  transform: scale(1.1);
-}
-.items .item .boton-info {
-  margin: 15px auto;
-  display: flex;
-  justify-content: center;
-  padding: 8px 15px;
-  border: none;
-  border-radius: 50px;
-  background-color: #259356;
-  color: #fff;
-  font-size: 1em;
-  cursor: pointer;
-}
-.items .item .boton-info:hover {
-  background-color: #1b6a3e;
-  transform: scale(1.1);
-}
-.items .item .btn-link {
-  text-decoration: none;
-}
-.items .item .img-item:hover {
-  transform: scale(1.6);
-}
 .items .item-single {
   width: 30rem;
-  margin-bottom: 30px;
   padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  background-color: #f9f9f9;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-  /* Estilos para el título del producto */
-  /* Estilos para la descripción del producto */
   /* Estilos para el precio del producto */
-  /* Estilos para el botón de comprar */
-}
-.items .item-single h3 {
-  text-align: center;
-  margin-top: 10px;
-  font-size: 1.2em;
-  font-weight: 600;
-}
-.items .item-single p {
-  padding: 10px 25px;
-  margin: 7px 0;
-  font-size: 0.9em;
-  color: #666;
+  /* Estilos para el botón de la ficha técnica */
 }
 .items .item-single .precio {
-  display: block;
-  margin: 5px 0 20px;
   padding: 15px;
-  text-align: center;
-  font-size: 1.1em;
-  font-weight: bold;
-  color: #1fc124;
-}
-.items .item-single .boton-comprar {
-  margin: 15px auto;
-  display: flex;
-  justify-content: center;
-  padding: 8px 15px;
-  border: none;
-  border-radius: 50px;
-  background-color: #0466b0;
-  color: #fff;
-  font-size: 1em;
-  cursor: pointer;
-}
-.items .item-single .boton-comprar:hover {
-  background-color: #03497e;
-  transform: scale(1.1);
 }
 .items .item-single .boton-ficha {
   margin: 15px auto;
@@ -591,11 +527,35 @@ main .img-product, main .product-description {
   background-color: #e93030;
   transform: scale(1.1);
 }
-.items .item-single .btn-link {
-  text-decoration: none;
+.items .item {
+  /* Estilos para la imagen del producto */
+  /* Estilos para la descripción del producto */
+  /* Estilos para el botón de información */
 }
-.items .item-single .img-item:hover {
-  transform: scale(1.6);
+.items .item .img-item {
+  width: 100%;
+  max-width: 15rem;
+  border-radius: 5px;
+  height: auto;
+}
+.items .item p {
+  padding: 20px;
+}
+.items .item .boton-info {
+  margin: 15px auto;
+  display: flex;
+  justify-content: center;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 50px;
+  background-color: #259356;
+  color: #fff;
+  font-size: 1em;
+  cursor: pointer;
+}
+.items .item .boton-info:hover {
+  background-color: #1b6a3e;
+  transform: scale(1.1);
 }
 
 footer {
