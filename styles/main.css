@@ -483,8 +483,7 @@ main .product-container {
   justify-content: space-around;
 }
 main .img-product, main .product-description {
-  max-width: 25rem;
-  width: 100%;
+  width: 25rem;
   margin: 10px;
 }
 
@@ -497,7 +496,7 @@ main .img-product, main .product-description {
   /* Estilos para cada producto */
 }
 .items .item-single {
-  width: 30rem;
+  width: 20rem;
   padding: 20px;
   /* Estilos para el precio del producto */
   /* Estilos para el botón de la ficha técnica */
@@ -520,6 +519,11 @@ main .img-product, main .product-description {
 .items .item-single .boton-ficha:hover {
   background-color: #e93030;
   transform: scale(1.1);
+}
+@media screen and (max-width: 600px) {
+  .items .item-single {
+    width: 75%;
+  }
 }
 .items .item {
   /* Estilos para la imagen del producto */

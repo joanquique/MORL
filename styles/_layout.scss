@@ -163,8 +163,7 @@ main {
     }
     
     .img-product, .product-description {
-        max-width: 25rem;
-        width: 100%;
+        width: 25rem;
         margin: 10px; 
     }
 }
@@ -177,44 +176,48 @@ main {
     margin-top: 20px;
 
 /* Estilos para cada producto */
-.item-single {
-    @extend %common-styles;
+    .item-single { // Articulo individual
+        @extend %item-styles;
 
-    width: 30rem;
-    padding: 20px;
-
-    /* Estilos para el precio del producto */
-    .precio {
-        padding: 15px;
-    }
-
-    /* Estilos para el botón de la ficha técnica */
-    .boton-ficha {
-        @include custom-button(#ee5e5e);
-    }
-}
-
-.item {
-    @extend %common-styles;
-
-    /* Estilos para la imagen del producto */
-    .img-item {
-        width: 100%;
-        max-width: 15rem;
-        border-radius: 5px;
-        height: auto;
-    }
-
-    /* Estilos para la descripción del producto */
-    p {
+        width: 20rem;
         padding: 20px;
+
+        /* Estilos para el precio del producto */
+        .precio {
+            padding: 15px;
+        }
+
+        /* Estilos para el botón de la ficha técnica */
+        .boton-ficha {
+            @include custom-button(#ee5e5e);
+        }
+        
+        @media screen and (max-width: 600px){
+            width: 75%;
+        }
     }
 
-    /* Estilos para el botón de información */
-    .boton-info {
-        @include custom-button(#259356);
+    .item { // Artículos en productos.html
+        @extend %item-styles;
+
+        /* Estilos para la imagen del producto */
+        .img-item {
+            width: 100%;
+            max-width: 15rem;
+            border-radius: 5px;
+            height: auto;
+        }
+
+        /* Estilos para la descripción del producto */
+        p {
+            padding: 20px;
+        }
+
+        /* Estilos para el botón de información */
+        .boton-info {
+            @include custom-button(#259356);
+        }
     }
-}
 }
 // Pie de página
 footer {
@@ -234,13 +237,13 @@ footer {
         box-sizing: border-box;
     }
          
-    .icon {
+    .icon { // Iconos generales
         width: 20px;
         margin-right: 10px; 
         filter: invert(1);
     }
 
-    .mail {
+    .mail { // Texto de mail
         color: $color-secundario;
         text-decoration-line: none;
     }
