@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>AC Portatil</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header> <!-- Barra de navegación -->
+        <nav class="busqueda-boton">
+            <ul>
+                <li>
+                    <form action="#" method="GET">
+                        <input type="text" name="q" placeholder="Buscar productos...">
+                        <button type="submit">Buscar</button>
+                    </form>
+                </li>
+                <li>
+                    <button class="login" id="loginButton">Iniciar sesión</button>
+                </li>
+            </ul>
+        </nav>
+        <nav>
+            <a href="index.html"><img class="logo-morl" src="img/morl_logo.jpg"></a>
+            <ul>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="about-of.html">Acerca de</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>  
+            <img class="cart-logo" src="img/shopping-cart.svg">          
+        </nav>
+    </header>
+    <div class="modal" id="modal"> <!-- Modal -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p class="text-sign-in">Inicio de sesión</p>
+            <form id="loginForm">
+                <!-- Campos de login -->
+                <input type="email" id="email" placeholder="Correo electrónico">
+                <input type="password" id="password" placeholder="Contraseña">
+                <div class="checkbox">
+                    <input type="checkbox">  Mantener sesión iniciada
+                </div>
+                <button type="submit" class="submit">Iniciar sesión</button>
+            </form>
+            <p class="text-sign-up">¿No tienes una cuenta? <a href="sign-up.html" id="registerLink">Regístrate aquí</a></p>
+            <small>&copy; 2024 MORL</small>
+        </div>
+    </div>
+    <main>
+        <div class="banner-item">
+            <div class="texto-bienvenida">
+                <h1>Producto de calidad</h1>
+            </div>
+        </div>
+        <div class="product-description">
+            <h2 id="product-title">Título del Producto</h2>
+            <img id="product-image" src="#" alt="Producto">
+            <p id="product-description">Descripción del producto.</p>
+            <p id="product-price">Precio: $XX.XX</p>
+            <button id="add-to-cart">Agregar al carrito</button>
+        </div>
+    </main>
+    <script src="js/modal.js"></script>
+</body>
+</html>

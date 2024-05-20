@@ -22,6 +22,10 @@ body {
     @include banner-style(url('../img/banner_morl.jpg'));
 }
 
+.banner-item {
+    @include banner-style(url('../img/banner-producto.jpg'));
+}
+
 // Encabezado
 header {
     background-color: $color-primario;
@@ -153,6 +157,17 @@ main {
     }
 }
 
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.img-product, .product-description {
+    width: 100%; /* O ajusta el porcentaje según tus necesidades */
+    max-width: 16rem;
+}
+
 /* Estilos para la sección de productos */
 .items {
     display: flex;
@@ -210,7 +225,10 @@ main {
             @include custom-button($color-primario);
         }
         .boton-info {
-            @include custom-button(#3cb371);
+            @include custom-button(#259356);
+        }
+        .btn-link {
+            text-decoration: none;
         }
         .img-item:hover {
             transform: scale(1.6); 
