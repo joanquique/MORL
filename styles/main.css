@@ -51,12 +51,6 @@
   .item {
     width: calc(50% - 20px);
   }
-  .item-single {
-    width: 300px;
-  }
-  .item-single .img-product {
-    width: 1rem;
-  }
   footer {
     box-sizing: border-box;
   }
