@@ -55,7 +55,7 @@
     box-sizing: border-box;
   }
 }
-.items .item .boton-comprar, .submit, .login, .busqueda-boton form button[type=submit] {
+.items .item .boton-info, .items .item .boton-comprar, .submit, .login, .busqueda-boton form button[type=submit] {
   transition: all 0.2s linear;
 }
 
@@ -428,10 +428,11 @@ main button:hover {
   /* Estilos para el precio del producto */
   /* Estilos para el botón de comprar */
 }
-.items .item img {
+.items .item .img-item {
   width: 100%;
   max-width: 15rem;
   border-radius: 5px;
+  height: auto;
 }
 .items .item h3 {
   text-align: center;
@@ -469,8 +470,24 @@ main button:hover {
   background-color: #03497e;
   transform: scale(1.1);
 }
-.items .item img:hover {
-  transform: scale(1.9);
+.items .item .boton-info {
+  margin: 15px auto;
+  display: flex;
+  justify-content: center;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 50px;
+  background-color: #3cb371;
+  color: #fff;
+  font-size: 1em;
+  cursor: pointer;
+}
+.items .item .boton-info:hover {
+  background-color: #2f8d59;
+  transform: scale(1.1);
+}
+.items .item .img-item:hover {
+  transform: scale(1.6);
 }
 
 footer {
