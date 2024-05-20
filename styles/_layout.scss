@@ -155,17 +155,18 @@ main {
     button:hover {
         background-color: #0056b3;
     }
-}
 
-.product-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.img-product, .product-description {
-    width: 100%; /* O ajusta el porcentaje según tus necesidades */
-    max-width: 16rem;
+    .product-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    .img-product, .product-description {
+        max-width: 25rem;
+        width: 100%;
+        margin: 10px; 
+    }
 }
 
 /* Estilos para la sección de productos */
@@ -226,6 +227,57 @@ main {
         }
         .boton-info {
             @include custom-button(#259356);
+        }
+        .btn-link {
+            text-decoration: none;
+        }
+        .img-item:hover {
+            transform: scale(1.6); 
+        }
+    }
+    .item-single {
+        width: 30rem;
+        margin-bottom: 30px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        background-color: #f9f9f9;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+        
+        /* Estilos para el título del producto */
+        h3 {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 1.2em;
+            font-weight: 600;
+        }
+        
+        /* Estilos para la descripción del producto */
+        p {
+            padding: 10px 25px;
+            margin: 7px 0;
+            font-size: 0.9em;
+            color: #666;
+        }
+        
+        /* Estilos para el precio del producto */
+        .precio {
+            display: block;
+            margin: 5px 0 20px;
+            padding: 15px;
+            text-align: center;
+            font-size: 1.1em;
+            font-weight: bold;
+            color: #1fc124; 
+        }
+        
+        /* Estilos para el botón de comprar */
+        .boton-comprar {
+            @include custom-button($color-primario);
+        }
+        .boton-ficha {
+            @include custom-button(#ee5e5e);
         }
         .btn-link {
             text-decoration: none;
