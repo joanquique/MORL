@@ -443,6 +443,9 @@ main .text-containers .text-container {
     margin: 10px;
   }
 }
+main .text-containers .text-container h3 {
+  font-weight: 600;
+}
 main .text-containers .text-container p {
   font-size: 0.95rem;
   text-align: justify;
@@ -450,7 +453,7 @@ main .text-containers .text-container p {
 }
 @media screen and (max-width: 600px) {
   main .text-containers .text-container p {
-    padding: 2rem 0.5rem;
+    padding: 0 0.5rem;
   }
 }
 main .text-containers .text-container-other {
@@ -470,6 +473,9 @@ main .text-containers .text-container-other {
     margin: 10px;
   }
 }
+main .text-containers .text-container-other h3 {
+  font-weight: 600;
+}
 main .text-containers .text-container-other p {
   font-size: 0.95rem;
   text-align: justify;
@@ -477,7 +483,7 @@ main .text-containers .text-container-other p {
 }
 @media screen and (max-width: 600px) {
   main .text-containers .text-container-other p {
-    padding: 2rem 0.5rem;
+    padding: 0 0.5rem;
   }
 }
 main .text-containers .text-container-1 {
@@ -497,6 +503,9 @@ main .text-containers .text-container-1 {
     margin: 10px;
   }
 }
+main .text-containers .text-container-1 h3 {
+  font-weight: 600;
+}
 main .text-containers .text-container-1 p {
   font-size: 0.95rem;
   text-align: justify;
@@ -504,7 +513,7 @@ main .text-containers .text-container-1 p {
 }
 @media screen and (max-width: 600px) {
   main .text-containers .text-container-1 p {
-    padding: 2rem 0.5rem;
+    padding: 0 0.5rem;
   }
 }
 main .text-containers .text-container-2 {
@@ -524,6 +533,9 @@ main .text-containers .text-container-2 {
     margin: 10px;
   }
 }
+main .text-containers .text-container-2 h3 {
+  font-weight: 600;
+}
 main .text-containers .text-container-2 p {
   font-size: 0.95rem;
   text-align: justify;
@@ -531,7 +543,7 @@ main .text-containers .text-container-2 p {
 }
 @media screen and (max-width: 600px) {
   main .text-containers .text-container-2 p {
-    padding: 2rem 0.5rem;
+    padding: 0 0.5rem;
   }
 }
 main .text-containers .text-container-3 {
@@ -551,6 +563,9 @@ main .text-containers .text-container-3 {
     margin: 10px;
   }
 }
+main .text-containers .text-container-3 h3 {
+  font-weight: 600;
+}
 main .text-containers .text-container-3 p {
   font-size: 0.95rem;
   text-align: justify;
@@ -558,7 +573,7 @@ main .text-containers .text-container-3 p {
 }
 @media screen and (max-width: 600px) {
   main .text-containers .text-container-3 p {
-    padding: 2rem 0.5rem;
+    padding: 0 0.5rem;
   }
 }
 main h2 {

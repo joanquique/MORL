@@ -154,12 +154,15 @@ $font-family: "Montserrat", Arial, sans-serif;
     @media screen and (max-width: 600px){
         margin: 10px;
     }
+    h3 {
+        font-weight: 600;
+    }
     p {
         font-size: 0.95rem;
         text-align: justify;
         padding: 5rem 1rem;
         @media screen and (max-width: 600px){
-            padding: 2rem 0.5rem;
+            padding: 0 0.5rem;
         }
     }
 }
