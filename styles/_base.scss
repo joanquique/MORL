@@ -1,8 +1,8 @@
 // Colores
 $color-primario: #0466b0;
 $color-secundario: #fff;
-$gradient-start: rgba(3, 74, 126, 0.7); // Color inicial del degradado (más oscuro con 70% de opacidad)
-$gradient-end: rgba(5, 128, 230, 0.3);
+// $gradient-start: rgba(3, 74, 126, 0.7); // Color inicial del degradado (más oscuro con 70% de opacidad)
+// $gradient-end: rgba(5, 128, 230, 0.3);
 
 //Tipografia
 $font-family: "Montserrat", Arial, sans-serif;
@@ -138,9 +138,9 @@ $font-family: "Montserrat", Arial, sans-serif;
 }
 
 //Mixin imágenes principal
-@mixin background-with-gradient($background-image) {
+@mixin background-gradient($gradient-start, $gradient-end, $background-image) {
     position: relative;
-    max-width: 600px;
+    max-width: 650px;
     height: 400px;
     margin: 20px auto;
     padding: 2rem;
@@ -149,11 +149,17 @@ $font-family: "Montserrat", Arial, sans-serif;
     background-size: cover;
     border-radius: 20px;
     font-weight: 500;
-
+    
+    @media screen and (max-width: 600px){
+        margin: 10px;
+    }
     p {
         font-size: 0.95rem;
         text-align: justify;
         padding: 5rem 1rem;
+        @media screen and (max-width: 600px){
+            padding: 2rem 0.5rem;
+        }
     }
 }
 

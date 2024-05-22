@@ -77,12 +77,28 @@ header {
 
 // Contenedor principal
 main {
-    .text-container {
-        @include background-with-gradient('/img/AC.jpg');
-    }
+    .text-containers {
 
-    .text-container-other {
-        @include background-with-gradient('/img/AC-residencial.jpg');
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .text-container {
+            @include background-gradient(rgba(3, 74, 126, 0.7), rgba(5, 128, 230, 0.3), '/img/AC.jpg');
+        }
+
+        .text-container-other {
+            @include background-gradient(rgba(133, 131, 131, 0.7), rgba(5, 128, 230, 0.3), '/img/AC-residencial.jpg');
+        }
+        .text-container-1 {
+            @include background-gradient(rgba(0, 51, 102, 0.7), rgba(0, 153, 255, 0.3), '/img/AC-img.jpg');
+        }
+        .text-container-2 {
+            @include background-gradient(rgba(49, 0, 51, 0.7), rgba(171, 52, 84, 0.3), '/img/AC-mision.jpg');
+        }
+        .text-container-3 {
+            @include background-gradient(rgba(133, 131, 131, 0.7), rgba(5, 128, 230, 0.3), '/img/morl-autos.jpg');
+        }
     }
 
     padding: auto;

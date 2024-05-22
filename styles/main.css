@@ -416,9 +416,14 @@ header nav .cart-logo {
 main {
   padding: auto;
 }
-main .text-container {
+main .text-containers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+main .text-containers .text-container {
   position: relative;
-  max-width: 600px;
+  max-width: 650px;
   height: 400px;
   margin: 20px auto;
   padding: 2rem;
@@ -428,27 +433,128 @@ main .text-container {
   border-radius: 20px;
   font-weight: 500;
 }
-main .text-container p {
+@media screen and (max-width: 600px) {
+  main .text-containers .text-container {
+    margin: 10px;
+  }
+}
+main .text-containers .text-container p {
   font-size: 0.95rem;
   text-align: justify;
   padding: 5rem 1rem;
 }
-main .text-container-other {
+@media screen and (max-width: 600px) {
+  main .text-containers .text-container p {
+    padding: 2rem 0.5rem;
+  }
+}
+main .text-containers .text-container-other {
   position: relative;
-  max-width: 600px;
+  max-width: 650px;
   height: 400px;
   margin: 20px auto;
   padding: 2rem;
   color: #fff;
-  background: linear-gradient(rgba(3, 74, 126, 0.7), rgba(5, 128, 230, 0.3)), url("/img/AC-residencial.jpg") no-repeat center center;
+  background: linear-gradient(rgba(133, 131, 131, 0.7), rgba(5, 128, 230, 0.3)), url("/img/AC-residencial.jpg") no-repeat center center;
   background-size: cover;
   border-radius: 20px;
   font-weight: 500;
 }
-main .text-container-other p {
+@media screen and (max-width: 600px) {
+  main .text-containers .text-container-other {
+    margin: 10px;
+  }
+}
+main .text-containers .text-container-other p {
   font-size: 0.95rem;
   text-align: justify;
   padding: 5rem 1rem;
+}
+@media screen and (max-width: 600px) {
+  main .text-containers .text-container-other p {
+    padding: 2rem 0.5rem;
+  }
+}
+main .text-containers .text-container-1 {
+  position: relative;
+  max-width: 650px;
+  height: 400px;
+  margin: 20px auto;
+  padding: 2rem;
+  color: #fff;
+  background: linear-gradient(rgba(0, 51, 102, 0.7), rgba(0, 153, 255, 0.3)), url("/img/AC-img.jpg") no-repeat center center;
+  background-size: cover;
+  border-radius: 20px;
+  font-weight: 500;
+}
+@media screen and (max-width: 600px) {
+  main .text-containers .text-container-1 {
+    margin: 10px;
+  }
+}
+main .text-containers .text-container-1 p {
+  font-size: 0.95rem;
+  text-align: justify;
+  padding: 5rem 1rem;
+}
+@media screen and (max-width: 600px) {
+  main .text-containers .text-container-1 p {
+    padding: 2rem 0.5rem;
+  }
+}
+main .text-containers .text-container-2 {
+  position: relative;
+  max-width: 650px;
+  height: 400px;
+  margin: 20px auto;
+  padding: 2rem;
+  color: #fff;
+  background: linear-gradient(rgba(49, 0, 51, 0.7), rgba(171, 52, 84, 0.3)), url("/img/AC-mision.jpg") no-repeat center center;
+  background-size: cover;
+  border-radius: 20px;
+  font-weight: 500;
+}
+@media screen and (max-width: 600px) {
+  main .text-containers .text-container-2 {
+    margin: 10px;
+  }
+}
+main .text-containers .text-container-2 p {
+  font-size: 0.95rem;
+  text-align: justify;
+  padding: 5rem 1rem;
+}
+@media screen and (max-width: 600px) {
+  main .text-containers .text-container-2 p {
+    padding: 2rem 0.5rem;
+  }
+}
+main .text-containers .text-container-3 {
+  position: relative;
+  max-width: 650px;
+  height: 400px;
+  margin: 20px auto;
+  padding: 2rem;
+  color: #fff;
+  background: linear-gradient(rgba(133, 131, 131, 0.7), rgba(5, 128, 230, 0.3)), url("/img/morl-autos.jpg") no-repeat center center;
+  background-size: cover;
+  border-radius: 20px;
+  font-weight: 500;
+}
+@media screen and (max-width: 600px) {
+  main .text-containers .text-container-3 {
+    margin: 10px;
+  }
+}
+main .text-containers .text-container-3 p {
+  font-size: 0.95rem;
+  text-align: justify;
+  padding: 5rem 1rem;
+}
+@media screen and (max-width: 600px) {
+  main .text-containers .text-container-3 p {
+    padding: 2rem 0.5rem;
+  }
 }
 main h2 {
   text-align: center;
