@@ -77,6 +77,14 @@ header {
 
 // Contenedor principal
 main {
+    .text-container {
+        @include background-with-gradient('/img/AC.jpg');
+    }
+
+    .text-container-other {
+        @include background-with-gradient('/img/AC-residencial.jpg');
+    }
+
     padding: auto;
     h2 {
         text-align: center;

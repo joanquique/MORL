@@ -1,6 +1,8 @@
 // Colores
 $color-primario: #0466b0;
 $color-secundario: #fff;
+$gradient-start: rgba(3, 74, 126, 0.7); // Color inicial del degradado (más oscuro con 70% de opacidad)
+$gradient-end: rgba(5, 128, 230, 0.3);
 
 //Tipografia
 $font-family: "Montserrat", Arial, sans-serif;
@@ -132,6 +134,26 @@ $font-family: "Montserrat", Arial, sans-serif;
     &:hover {
         background-color: darken($color, 10%);
         transform: scale(1.1);
+    }
+}
+
+//Mixin imágenes principal
+@mixin background-with-gradient($background-image) {
+    position: relative;
+    max-width: 600px;
+    height: 400px;
+    margin: 20px auto;
+    padding: 2rem;
+    color: $color-secundario;
+    background: linear-gradient($gradient-start, $gradient-end), url($background-image) no-repeat center center;
+    background-size: cover;
+    border-radius: 20px;
+    font-weight: 500;
+
+    p {
+        font-size: 0.95rem;
+        text-align: justify;
+        padding: 5rem 1rem;
     }
 }
 

@@ -416,6 +416,40 @@ header nav .cart-logo {
 main {
   padding: auto;
 }
+main .text-container {
+  position: relative;
+  max-width: 600px;
+  height: 400px;
+  margin: 20px auto;
+  padding: 2rem;
+  color: #fff;
+  background: linear-gradient(rgba(3, 74, 126, 0.7), rgba(5, 128, 230, 0.3)), url("/img/AC.jpg") no-repeat center center;
+  background-size: cover;
+  border-radius: 20px;
+  font-weight: 500;
+}
+main .text-container p {
+  font-size: 0.95rem;
+  text-align: justify;
+  padding: 5rem 1rem;
+}
+main .text-container-other {
+  position: relative;
+  max-width: 600px;
+  height: 400px;
+  margin: 20px auto;
+  padding: 2rem;
+  color: #fff;
+  background: linear-gradient(rgba(3, 74, 126, 0.7), rgba(5, 128, 230, 0.3)), url("/img/AC-residencial.jpg") no-repeat center center;
+  background-size: cover;
+  border-radius: 20px;
+  font-weight: 500;
+}
+main .text-container-other p {
+  font-size: 0.95rem;
+  text-align: justify;
+  padding: 5rem 1rem;
+}
 main h2 {
   text-align: center;
   font-weight: 400;
