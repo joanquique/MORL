@@ -81,7 +81,7 @@ main #telefono {
   margin-bottom: 30px;
   padding: 20px;
   border: 1px solid #ccc;
-  border-radius: 10px;
+  border-radius: 20px;
   background-color: #f9f9f9;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
@@ -375,7 +375,7 @@ body {
 .banner .texto-bienvenida {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 8px;
   margin: 10px;
 }
 
@@ -392,7 +392,7 @@ body {
 .banner-items .texto-bienvenida {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 8px;
   margin: 10px;
 }
 
@@ -409,7 +409,7 @@ body {
 .banner-sign-up .texto-bienvenida {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 8px;
   margin: 10px;
 }
 
@@ -426,7 +426,7 @@ body {
 .banner-about-of .texto-bienvenida {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 8px;
   margin: 10px;
 }
 
@@ -443,7 +443,7 @@ body {
 .banner-item .texto-bienvenida {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 8px;
   margin: 10px;
 }
 
