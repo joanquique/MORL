@@ -65,8 +65,8 @@ header {
             width: 70px;
             height: auto;
         }
-        .cart-logo {
-            padding-right: 30px;
+        .header__icon {
+            padding-right: 80px;
             filter: invert(1);
             width: 40px;
             height: auto;
@@ -126,14 +126,13 @@ main {
     }
 
     p {
-        padding: 0 8%;
+        padding: 0 6%;
         text-align: justify;
-        margin-top: 30px;
+        margin-top: 20px;
     }
     img {
         width: 40rem;
         display: block;
-        margin: auto;
         padding: 25px;
     }
 

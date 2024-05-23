@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Productos</title>
-    <script src="js/filter-items.js" defer></script>
+    <script src="js/functions.js" defer></script>
     <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
@@ -34,7 +34,11 @@
                 <li><a href="about-of.html">Acerca de</a></li>
                 <li><a href="#">Contacto</a></li>
             </ul>  
-            <img class="cart-logo" src="img/shopping-cart.svg">          
+            <div class="cart__icon-container">
+                <i class="header__icon" id="cart-toggle">
+                    <img src="img/shopping-cart.svg" alt="Icono Carrito" width="30">
+                </i>
+            </div>          
         </nav>
     </header>
     <div class="modal" id="modal"> <!-- Modal -->
@@ -68,7 +72,7 @@
                     Con su combinación de eficiencia energética y elegancia moderna, 
                     este minisplit es la elección ideal para hogares, oficinas y espacios comerciales.</p>
                 <span class="precio">$7,999.00</span>
-                <button class="boton-comprar">Agregar al carrito</button>
+                <button class="add-to-cart">Agregar al carrito</button>
                 <a class="btn-link" href="minisplit.html"><button class="boton-info">Detalles del producto</button></a>
             </article>
             <article class="item">
@@ -79,7 +83,7 @@
                     es posible o conveniente. Su diseño compacto y portátil lo hace perfecto para una variedad de entornos, 
                     desde hogares y oficinas hasta caravanas y más.</p>
                 <span class="precio">$9,999.00</span>
-                <button class="boton-comprar">Agregar al carrito</button>
+                <button class="add-to-cart">Agregar al carrito</button>
                 <a class="btn-link" href="portatil.html"><button class="boton-info">Detalles del producto</button></a>
             </article>
             <article class="item">
@@ -90,7 +94,7 @@
                     innovación y la ingeniería de vanguardia, brindando un control preciso sobre el clima interior en todo 
                     momento.</p>
                 <span class="precio">$22,999.00</span>
-                <button class="boton-comprar">Agregar al carrito</button>
+                <button class="add-to-cart">Agregar al carrito</button>
                 <a><button class="boton-info">Detalles del producto</button></a>
             </article>
             <article class="item">
@@ -100,7 +104,7 @@
                     Diseñado con la última tecnología en refrigeración, este equipo proporciona 
                     un rendimiento óptimo y un confort excepcional en cualquier entorno.</p>
                 <span class="precio">$7,999.00</span>
-                <button class="boton-comprar">Agregar al carrito</button>
+                <button class="add-to-cart">Agregar al carrito</button>
                 <a class="btn-link" href="minisplit.html"><button class="boton-info">Detalles del producto</button></a>
             </article>
             <article class="item">
@@ -111,7 +115,7 @@
                     es posible o conveniente. Su diseño compacto y portátil lo hace perfecto para una variedad de entornos, 
                     desde hogares y oficinas hasta caravanas y más.</p>
                 <span class="precio">$18,999.00</span>
-                <button class="boton-comprar">Agregar al carrito</button>
+                <button class="add-to-cart">Agregar al carrito</button>
                 <a class="btn-link" href="portatil.html"><button class="boton-info">Detalles del producto</button></a>
             </article>
             <article class="item">
@@ -122,7 +126,7 @@
                     innovación y la ingeniería de vanguardia, brindando un control preciso sobre el clima interior en todo 
                     momento.</p>
                 <span class="precio">$22,999.00</span>
-                <button class="boton-comprar">Agregar al carrito</button>
+                <button class="add-to-cart">Agregar al carrito</button>
                 <a><button class="boton-info">Detalles del producto</button></a>
             </article>
             <article class="item">
@@ -132,7 +136,7 @@
                     Diseñado con la última tecnología en refrigeración, este equipo proporciona 
                     un rendimiento óptimo y un confort excepcional en cualquier entorno.</p>
                 <span class="precio">$7,999.00</span>
-                <button class="boton-comprar">Agregar al carrito</button>
+                <button class="add-to-cart">Agregar al carrito</button>
                 <a class="btn-link" href="minisplit.html"><button class="boton-info">Detalles del producto</button></a>
             </article>
             <article class="item">
@@ -143,7 +147,7 @@
                     es posible o conveniente. Su diseño compacto y portátil lo hace perfecto para una variedad de entornos, 
                     desde hogares y oficinas hasta caravanas y más.</p>
                 <span class="precio">$18,999.00</span>
-                <button class="boton-comprar">Agregar al carrito</button>
+                <button class="add-to-cart">Agregar al carrito</button>
                 <a class="btn-link" href="portatil.html"><button class="boton-info">Detalles del producto</button></a>
             </article>
             <article class="item">
@@ -154,9 +158,15 @@
                     innovación y la ingeniería de vanguardia, brindando un control preciso sobre el clima interior en todo 
                     momento.</p>
                 <span class="precio">$22,999.00</span>
-                <button class="boton-comprar">Agregar al carrito</button>
+                <button class="add-to-cart">Agregar al carrito</button>
                 <a><button class="boton-info">Detalles del producto</button></a>
             </article>
+        </section>
+        <section class="cart cart--container"> <!-- Carrito de compras-->
+            <h2 class="cart__title">CARRITO</h2>
+            <i id="cart-close"><img src="img/x.svg" class="cart__close-icon" alt="Icono Cerrar" width="25"></i> 
+            <div class="cart__item">
+            </div>
         </section>
     </main>
     <footer><!-- Pie de página -->
