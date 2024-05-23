@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Acerca de</title>
     <link rel="stylesheet" href="styles/main.css">
+    <script src="js/functions.js" defer></script>
 </head>
 <body>
     <header> <!-- Barra de navegación -->
@@ -32,7 +33,11 @@
                 <li><a href="about-of.html">Acerca de</a></li>
                 <li><a href="#">Contacto</a></li>
             </ul>  
-            <img class="cart-logo" src="img/shopping-cart.svg">          
+            <div class="cart__icon-container">
+                <i class="header__icon" id="cart-toggle">
+                    <img src="img/shopping-cart.svg" alt="Icono Carrito" width="30">
+                </i>
+            </div>              
         </nav>
     </header>
     <div class="modal" id="modal"> <!-- Modal -->
@@ -110,6 +115,12 @@
                     con la excelencia nos impulsa a alcanzar nuevos niveles en la prestación de servicios, 
                     asegurando la plena satisfacción y confianza de nuestros clientes en cada interacción.</p>
                     <!-- <img src="img/morl-autos.jpg" alt="autos img"> -->
+            </div>
+        </section>
+        <section class="cart cart--container"> <!-- Carrito de compras-->
+            <h2 class="cart__title">CARRITO</h2>
+            <i id="cart-close"><img src="img/x.svg" class="cart__close-icon" alt="Icono Cerrar" width="25"></i> 
+            <div class="cart__item">
             </div>
         </section>
     </main>

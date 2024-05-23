@@ -38,7 +38,10 @@
     justify-content: center;
   }
   nav ul li {
-    margin: 10px;
+    margin: 8px;
+  }
+  nav img {
+    padding-right: 20px;
   }
   body img {
     max-width: 20rem;
@@ -311,12 +314,12 @@ small {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.6rem;
+  padding: 0.6rem 0.2rem;
   box-sizing: border-box;
 }
 .cart__item img {
   width: 15%;
-  padding: 0.6rem;
+  padding: 0.6rem 0;
 }
 .cart__item .cart__item-delete-icon {
   width: 20px;
@@ -481,11 +484,12 @@ header nav ul li a:hover {
 }
 header nav .logo-morl {
   padding-left: 10px;
+  padding-right: 3px;
   width: 70px;
   height: auto;
 }
 header nav .header__icon {
-  padding-right: 80px;
+  padding-right: 30px;
   filter: invert(1);
   width: 40px;
   height: auto;

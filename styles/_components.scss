@@ -197,12 +197,12 @@ small { // Pie de pagina de modal copyright
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 0.6rem;
+        padding: 0.6rem 0.2rem;
         box-sizing: border-box;
 
         img {
             width: 15%;
-            padding: 0.6rem;
+            padding: 0.6rem 0;
         }
 
         .cart__item-delete-icon {
