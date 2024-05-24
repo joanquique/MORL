@@ -77,6 +77,9 @@ $font-family: "Montserrat", Arial, sans-serif;
     .item {
         width: calc(50% - 20px);
     }
+    .cart__item {
+        max-width: 23.75rem;
+    }
     
     footer {
         box-sizing: border-box;

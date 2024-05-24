@@ -205,6 +205,13 @@ small { // Pie de pagina de modal copyright
             padding: 0.6rem 0;
         }
 
+        p:nth-child(2) {
+            text-align: left;
+        }
+        p:nth-child(3) {
+            padding-left: 0.6rem;
+        }
+
         .cart__item-delete-icon {
             width: 20px;
             cursor: pointer;
