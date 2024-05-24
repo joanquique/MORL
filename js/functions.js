@@ -20,17 +20,6 @@ function filtrarProductos() {
     });
 }
 
-// Funciones de carrito de compras
-document.getElementById('cart-toggle').addEventListener('click', function() {
-    console.log("Clic en el icono de carrito");
-    document.querySelector('.cart').classList.toggle('cart--open');
-});
-
-document.getElementById('cart-close').addEventListener('click', function() {
-    console.log("Clic en el icono de cerrar carrito");
-    document.querySelector('.cart').classList.remove('cart--open');
-});
-
 // Escuchar el evento de envío del formulario de búsqueda
 document.querySelector('form').addEventListener('submit', function(event) {
     event.preventDefault(); // Evitar que el formulario se envíe
@@ -43,6 +32,17 @@ document.querySelector('form').addEventListener('submit', function(event) {
 document.querySelector('input[name="q"]').addEventListener('input', function() {
     // Filtrar los productos al cambiar el texto en el cuadro de búsqueda
     filtrarProductos();
+});
+
+// Funciones de carrito de compras
+document.getElementById('cart-toggle').addEventListener('click', function() {
+    console.log("Clic en el icono de carrito");
+    document.querySelector('.cart').classList.toggle('cart--open');
+});
+
+document.getElementById('cart-close').addEventListener('click', function() {
+    console.log("Clic en el icono de cerrar carrito");
+    document.querySelector('.cart').classList.remove('cart--open');
 });
 
 // Selecciona todos los botones "Agregar al carrito" y agrega un evento de clic a cada uno
