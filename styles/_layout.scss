@@ -28,9 +28,11 @@ body {
 
 // Encabezado
 header {
+    z-index: 1000;
     background-color: $color-primario;
     color: $color-secundario;
     padding: 15px 0;
+    height: 6.875rem;
     nav {
         display: flex;
         align-items: center;
@@ -74,7 +76,19 @@ header {
             cursor: pointer;
         }
     }
+    transition: background-color 0.5s linear;
 }
+header.scrolled {
+    background-color: $color-secundario; /* Cambia el color de fondo al hacer scroll */
+    position: fixed; /* Fija el header en la parte superior */
+    width: 100%; /* Opcional: asegura que el header ocupe toda la anchura */
+}
+
+  /* Aplicar margen superior al contenido cuando el header está fijo */
+header.scrolled + main {
+    margin-top: 130px; /* Ajusta la altura según la altura de tu header */
+  }
+  
 
 // Contenedor principal
 main {

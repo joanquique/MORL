@@ -1,3 +1,15 @@
+//Efecto de header
+window.addEventListener('scroll', function() {
+    var header = document.querySelector('header');
+    var scrollPosition = window.scrollY;
+  
+    if (scrollPosition > 50) { // Cambia este valor según tus necesidades
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  });
+
 // Función para filtrar los productos
 function filtrarProductos() {
     // Obtener el texto ingresado en el cuadro de búsqueda

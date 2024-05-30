@@ -123,6 +123,7 @@ main #telefono {
   background-color: #0466b0;
   color: #fff;
   font-size: 1em;
+  font-family: "Roboto Serif";
   cursor: pointer;
 }
 .items .item .add-to-cart:hover, .items .item-single .add-to-cart:hover {
@@ -146,6 +147,7 @@ main #telefono {
   margin-right: 10px;
   width: 200px;
   font-size: 14px;
+  font-family: "Roboto Serif", Arial, sans-serif;
 }
 .busqueda-boton form button[type=submit] {
   padding: 8px 12px;
@@ -168,6 +170,7 @@ main #telefono {
   background-color: #145483;
   color: #fff;
   font-size: 14px;
+  font-family: "Roboto Serif", Arial, sans-serif;
   cursor: pointer;
 }
 .login:hover {
@@ -289,7 +292,7 @@ small {
   width: 100%;
   max-width: 500px;
   background-color: #fff;
-  font-family: "Montserrat", Arial, sans-serif;
+  font-family: "Roboto Serif", Arial, sans-serif;
   border-radius: 20px;
   padding: 25px;
   box-sizing: border-box;
@@ -366,7 +369,7 @@ small {
 }
 
 body {
-  font-family: "Montserrat", Arial, sans-serif;
+  font-family: "Roboto Serif", Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -457,9 +460,12 @@ body {
 }
 
 header {
+  z-index: 1000;
   background-color: #0466b0;
   color: #fff;
   padding: 15px 0;
+  height: 6.875rem;
+  transition: background-color 0.5s linear;
 }
 header nav {
   display: flex;
@@ -505,6 +511,17 @@ header nav .header__icon {
   cursor: pointer;
 }
 
+header.scrolled {
+  background-color: #fff; /* Cambia el color de fondo al hacer scroll */
+  position: fixed; /* Fija el header en la parte superior */
+  width: 100%; /* Opcional: asegura que el header ocupe toda la anchura */
+}
+
+/* Aplicar margen superior al contenido cuando el header está fijo */
+header.scrolled + main {
+  margin-top: 130px; /* Ajusta la altura según la altura de tu header */
+}
+
 main {
   padding: auto;
 }
@@ -523,7 +540,8 @@ main .text-containers .text-container {
   background: linear-gradient(rgba(3, 74, 126, 0.7), rgba(5, 128, 230, 0.3)), url("/img/AC.jpg") no-repeat center center;
   background-size: cover;
   border-radius: 20px;
-  font-weight: 500;
+  font-weight: 400;
+  letter-spacing: 0.5px;
 }
 @media screen and (max-width: 600px) {
   main .text-containers .text-container {
@@ -534,7 +552,7 @@ main .text-containers .text-container h3 {
   font-weight: 600;
 }
 main .text-containers .text-container p {
-  font-size: 0.95rem;
+  font-size: 1rem;
   text-align: justify;
   padding: 5rem 1rem;
 }
@@ -553,7 +571,8 @@ main .text-containers .text-container-other {
   background: linear-gradient(rgba(133, 131, 131, 0.7), rgba(5, 128, 230, 0.3)), url("/img/AC-residencial.jpg") no-repeat center center;
   background-size: cover;
   border-radius: 20px;
-  font-weight: 500;
+  font-weight: 400;
+  letter-spacing: 0.5px;
 }
 @media screen and (max-width: 600px) {
   main .text-containers .text-container-other {
@@ -564,7 +583,7 @@ main .text-containers .text-container-other h3 {
   font-weight: 600;
 }
 main .text-containers .text-container-other p {
-  font-size: 0.95rem;
+  font-size: 1rem;
   text-align: justify;
   padding: 5rem 1rem;
 }
@@ -583,7 +602,8 @@ main .text-containers .text-container-1 {
   background: linear-gradient(rgba(0, 51, 102, 0.7), rgba(0, 153, 255, 0.3)), url("/img/AC-img.jpg") no-repeat center center;
   background-size: cover;
   border-radius: 20px;
-  font-weight: 500;
+  font-weight: 400;
+  letter-spacing: 0.5px;
 }
 @media screen and (max-width: 600px) {
   main .text-containers .text-container-1 {
@@ -594,7 +614,7 @@ main .text-containers .text-container-1 h3 {
   font-weight: 600;
 }
 main .text-containers .text-container-1 p {
-  font-size: 0.95rem;
+  font-size: 1rem;
   text-align: justify;
   padding: 5rem 1rem;
 }
@@ -613,7 +633,8 @@ main .text-containers .text-container-2 {
   background: linear-gradient(rgba(49, 0, 51, 0.7), rgba(171, 52, 84, 0.3)), url("/img/AC-mision.jpg") no-repeat center center;
   background-size: cover;
   border-radius: 20px;
-  font-weight: 500;
+  font-weight: 400;
+  letter-spacing: 0.5px;
 }
 @media screen and (max-width: 600px) {
   main .text-containers .text-container-2 {
@@ -624,7 +645,7 @@ main .text-containers .text-container-2 h3 {
   font-weight: 600;
 }
 main .text-containers .text-container-2 p {
-  font-size: 0.95rem;
+  font-size: 1rem;
   text-align: justify;
   padding: 5rem 1rem;
 }
@@ -643,7 +664,8 @@ main .text-containers .text-container-3 {
   background: linear-gradient(rgba(133, 131, 131, 0.7), rgba(5, 128, 230, 0.3)), url("/img/morl-autos.jpg") no-repeat center center;
   background-size: cover;
   border-radius: 20px;
-  font-weight: 500;
+  font-weight: 400;
+  letter-spacing: 0.5px;
 }
 @media screen and (max-width: 600px) {
   main .text-containers .text-container-3 {
@@ -654,7 +676,7 @@ main .text-containers .text-container-3 h3 {
   font-weight: 600;
 }
 main .text-containers .text-container-3 p {
-  font-size: 0.95rem;
+  font-size: 1rem;
   text-align: justify;
   padding: 5rem 1rem;
 }
@@ -760,6 +782,7 @@ main .img-product, main .product-description {
   background-color: #ee5e5e;
   color: #fff;
   font-size: 1em;
+  font-family: "Roboto Serif";
   cursor: pointer;
 }
 .items .item-single .boton-ficha:hover {
@@ -795,6 +818,7 @@ main .img-product, main .product-description {
   background-color: #259356;
   color: #fff;
   font-size: 1em;
+  font-family: "Roboto Serif";
   cursor: pointer;
 }
 .items .item .boton-info:hover {
