@@ -1,14 +1,20 @@
 //Efecto de header
 window.addEventListener('scroll', function() {
     var header = document.querySelector('header');
+    var logo = document.getElementById('logo');
     var scrollPosition = window.scrollY;
-  
+
     if (scrollPosition > 50) { // Cambia este valor según tus necesidades
-      header.classList.add('scrolled');
+        header.classList.add('scrolled');
+        // Cambiar el logo por el logo en color
+        logo.src = "/img/CLIMA CLICK SOLUCIONES EN AIRE ACONDICIONADO.png";
     } else {
-      header.classList.remove('scrolled');
+        header.classList.remove('scrolled');
+        // Restaurar el logo blanco
+        logo.src = "img/CLIMA CLICK BLANCO.png";
     }
-  });
+});
+
 
 // Función para filtrar los productos
 function filtrarProductos() {
