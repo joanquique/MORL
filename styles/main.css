@@ -24,14 +24,14 @@
   .login {
     padding: 4px 6px;
     border-radius: 500px;
-    background-color: #0466b0;
+    background-color: #0465b0;
     color: #fff;
     font-size: 14px;
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
   .login:hover {
-    background-color: #03497e;
+    background-color: #03487e;
   }
   nav ul {
     flex-wrap: wrap;
@@ -69,7 +69,7 @@ main #nombre, main #correo,
 main #passwrd, main #direccion,
 main #telefono {
   padding: 8px;
-  border: 2px solid #0466b0;
+  border: 2px solid #0465b0;
   border-radius: 50px;
   width: 90%;
   font-size: 14px;
@@ -120,14 +120,14 @@ main #telefono {
   padding: 8px 15px;
   border: none;
   border-radius: 50px;
-  background-color: #0466b0;
+  background-color: #0465b0;
   color: #fff;
   font-size: 1em;
   font-family: "Roboto Serif";
   cursor: pointer;
 }
 .items .item .add-to-cart:hover, .items .item-single .add-to-cart:hover {
-  background-color: #03497e;
+  background-color: #03487e;
   transform: scale(1.1);
 }
 .items .item .btn-link, .items .item-single .btn-link {
@@ -142,7 +142,7 @@ main #telefono {
 }
 .busqueda-boton form input[type=text] {
   padding: 10px;
-  border: 1px solid #0466b0;
+  border: 1px solid #0465b0;
   border-radius: 20px;
   margin-right: 10px;
   width: 200px;
@@ -153,13 +153,13 @@ main #telefono {
   padding: 8px 12px;
   border: none;
   border-radius: 500px;
-  background-color: #0466b0;
+  background-color: #0465b0;
   color: #fff;
   font-size: 14px;
   cursor: pointer;
 }
 .busqueda-boton form button[type=submit]:hover {
-  background-color: #03497e;
+  background-color: #03487e;
   scale: 1.1;
 }
 
@@ -174,7 +174,7 @@ main #telefono {
   cursor: pointer;
 }
 .login:hover {
-  background-color: #03497e;
+  background-color: #03487e;
   scale: 1.1;
 }
 
@@ -203,7 +203,7 @@ main #telefono {
 
 #email, #password {
   padding: 8px;
-  border: 2px solid #0466b0;
+  border: 2px solid #0465b0;
   border-radius: 50px;
   width: 250px;
   font-size: 14px;
@@ -227,7 +227,7 @@ main #telefono {
   border: none;
   width: 200px;
   border-radius: 500px;
-  background-color: #0466b0;
+  background-color: #0465b0;
   color: #fff;
   font-size: 14px;
   cursor: pointer;
@@ -236,7 +236,7 @@ main #telefono {
   text-align: center;
 }
 .submit:hover {
-  background-color: #03497e;
+  background-color: #03487e;
   scale: 1.1;
 }
 
@@ -461,7 +461,7 @@ body {
 
 header {
   z-index: 1000;
-  background-color: #0466b0;
+  background-color: #0465b0;
   color: #fff;
   padding: 15px 0;
   height: 6.875rem;
@@ -489,18 +489,17 @@ header nav ul li a {
   text-decoration: none;
   border: none;
   border-radius: 500px;
-  background-color: #0466b0;
+  background-color: #0465b0;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 header nav ul li a:hover {
-  background-color: #03497e;
+  background-color: #03487e;
   transform: scale(1.1);
 }
 header nav .logo-morl {
-  padding-left: 10px;
-  padding-right: 3px;
-  width: 70px;
+  padding: 0 3px 0 10px;
+  width: 250px;
   height: auto;
 }
 header nav .header__icon {
@@ -509,6 +508,9 @@ header nav .header__icon {
   width: 40px;
   height: auto;
   cursor: pointer;
+}
+header nav .panel-nav {
+  padding-right: 195px;
 }
 
 header.scrolled {
@@ -695,7 +697,7 @@ main h3 {
 }
 main .encabezado {
   font-weight: 500;
-  background-color: #0466b0;
+  background-color: #0465b0;
   border-radius: 20px;
   color: #fff;
   height: 60px;
@@ -734,7 +736,7 @@ main label {
   font-weight: bold;
 }
 main button {
-  background-color: #0466b0;
+  background-color: #0465b0;
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -827,7 +829,7 @@ main .img-product, main .product-description {
 }
 
 footer {
-  background-color: #0466b0;
+  background-color: #0465b0;
   color: #fff;
   padding: 10px 0;
   display: flex;
