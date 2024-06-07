@@ -149,7 +149,7 @@ $font-family: "Roboto Serif", Arial, sans-serif;
 @mixin background-gradient($gradient-start, $gradient-end, $background-image) {
     position: relative;
     max-width: 650px;
-    height: 400px;
+    height: 500px;
     margin: 20px auto;
     padding: 2rem;
     color: $color-secundario;

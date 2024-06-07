@@ -535,7 +535,7 @@ main .text-containers {
 main .text-containers .text-container {
   position: relative;
   max-width: 650px;
-  height: 400px;
+  height: 500px;
   margin: 20px auto;
   padding: 2rem;
   color: #fff;
@@ -566,7 +566,7 @@ main .text-containers .text-container p {
 main .text-containers .text-container-other {
   position: relative;
   max-width: 650px;
-  height: 400px;
+  height: 500px;
   margin: 20px auto;
   padding: 2rem;
   color: #fff;
@@ -597,7 +597,7 @@ main .text-containers .text-container-other p {
 main .text-containers .text-container-1 {
   position: relative;
   max-width: 650px;
-  height: 400px;
+  height: 500px;
   margin: 20px auto;
   padding: 2rem;
   color: #fff;
@@ -628,7 +628,7 @@ main .text-containers .text-container-1 p {
 main .text-containers .text-container-2 {
   position: relative;
   max-width: 650px;
-  height: 400px;
+  height: 500px;
   margin: 20px auto;
   padding: 2rem;
   color: #fff;
@@ -659,7 +659,7 @@ main .text-containers .text-container-2 p {
 main .text-containers .text-container-3 {
   position: relative;
   max-width: 650px;
-  height: 400px;
+  height: 500px;
   margin: 20px auto;
   padding: 2rem;
   color: #fff;
