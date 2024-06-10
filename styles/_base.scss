@@ -5,7 +5,7 @@ $color-secundario: #fff;
 // $gradient-end: rgba(5, 128, 230, 0.3);
 
 //Tipografia
-$font-family: "Roboto Serif", Arial, sans-serif;
+$font-family: "Quicksand", Arial, sans-serif;
 
 // Animación de entrada de modal
 @keyframes slideIn {
@@ -86,6 +86,13 @@ $font-family: "Roboto Serif", Arial, sans-serif;
     }
 }
 
+@media screen and (max-width: 1000px){
+    #logo {
+        content: url('/img/CARRITO_BLANCO.png'); /* Cambia el logo para dispositivos móviles */
+        width: 70px; /* Tamaño del logo móvil, ajusta según sea necesario */
+    }
+}
+
 // Transición de botones 
 %transition-button {
     transition: all 0.2s linear;
@@ -111,6 +118,7 @@ $font-family: "Roboto Serif", Arial, sans-serif;
     text-align: center;
     padding: 3rem 0;
     height: 8rem;
+    font-size: 1rem;
     
     h1, .texto-bienvenida {
         animation: slideIn 1.3s cubic-bezier(0, 0, 0, 1);
@@ -135,7 +143,7 @@ $font-family: "Roboto Serif", Arial, sans-serif;
     background-color: $color; 
     color: $color-secundario;
     font-size: 1em;
-    font-family: "Roboto Serif";
+    font-family: "Quicksand";
     cursor: pointer;
     @extend %transition-button;
     
@@ -223,3 +231,18 @@ $font-family: "Roboto Serif", Arial, sans-serif;
         transform: scale(1.6);
     }
 }
+
+// @media screen and (max-width: 600px) {
+//     .logo-morl {
+//         width: 60px; /* Tamaño del logo móvil, ajusta según sea necesario */
+//     }
+
+//     header nav {
+//         padding-right: 10px; /* Ajuste de espaciado en dispositivos móviles */
+//     }
+
+//     .login {
+//         padding: 4px 6px;
+//         font-size: 14px;
+//     }
+// }

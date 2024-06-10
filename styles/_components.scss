@@ -19,7 +19,7 @@
             background-color: $color-primario;
             color: $color-secundario;
             font-size: 14px;
-            //font-family: $font-family;
+            font-family: $font-family;
             cursor: pointer;
             @extend %transition-button;
             &:hover {

@@ -61,6 +61,12 @@
     box-sizing: border-box;
   }
 }
+@media screen and (max-width: 1000px) {
+  #logo {
+    content: url("/img/CARRITO_BLANCO.png"); /* Cambia el logo para dispositivos móviles */
+    width: 70px; /* Tamaño del logo móvil, ajusta según sea necesario */
+  }
+}
 .items .item .boton-info, .items .item-single .boton-ficha, .submit, .login, .busqueda-boton form button[type=submit], .items .item .add-to-cart, .items .item-single .add-to-cart {
   transition: all 0.2s linear;
 }
@@ -123,7 +129,7 @@ main #telefono {
   background-color: #0465b0;
   color: #fff;
   font-size: 1em;
-  font-family: "Roboto Serif";
+  font-family: "Quicksand";
   cursor: pointer;
 }
 .items .item .add-to-cart:hover, .items .item-single .add-to-cart:hover {
@@ -147,7 +153,7 @@ main #telefono {
   margin-right: 10px;
   width: 200px;
   font-size: 14px;
-  font-family: "Roboto Serif", Arial, sans-serif;
+  font-family: "Quicksand", Arial, sans-serif;
 }
 .busqueda-boton form button[type=submit] {
   padding: 8px 12px;
@@ -156,6 +162,7 @@ main #telefono {
   background-color: #0465b0;
   color: #fff;
   font-size: 14px;
+  font-family: "Quicksand", Arial, sans-serif;
   cursor: pointer;
 }
 .busqueda-boton form button[type=submit]:hover {
@@ -170,7 +177,7 @@ main #telefono {
   background-color: #145483;
   color: #fff;
   font-size: 14px;
-  font-family: "Roboto Serif", Arial, sans-serif;
+  font-family: "Quicksand", Arial, sans-serif;
   cursor: pointer;
 }
 .login:hover {
@@ -292,7 +299,7 @@ small {
   width: 100%;
   max-width: 500px;
   background-color: #fff;
-  font-family: "Roboto Serif", Arial, sans-serif;
+  font-family: "Quicksand", Arial, sans-serif;
   border-radius: 20px;
   padding: 25px;
   box-sizing: border-box;
@@ -369,7 +376,7 @@ small {
 }
 
 body {
-  font-family: "Roboto Serif", Arial, sans-serif;
+  font-family: "Quicksand", Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -380,6 +387,7 @@ body {
   text-align: center;
   padding: 3rem 0;
   height: 8rem;
+  font-size: 1rem;
 }
 .banner h1, .banner .texto-bienvenida {
   animation: slideIn 1.3s cubic-bezier(0, 0, 0, 1);
@@ -397,6 +405,7 @@ body {
   text-align: center;
   padding: 3rem 0;
   height: 8rem;
+  font-size: 1rem;
 }
 .banner-items h1, .banner-items .texto-bienvenida {
   animation: slideIn 1.3s cubic-bezier(0, 0, 0, 1);
@@ -414,6 +423,7 @@ body {
   text-align: center;
   padding: 3rem 0;
   height: 8rem;
+  font-size: 1rem;
 }
 .banner-sign-up h1, .banner-sign-up .texto-bienvenida {
   animation: slideIn 1.3s cubic-bezier(0, 0, 0, 1);
@@ -431,6 +441,7 @@ body {
   text-align: center;
   padding: 3rem 0;
   height: 8rem;
+  font-size: 1rem;
 }
 .banner-about-of h1, .banner-about-of .texto-bienvenida {
   animation: slideIn 1.3s cubic-bezier(0, 0, 0, 1);
@@ -448,6 +459,7 @@ body {
   text-align: center;
   padding: 3rem 0;
   height: 8rem;
+  font-size: 1rem;
 }
 .banner-item h1, .banner-item .texto-bienvenida {
   animation: slideIn 1.3s cubic-bezier(0, 0, 0, 1);
@@ -464,7 +476,7 @@ header {
   background-color: #0465b0;
   color: #fff;
   padding: 15px 0;
-  height: 6.875rem;
+  height: auto;
   transition: background-color 0.5s linear;
 }
 header nav {
@@ -498,8 +510,8 @@ header nav ul li a:hover {
   transform: scale(1.1);
 }
 header nav .logo-morl {
-  padding: 0 3px 0 10px;
-  width: 220px;
+  padding: 0 3px 0 20px;
+  width: 180px;
   height: auto;
 }
 header nav .header__icon {
@@ -509,19 +521,24 @@ header nav .header__icon {
   height: auto;
   cursor: pointer;
 }
-header nav .panel-nav {
-  padding-right: 195px;
-}
 
 header.scrolled {
   background-color: #fff; /* Cambia el color de fondo al hacer scroll */
   position: fixed; /* Fija el header en la parte superior */
   width: 100%; /* Opcional: asegura que el header ocupe toda la anchura */
 }
+header.scrolled .cart__icon-container svg {
+  fill: #ffffff; /* Color blanco por defecto */
+  transition: fill 0.3s ease; /* Agregar una transición suave */
+}
 
 /* Aplicar margen superior al contenido cuando el header está fijo */
 header.scrolled + main {
   margin-top: 130px; /* Ajusta la altura según la altura de tu header */
+}
+
+header.scrolled + main .cart__icon-container svg {
+  fill: #0465b0; /* Cambiar a color azul cuando se hace scroll */
 }
 
 main {
@@ -755,6 +772,7 @@ main .product-container {
 main .img-product, main .product-description {
   width: 25rem;
   margin: 10px;
+  border-radius: 35px;
 }
 
 /* Estilos para la sección de productos */
@@ -784,7 +802,7 @@ main .img-product, main .product-description {
   background-color: #ee5e5e;
   color: #fff;
   font-size: 1em;
-  font-family: "Roboto Serif";
+  font-family: "Quicksand";
   cursor: pointer;
 }
 .items .item-single .boton-ficha:hover {
@@ -804,7 +822,7 @@ main .img-product, main .product-description {
 .items .item .img-item {
   width: 100%;
   max-width: 15rem;
-  border-radius: 5px;
+  border-radius: 35px;
   height: auto;
 }
 .items .item p {
@@ -820,7 +838,7 @@ main .img-product, main .product-description {
   background-color: #259356;
   color: #fff;
   font-size: 1em;
-  font-family: "Roboto Serif";
+  font-family: "Quicksand";
   cursor: pointer;
 }
 .items .item .boton-info:hover {

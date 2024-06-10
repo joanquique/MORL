@@ -32,7 +32,7 @@ header {
     background-color: $color-primario;
     color: $color-secundario;
     padding: 15px 0;
-    height: 6.875rem;
+    height: auto;
     nav {
         display: flex;
         align-items: center;
@@ -63,8 +63,8 @@ header {
             }
         }
         .logo-morl {
-            padding: 0 3px 0 10px; 
-            width: 220px;
+            padding: 0 3px 0 20px; 
+            width: 180px;
             height: auto;
         }
         .header__icon {
@@ -74,9 +74,9 @@ header {
             height: auto;
             cursor: pointer;
         }
-        .panel-nav {
-            padding-right: 195px;
-        }
+        // .panel-nav {
+        //     padding-right: 12.18rem;
+        // }
     }
     transition: background-color 0.5s linear;
 }
@@ -84,12 +84,25 @@ header.scrolled {
     background-color: $color-secundario; /* Cambia el color de fondo al hacer scroll */
     position: fixed; /* Fija el header en la parte superior */
     width: 100%; /* Opcional: asegura que el header ocupe toda la anchura */
+  
+    // Cambiar el color del ícono del carrito cuando se hace scroll
+    .cart__icon-container svg {
+        fill: #ffffff; /* Color blanco por defecto */
+        transition: fill 0.3s ease; /* Agregar una transición suave */
+    }
 }
-
-  /* Aplicar margen superior al contenido cuando el header está fijo */
+  
+/* Aplicar margen superior al contenido cuando el header está fijo */
 header.scrolled + main {
     margin-top: 130px; /* Ajusta la altura según la altura de tu header */
-  }
+}
+
+// Cambiar el color del ícono del carrito cuando se hace scroll
+header.scrolled + main {
+    .cart__icon-container svg {
+        fill: #0465b0; /* Cambiar a color azul cuando se hace scroll */
+    }
+}
   
 
 // Contenedor principal
@@ -205,6 +218,7 @@ main {
     .img-product, .product-description {
         width: 25rem;
         margin: 10px; 
+        border-radius: 35px;
     }
 }
 
@@ -244,7 +258,7 @@ main {
         .img-item {
             width: 100%;
             max-width: 15rem;
-            border-radius: 5px;
+            border-radius: 35px;
             height: auto;
         }
 

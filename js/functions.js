@@ -2,18 +2,34 @@
 window.addEventListener('scroll', function() {
     var header = document.querySelector('header');
     var logo = document.getElementById('logo');
+    var cartIcon = document.querySelector('.header__icon'); // Selecciona el ícono del carrito
     var scrollPosition = window.scrollY;
 
-    if (scrollPosition > 50) { // Cambia este valor según tus necesidades
+    if (scrollPosition > 50) {
         header.classList.add('scrolled');
         // Cambiar el logo por el logo en color
-        logo.src = "/img/CLIMA CLICK SOLUCIONES EN AIRE ACONDICIONADO.png";
+        if (window.innerWidth <= 600) {
+            logo.src = "img/CARRITO_AZUL_PNG-02.png"; // Logo móvil al hacer scroll
+        } else {
+            logo.src = "/img/CLIMACLICK_AZUL.png"; // Logo normal al hacer scroll
+        }
+
+        // Cambiar el color del ícono del carrito
+        cartIcon.style.filter = "invert(0)"; // Cambia el color del ícono a azul (#0465b0)
     } else {
         header.classList.remove('scrolled');
         // Restaurar el logo blanco
-        logo.src = "img/CLIMA CLICK BLANCO.png";
+        if (window.innerWidth <= 600) {
+            logo.src = "img/CARRITO_BLANCO.png"; // Logo móvil sin scroll
+        } else {
+            logo.src = "img/CLIMACLICK_BLANCO.png"; // Logo normal sin scroll
+        }
+
+        // Restaurar el color del ícono del carrito a blanco
+        cartIcon.style.filter = "invert(1)"; // Cambia el color del ícono a blanco
     }
 });
+
 
 
 // Función para filtrar los productos
