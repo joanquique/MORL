@@ -90,6 +90,7 @@ $font-family: "Quicksand", Arial, sans-serif;
     #logo {
         content: url('/img/CARRITO_BLANCO.png'); /* Cambia el logo para dispositivos móviles */
         width: 70px; /* Tamaño del logo móvil, ajusta según sea necesario */
+        padding-left: 0.6rem;
     }
 }
 
@@ -232,17 +233,22 @@ $font-family: "Quicksand", Arial, sans-serif;
     }
 }
 
-// @media screen and (max-width: 600px) {
-//     .logo-morl {
-//         width: 60px; /* Tamaño del logo móvil, ajusta según sea necesario */
-//     }
+@media (min-width: 650px) {
+    .panel-nav {
+        justify-content: center; 
+    }
+}
 
-//     header nav {
-//         padding-right: 10px; /* Ajuste de espaciado en dispositivos móviles */
-//     }
+@media (min-width: 750px) {
+    .panel-nav {
+        justify-content: center; // Ensure it is centered
+    }
 
-//     .login {
-//         padding: 4px 6px;
-//         font-size: 14px;
-//     }
-// }
+    .boton-nav {
+        margin-right: 10px; // Adjust the margin to reduce space between buttons
+        
+        &:last-child {
+            margin-right: 0; // Ensure no extra margin on the last item
+        }
+    }
+}

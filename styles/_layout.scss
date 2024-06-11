@@ -33,9 +33,17 @@ header {
     color: $color-secundario;
     padding: 15px 0;
     height: auto;
+
     nav {
         display: flex;
         align-items: center;
+
+        .logo-morl {
+            padding: 0 3px 0 20px; 
+            width: 180px;
+            height: auto;
+        }
+
         ul {
             list-style-type: none;
             margin: 0;
@@ -44,10 +52,12 @@ header {
             justify-content: center;
             align-items: center;
             flex-grow: 1;
+
             li {
                 margin-right: 20px;
+
                 a {
-                    padding: 9px 13px;
+                    padding: 5px 13px;
                     color: $color-secundario;
                     text-decoration: none;
                     border: none;
@@ -55,6 +65,7 @@ header {
                     background-color: $color-primario;
                     cursor: pointer;
                     transition: background-color 0.3s ease, transform 0.3s ease;
+
                     &:hover {
                         background-color: darken($color-primario, 10%);
                         transform: scale(1.1);
@@ -62,11 +73,7 @@ header {
                 }
             }
         }
-        .logo-morl {
-            padding: 0 3px 0 20px; 
-            width: 180px;
-            height: auto;
-        }
+
         .header__icon {
             padding-right: 30px;
             filter: invert(1);
@@ -74,12 +81,20 @@ header {
             height: auto;
             cursor: pointer;
         }
-        // .panel-nav {
-        //     padding-right: 12.18rem;
-        // }
+
+        .panel-nav {
+            justify-content: space-evenly; // Default behavior for smaller screens
+        }
+
+        .boton-nav {
+            margin-right: 1px;
+        }
     }
+
     transition: background-color 0.5s linear;
 }
+
+
 header.scrolled {
     background-color: $color-secundario; /* Cambia el color de fondo al hacer scroll */
     position: fixed; /* Fija el header en la parte superior */

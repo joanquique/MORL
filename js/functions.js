@@ -11,7 +11,7 @@ window.addEventListener('scroll', function() {
         if (window.innerWidth <= 600) {
             logo.src = "img/CARRITO_AZUL_PNG-02.png"; // Logo móvil al hacer scroll
         } else {
-            logo.src = "/img/CLIMACLICK_AZUL.png"; // Logo normal al hacer scroll
+            logo.src = "img/CLIMACLICK_AZUL.png"; // Logo normal al hacer scroll
         }
 
         // Cambiar el color del ícono del carrito

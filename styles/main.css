@@ -65,6 +65,7 @@
   #logo {
     content: url("/img/CARRITO_BLANCO.png"); /* Cambia el logo para dispositivos móviles */
     width: 70px; /* Tamaño del logo móvil, ajusta según sea necesario */
+    padding-left: 0.6rem;
   }
 }
 .items .item .boton-info, .items .item-single .boton-ficha, .submit, .login, .busqueda-boton form button[type=submit], .items .item .add-to-cart, .items .item-single .add-to-cart {
@@ -143,6 +144,22 @@ main #telefono {
   transform: scale(1.6);
 }
 
+@media (min-width: 650px) {
+  .panel-nav {
+    justify-content: center;
+  }
+}
+@media (min-width: 750px) {
+  .panel-nav {
+    justify-content: center;
+  }
+  .boton-nav {
+    margin-right: 10px;
+  }
+  .boton-nav:last-child {
+    margin-right: 0;
+  }
+}
 .busqueda-boton {
   padding-bottom: 10px;
 }
@@ -483,6 +500,11 @@ header nav {
   display: flex;
   align-items: center;
 }
+header nav .logo-morl {
+  padding: 0 3px 0 20px;
+  width: 180px;
+  height: auto;
+}
 header nav ul {
   list-style-type: none;
   margin: 0;
@@ -496,7 +518,7 @@ header nav ul li {
   margin-right: 20px;
 }
 header nav ul li a {
-  padding: 9px 13px;
+  padding: 5px 13px;
   color: #fff;
   text-decoration: none;
   border: none;
@@ -509,17 +531,18 @@ header nav ul li a:hover {
   background-color: #03487e;
   transform: scale(1.1);
 }
-header nav .logo-morl {
-  padding: 0 3px 0 20px;
-  width: 180px;
-  height: auto;
-}
 header nav .header__icon {
   padding-right: 30px;
   filter: invert(1);
   width: 40px;
   height: auto;
   cursor: pointer;
+}
+header nav .panel-nav {
+  justify-content: space-evenly;
+}
+header nav .boton-nav {
+  margin-right: 1px;
 }
 
 header.scrolled {
