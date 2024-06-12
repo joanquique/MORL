@@ -87,7 +87,8 @@ header {
         }
 
         .boton-nav {
-            margin-right: 1px;
+            //padding-right: 5rem;
+            align-self: center;
         }
     }
 
@@ -296,7 +297,7 @@ footer {
     display: flex;
     flex-wrap: nowrap; /* Evita que los elementos se envuelvan */
     justify-content: space-between; /* Alinea los elementos al inicio, centro y final del contenedor */
-    
+    height: auto;
     p {
         margin: 5px 0;
         font-size: 12px;
@@ -304,6 +305,7 @@ footer {
         align-items: center; 
         padding: 5px;
         box-sizing: border-box;
+        text-align: left;
     }
          
     .icon { // Iconos generales

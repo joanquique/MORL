@@ -66,7 +66,7 @@ $font-family: "Quicksand", Arial, sans-serif;
         img {
             max-width: 20rem;
             display: block;
-            margin: auto;
+            //margin: auto;
         }
 
         p {
@@ -82,7 +82,11 @@ $font-family: "Quicksand", Arial, sans-serif;
     }
     
     footer {
-        box-sizing: border-box;
+        flex-direction: column;
+    }
+    .p-footer {
+        text-align: left; /* Cambiado de center a left */
+        width: 100%; /* Asegura que el elemento ocupe el 100% del ancho disponible */
     }
 }
 

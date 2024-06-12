@@ -46,7 +46,6 @@
   body img {
     max-width: 20rem;
     display: block;
-    margin: auto;
   }
   body p {
     padding: 15px;
@@ -58,7 +57,11 @@
     max-width: 23.75rem;
   }
   footer {
-    box-sizing: border-box;
+    flex-direction: column;
+  }
+  .p-footer {
+    text-align: left; /* Cambiado de center a left */
+    width: 100%; /* Asegura que el elemento ocupe el 100% del ancho disponible */
   }
 }
 @media screen and (max-width: 1000px) {
@@ -542,7 +545,7 @@ header nav .panel-nav {
   justify-content: space-evenly;
 }
 header nav .boton-nav {
-  margin-right: 1px;
+  align-self: center;
 }
 
 header.scrolled {
@@ -876,6 +879,7 @@ footer {
   display: flex;
   flex-wrap: nowrap; /* Evita que los elementos se envuelvan */
   justify-content: space-between; /* Alinea los elementos al inicio, centro y final del contenedor */
+  height: auto;
 }
 footer p {
   margin: 5px 0;
@@ -884,6 +888,7 @@ footer p {
   align-items: center;
   padding: 5px;
   box-sizing: border-box;
+  text-align: left;
 }
 footer .icon {
   width: 20px;
