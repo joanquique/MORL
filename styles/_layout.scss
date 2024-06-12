@@ -318,4 +318,7 @@ footer {
         color: $color-secundario;
         text-decoration-line: none;
     }
+    a[href^="tel"] { /* Solo para enlaces telefónicos */
+        margin-right: 5px; /* Ajusta según sea necesario */
+    }
 }

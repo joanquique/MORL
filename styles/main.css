@@ -898,4 +898,7 @@ footer .icon {
 footer .mail {
   color: #fff;
   text-decoration-line: none;
+}
+footer a[href^=tel] { /* Solo para enlaces telefónicos */
+  margin-right: 5px; /* Ajusta según sea necesario */
 }/*# sourceMappingURL=main.css.map */
