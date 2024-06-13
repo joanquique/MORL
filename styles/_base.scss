@@ -92,7 +92,7 @@ $font-family: "Quicksand", Arial, sans-serif;
 
 @media screen and (max-width: 1000px){
     #logo {
-        content: url('/img/CARRITO_BLANCO.png'); /* Cambia el logo para dispositivos móviles */
+        //content: url('/img/CARRITO_BLANCO.png'); /* Cambia el logo para dispositivos móviles */
         width: 70px; /* Tamaño del logo móvil, ajusta según sea necesario */
         padding-left: 0.6rem;
     }

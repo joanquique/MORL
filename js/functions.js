@@ -1,3 +1,13 @@
+window.addEventListener('load', function() {
+    console.log(`Página cargada!`)
+    var imagen_logo = document.getElementById('logo');
+    if(this.window.innerWidth <= 1000) {
+        imagen_logo.src = 'img/CARRITO_BLANCO.png'
+    } else {
+        imagen_logo.src = 'img/CLIMACLICK_BLANCO.png'
+    }
+})
+
 //Efecto de header
 window.addEventListener('scroll', function() {
     var header = document.querySelector('header');
