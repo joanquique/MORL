@@ -40,8 +40,6 @@ window.addEventListener('scroll', function() {
     }
 });
 
-
-
 // Función para filtrar los productos
 function filtrarProductos() {
     // Obtener el texto ingresado en el cuadro de búsqueda
@@ -120,21 +118,33 @@ function addToCart(name, price, imgSrc) {
     itemPrice.textContent = price;
     cartItem.appendChild(itemPrice);
 
-    // Contador de productos
+    // Botones de incrementar y eliminar
+    const quantityControls = document.createElement('div');
+    quantityControls.classList.add('cart__quantity-controls');
+
+    const decrementButton = document.createElement('button');
+    decrementButton.textContent = '-';
+    decrementButton.classList.add('cart__quantity-decrement');
+    decrementButton.addEventListener('click', () => {
+        updateCartItemQuantity(cartItem, -1);
+    });
+    quantityControls.appendChild(decrementButton);
+
     const itemCount = document.createElement('span');
     itemCount.textContent = '1';
     itemCount.classList.add('cart__item-count');
-    //cartItem.appendChild(itemCount);
+    quantityControls.appendChild(itemCount);
 
-    // Botón para eliminar el producto del carrito
-    const deleteIcon = document.createElement('i');
-    deleteIcon.innerHTML = `<img src="img/quitar.png" class="cart__item-delete-icon" alt="Icono Quitar">`;
-    deleteIcon.addEventListener('click', () => {
-        cartItem.remove(); // Elimina el elemento del carrito
-        updateCartItemCount(-1); // Disminuye el contador de productos
+    const incrementButton = document.createElement('button');
+    incrementButton.textContent = '+';
+    incrementButton.classList.add('cart__quantity-increment');
+    incrementButton.addEventListener('click', () => {
+        updateCartItemQuantity(cartItem, 1);
     });
-    cartItem.appendChild(deleteIcon);
+    quantityControls.appendChild(incrementButton);
 
+    cartItem.appendChild(quantityControls);
+    
     // Agrega el elemento del producto al carrito
     const cart = document.querySelector('.cart');
     cart.appendChild(cartItem);
@@ -150,4 +160,16 @@ function updateCartItemCount(change) {
         element.textContent = currentCount;
         element.style.display = currentCount > 0 ? 'inline-block' : 'none'; // Mostrar el contador sólo si hay artículos en el carrito
     });
+}
+
+function updateCartItemQuantity(cartItem, change) {
+    const itemCountElement = cartItem.querySelector('.cart__item-count');
+    let currentCount = parseInt(itemCountElement.textContent);
+    currentCount += change;
+    if (currentCount < 1) {
+        cartItem.remove(); // Elimina el elemento del carrito si la cantidad es cero o negativa
+        updateCartItemCount(-1); // Disminuye el contador de productos
+    } else {
+        itemCountElement.textContent = currentCount;
+    }
 }
