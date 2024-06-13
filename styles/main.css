@@ -705,7 +705,7 @@ main .text-containers .text-container-3 {
   margin: 20px auto;
   padding: 2rem;
   color: #fff;
-  background: linear-gradient(rgba(133, 131, 131, 0.7), rgba(5, 128, 230, 0.3)), url("/img/morl-autos.jpg") no-repeat center center;
+  background: linear-gradient(rgba(133, 131, 131, 0.7), rgba(5, 128, 230, 0.3)), url("../img/morl-autos.jpg") no-repeat center center;
   background-size: cover;
   border-radius: 20px;
   font-weight: 400;
