@@ -321,4 +321,19 @@ footer {
     a[href^="tel"] { /* Solo para enlaces telefónicos */
         margin-right: 5px; /* Ajusta según sea necesario */
     }
+    .social-icons {
+        display: flex;
+        align-items: center;
+
+        .social-icon {
+            width: 20px;
+            margin-right: 10px;
+            filter: invert(1);
+            transition: transform 0.3s ease;
+
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+    }
 }
