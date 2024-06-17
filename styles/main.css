@@ -931,6 +931,7 @@ footer a[href^=tel] { /* Solo para enlaces telefónicos */
 footer .social-icons {
   display: flex;
   align-items: center;
+  justify-content: right;
 }
 footer .social-icons .social-icon {
   width: 20px;
