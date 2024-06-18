@@ -1,11 +1,6 @@
 window.addEventListener('load', function() {
     console.log(`Página cargada!`)
     var imagen_logo = document.getElementById('logo');
-    if(this.window.innerWidth <= 1000) {
-        imagen_logo.src = 'img/CARRITO_BLANCO.png'
-    } else {
-        imagen_logo.src = 'img/CLIMACLICK_BLANCO.png'
-    }
 })
 
 //Efecto de header
@@ -15,29 +10,9 @@ window.addEventListener('scroll', function() {
     var cartIcon = document.querySelector('.header__icon'); // Selecciona el ícono del carrito
     var scrollPosition = window.scrollY;
 
-    if (scrollPosition > 50) {
-        header.classList.add('scrolled');
-        // Cambiar el logo por el logo en color
-        if (window.innerWidth <= 600) {
-            logo.src = "img/CARRITO_AZUL_PNG-02.png"; // Logo móvil al hacer scroll
-        } else {
-            logo.src = "img/CLIMACLICK_AZUL.png"; // Logo normal al hacer scroll
-        }
+    scrollPosition > 50 ? header.classList.add('scrolled') : header.classList.remove('scrolled');
 
-        // Cambiar el color del ícono del carrito
-        cartIcon.style.filter = "invert(0)"; // Cambia el color del ícono a azul (#0465b0)
-    } else {
-        header.classList.remove('scrolled');
-        // Restaurar el logo blanco
-        if (window.innerWidth <= 600) {
-            logo.src = "img/CARRITO_BLANCO.png"; // Logo móvil sin scroll
-        } else {
-            logo.src = "img/CLIMACLICK_BLANCO.png"; // Logo normal sin scroll
-        }
 
-        // Restaurar el color del ícono del carrito a blanco
-        cartIcon.style.filter = "invert(1)"; // Cambia el color del ícono a blanco
-    }
 });
 
 // Función para filtrar los productos
@@ -61,14 +36,6 @@ function filtrarProductos() {
         }
     });
 }
-
-// Escuchar el evento de envío del formulario de búsqueda
-document.querySelector('form').addEventListener('submit', function(event) {
-    event.preventDefault(); // Evitar que el formulario se envíe
-
-    // Filtrar los productos al enviar el formulario
-    filtrarProductos();
-});
 
 // Escuchar el evento de cambio en el cuadro de búsqueda
 document.querySelector('input[name="q"]').addEventListener('input', function() {

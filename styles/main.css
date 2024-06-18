@@ -519,11 +519,10 @@ body {
 
 header {
   z-index: 1000;
-  background-color: #0465b0;
+  background-color: #fff;
   color: #fff;
   padding: 15px 0;
   height: auto;
-  transition: background-color 0.5s linear;
 }
 header nav {
   display: flex;
@@ -531,7 +530,7 @@ header nav {
 }
 header nav .logo-morl {
   padding: 0 3px 0 20px;
-  width: 200px;
+  width: 150px;
   height: auto;
 }
 header nav ul {
@@ -548,21 +547,20 @@ header nav ul li {
 }
 header nav ul li a {
   padding: 5px 13px;
-  color: #fff;
+  color: black;
   text-decoration: none;
-  border: none;
+  border: 1px solid #0465b0;
   border-radius: 500px;
-  background-color: #0465b0;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 header nav ul li a:hover {
   background-color: #03487e;
   transform: scale(1.1);
+  color: #fff;
 }
 header nav .header__icon {
   padding-right: 30px;
-  filter: invert(1);
   width: 40px;
   height: auto;
   cursor: pointer;
@@ -575,22 +573,8 @@ header nav .boton-nav {
 }
 
 header.scrolled {
-  background-color: #fff; /* Cambia el color de fondo al hacer scroll */
   position: fixed; /* Fija el header en la parte superior */
   width: 100%; /* Opcional: asegura que el header ocupe toda la anchura */
-}
-header.scrolled .cart__icon-container svg {
-  fill: #ffffff; /* Color blanco por defecto */
-  transition: fill 0.3s ease; /* Agregar una transición suave */
-}
-
-/* Aplicar margen superior al contenido cuando el header está fijo */
-header.scrolled + main {
-  margin-top: 130px; /* Ajusta la altura según la altura de tu header */
-}
-
-header.scrolled + main .cart__icon-container svg {
-  fill: #0465b0; /* Cambiar a color azul cuando se hace scroll */
 }
 
 main {

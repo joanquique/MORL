@@ -29,7 +29,7 @@ body {
 // Encabezado
 header {
     z-index: 1000;
-    background-color: $color-primario;
+    background-color: #fff;
     color: $color-secundario;
     padding: 15px 0;
     height: auto;
@@ -40,7 +40,7 @@ header {
 
         .logo-morl {
             padding: 0 3px 0 20px; 
-            width: 200px;
+            width: 150px;
             height: auto;
         }
 
@@ -58,17 +58,18 @@ header {
 
                 a {
                     padding: 5px 13px;
-                    color: $color-secundario;
+                    color: black;
                     text-decoration: none;
-                    border: none;
+                    border: 1px solid $color-primario;
                     border-radius: 500px;
-                    background-color: $color-primario;
+                    //background-color: $color-primario;
                     cursor: pointer;
                     transition: background-color 0.3s ease, transform 0.3s ease;
 
                     &:hover {
                         background-color: darken($color-primario, 10%);
                         transform: scale(1.1);
+                        color: #fff;
                     }
                 }
             }
@@ -76,7 +77,6 @@ header {
 
         .header__icon {
             padding-right: 30px;
-            filter: invert(1);
             width: 40px;
             height: auto;
             cursor: pointer;
@@ -92,34 +92,14 @@ header {
         }
     }
 
-    transition: background-color 0.5s linear;
+    //transition: background-color 0.5s linear;
 }
-
 
 header.scrolled {
-    background-color: $color-secundario; /* Cambia el color de fondo al hacer scroll */
+    //background-color: $color-secundario; /* Cambia el color de fondo al hacer scroll */
     position: fixed; /* Fija el header en la parte superior */
     width: 100%; /* Opcional: asegura que el header ocupe toda la anchura */
-  
-    // Cambiar el color del ícono del carrito cuando se hace scroll
-    .cart__icon-container svg {
-        fill: #ffffff; /* Color blanco por defecto */
-        transition: fill 0.3s ease; /* Agregar una transición suave */
-    }
 }
-  
-/* Aplicar margen superior al contenido cuando el header está fijo */
-header.scrolled + main {
-    margin-top: 130px; /* Ajusta la altura según la altura de tu header */
-}
-
-// Cambiar el color del ícono del carrito cuando se hace scroll
-header.scrolled + main {
-    .cart__icon-container svg {
-        fill: #0465b0; /* Cambiar a color azul cuando se hace scroll */
-    }
-}
-  
 
 // Contenedor principal
 main {
