@@ -1,8 +1,3 @@
-window.addEventListener('load', function() {
-    console.log(`Página cargada!`)
-    var imagen_logo = document.getElementById('logo');
-})
-
 document.addEventListener('DOMContentLoaded', function() {
     const header = document.getElementById('main-header');
     const windowWidth = window.innerWidth;
@@ -44,7 +39,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 </ul>
             </nav>
         `;
-    } else {
+    } 
+    else {
         // Código HTML para dispositivos grandes
         header.innerHTML = `
             <nav class="busqueda-boton">
@@ -84,9 +80,18 @@ document.addEventListener('DOMContentLoaded', function() {
             panelNav.classList.toggle('hidden');
         });
     }
+
+    // Agrega el evento para mostrar/ocultar el carrito
+    const cartToggle = document.getElementById('cart-toggle');
+    if (cartToggle) {
+        cartToggle.addEventListener('click', function() {
+            const cart = document.querySelector('.cart');
+            if (cart) {
+                cart.classList.toggle('hidden');
+            }
+        });
+    }
 });
-
-
 
 //Efecto de header
 window.addEventListener('scroll', function() {
