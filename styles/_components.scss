@@ -12,21 +12,21 @@
             font-family: $font-family;
         }
 
-        button[type="submit"] {
-            padding: 8px 12px;
-            border: none;
-            border-radius: 500px;
-            background-color: $color-primario;
-            color: $color-secundario;
-            font-size: 14px;
-            font-family: $font-family;
-            cursor: pointer;
-            @extend %transition-button;
-            &:hover {
-                background-color: darken($color-primario, 10%);
-                scale: 1.1;
-            }
-        }
+        // button[type="submit"] {
+        //     padding: 8px 12px;
+        //     border: none;
+        //     border-radius: 500px;
+        //     background-color: $color-primario;
+        //     color: $color-secundario;
+        //     font-size: 14px;
+        //     font-family: $font-family;
+        //     cursor: pointer;
+        //     @extend %transition-button;
+        //     &:hover {
+        //         background-color: darken($color-primario, 10%);
+        //         scale: 1.1;
+        //     }
+        // }
     }
 }
 
@@ -229,8 +229,6 @@ small { // Pie de pagina de modal copyright
         }
     }
 }
-
-
 
 .cart__close-icon {
     position: absolute;

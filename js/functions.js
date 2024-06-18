@@ -3,6 +3,91 @@ window.addEventListener('load', function() {
     var imagen_logo = document.getElementById('logo');
 })
 
+document.addEventListener('DOMContentLoaded', function() {
+    const header = document.getElementById('main-header');
+    const windowWidth = window.innerWidth;
+
+    if (windowWidth <= 600) {
+        // Código HTML para dispositivos móviles
+        header.innerHTML = `
+            <nav class="busqueda-boton">
+                <ul>
+                    <li>
+                        <form action="#" method="GET">
+                            <input type="text" name="q" placeholder="Buscar productos...">
+                        </form>
+                    </li>
+                    <li>
+                        <button class="login" id="loginButton">Iniciar sesión</button>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="nav-mobile">
+                <div class="menu-icon-container">
+                    <i class="menu__icon" id="menu-toggle">
+                        <img src="img/menu.svg" alt="Icono Menú" width="30" style="padding-left: 15px;">
+                    </i>
+                </div>
+                <a href="index.html"><img class="logo-morl" id="logo" src="img/CLIMACLICK_AZUL.png"></a>
+                <div class="cart__icon-container">
+                    <i id="cart-toggle">
+                        <img src="img/shopping-cart.svg" alt="Icono Carrito" width="30" style="padding-right: 20px;">
+                    </i>
+                </div>
+            </nav>
+            <nav class="panel-nav hidden">
+                <ul>
+                    <li class="boton-nav"><a href="productos.html">Productos</a></li>
+                    <li class="boton-nav"><a href="#">Servicios</a></li>
+                    <li class="boton-nav"><a href="nosotros.html">Nosotros</a></li>
+                    <li class="boton-nav"><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+        `;
+    } else {
+        // Código HTML para dispositivos grandes
+        header.innerHTML = `
+            <nav class="busqueda-boton">
+                <ul>
+                    <li>
+                        <form action="#" method="GET">
+                            <input type="text" name="q" placeholder="Buscar productos...">
+                        </form>
+                    </li>
+                    <li>
+                        <button class="login" id="loginButton">Iniciar sesión</button>
+                    </li>
+                </ul>
+            </nav>
+            <nav>
+                <ul class="panel-nav">
+                    <li class="boton-nav"><a href="productos.html">Productos</a></li>
+                    <li class="boton-nav"><a href="#">Servicios</a></li>
+                    <a href="index.html"><img class="logo-morl" id="logo" src="img/CLIMACLICK_AZUL.png"></a>
+                    <li class="boton-nav"><a href="nosotros.html">Nosotros</a></li>
+                    <li class="boton-nav"><a href="#">Contacto</a></li>
+                </ul>  
+                <div class="cart__icon-container">
+                    <i class="header__icon" id="cart-toggle">
+                        <img src="img/shopping-cart.svg" alt="Icono Carrito" width="30">
+                    </i>
+                </div>        
+            </nav>
+        `;
+    }
+
+    // Agrega el evento para mostrar/ocultar el menú en dispositivos móviles
+    const menuToggle = document.getElementById('menu-toggle');
+    if (menuToggle) {
+        menuToggle.addEventListener('click', function() {
+            const panelNav = document.querySelector('.panel-nav');
+            panelNav.classList.toggle('hidden');
+        });
+    }
+});
+
+
+
 //Efecto de header
 window.addEventListener('scroll', function() {
     var header = document.querySelector('header');

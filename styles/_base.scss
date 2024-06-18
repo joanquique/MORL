@@ -53,13 +53,21 @@ $font-family: "Quicksand", Arial, sans-serif;
         ul {
             flex-wrap: wrap;
             justify-content: center;
-            li {
-                margin: 8px;
-            }
         }
-        img {
-            padding-right: 20px;
+    }
+    
+    .nav-mobile {
+        display: flex;
+        justify-content: space-between;
+        
+        .logo-morl {
+            width: 150px;
         }
+
+    }
+
+    .panel-nav {
+        display: none; /* Oculta el panel de navegación en dispositivos pequeños */
     }
 
     body {
@@ -85,14 +93,18 @@ $font-family: "Quicksand", Arial, sans-serif;
     footer {
         flex-direction: column;
     }
+    .p-footer {
+        text-align: left; /* Cambiado de center a left */
+        width: 100%; /* Asegura que el elemento ocupe el 100% del ancho disponible */
+    }
 }
 
 @media screen and (max-width: 1000px){
-    #logo {
-        //content: url('/img/CARRITO_BLANCO.png'); /* Cambia el logo para dispositivos móviles */
-        width: 70px; /* Tamaño del logo móvil, ajusta según sea necesario */
-        padding-left: 0.6rem;
-    }
+    // #logo {
+    //     //content: url('/img/CARRITO_BLANCO.png'); /* Cambia el logo para dispositivos móviles */
+    //     width: 70px; /* Tamaño del logo móvil, ajusta según sea necesario */
+    //     padding-left: 0.6rem;
+    // }
 }
 
 // Transición de botones 

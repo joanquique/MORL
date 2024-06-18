@@ -37,11 +37,15 @@
     flex-wrap: wrap;
     justify-content: center;
   }
-  nav ul li {
-    margin: 8px;
+  .nav-mobile {
+    display: flex;
+    justify-content: space-between;
   }
-  nav img {
-    padding-right: 20px;
+  .nav-mobile .logo-morl {
+    width: 150px;
+  }
+  .panel-nav {
+    display: none; /* Oculta el panel de navegación en dispositivos pequeños */
   }
   body img {
     max-width: 20rem;
@@ -60,14 +64,12 @@
   footer {
     flex-direction: column;
   }
-}
-@media screen and (max-width: 1000px) {
-  #logo {
-    width: 70px; /* Tamaño del logo móvil, ajusta según sea necesario */
-    padding-left: 0.6rem;
+  .p-footer {
+    text-align: left; /* Cambiado de center a left */
+    width: 100%; /* Asegura que el elemento ocupe el 100% del ancho disponible */
   }
 }
-.items .item .boton-info, .items .item-single .boton-ficha, .submit, .login, .busqueda-boton form button[type=submit], .items .item .add-to-cart, .items .item-single .add-to-cart {
+.items .item .boton-info, .items .item-single .boton-ficha, .submit, .login, .items .item .add-to-cart, .items .item-single .add-to-cart {
   transition: all 0.2s linear;
 }
 
@@ -170,20 +172,6 @@ main #telefono {
   width: 200px;
   font-size: 14px;
   font-family: "Quicksand", Arial, sans-serif;
-}
-.busqueda-boton form button[type=submit] {
-  padding: 8px 12px;
-  border: none;
-  border-radius: 500px;
-  background-color: #0465b0;
-  color: #fff;
-  font-size: 14px;
-  font-family: "Quicksand", Arial, sans-serif;
-  cursor: pointer;
-}
-.busqueda-boton form button[type=submit]:hover {
-  background-color: #03487e;
-  scale: 1.1;
 }
 
 .login {
