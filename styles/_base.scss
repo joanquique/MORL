@@ -81,17 +81,17 @@ $font-family: "Quicksand", Arial, sans-serif;
     .cart__item {
         max-width: 23.75rem;
     }
+
+    #cart-icon {
+        padding: 15px 20px 0 0;
+    }
+
+    #menu-icon {
+        padding: 15px 0 0 20px;
+    }
     
     footer {
         flex-direction: column;
-    }
-}
-
-@media screen and (max-width: 1000px){
-    #logo {
-        //content: url('/img/CARRITO_BLANCO.png'); /* Cambia el logo para dispositivos móviles */
-        width: 70px; /* Tamaño del logo móvil, ajusta según sea necesario */
-        padding-left: 0.6rem;
     }
 }
 
