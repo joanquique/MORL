@@ -90,6 +90,14 @@ $font-family: "Quicksand", Arial, sans-serif;
     .cart__item {
         max-width: 23.75rem;
     }
+
+    #cart-icon {
+        padding: 15px 20px 0 0;
+    }
+
+    #menu-icon {
+        padding: 15px 0 0 20px;
+    }
     
     footer {
         flex-direction: column;
@@ -98,14 +106,6 @@ $font-family: "Quicksand", Arial, sans-serif;
         text-align: left; /* Cambiado de center a left */
         width: 100%; /* Asegura que el elemento ocupe el 100% del ancho disponible */
     }
-}
-
-@media screen and (max-width: 1000px){
-    // #logo {
-    //     //content: url('/img/CARRITO_BLANCO.png'); /* Cambia el logo para dispositivos móviles */
-    //     width: 70px; /* Tamaño del logo móvil, ajusta según sea necesario */
-    //     padding-left: 0.6rem;
-    // }
 }
 
 // Transición de botones 

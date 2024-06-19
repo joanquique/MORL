@@ -62,6 +62,12 @@
   .cart__item {
     max-width: 23.75rem;
   }
+  #cart-icon {
+    padding: 15px 20px 0 0;
+  }
+  #menu-icon {
+    padding: 15px 0 0 20px;
+  }
   footer {
     flex-direction: column;
   }
@@ -71,6 +77,8 @@
   }
 }
 .items .item .boton-info, .items .item-single .boton-ficha, .submit, .login, .items .item .add-to-cart, .items .item-single .add-to-cart {
+}
+.items .item .boton-info, .items .item-single .boton-ficha, .submit, .login, .busqueda-boton form button[type=submit], .items .item .add-to-cart, .items .item-single .add-to-cart {
   transition: all 0.2s linear;
 }
 
@@ -163,7 +171,7 @@ main #telefono {
   }
 }
 .busqueda-boton {
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 .busqueda-boton form input[type=text] {
   padding: 10px;
@@ -366,10 +374,91 @@ small {
   transition: transform 0.2s ease;
 }
 .cart__close-icon:hover {
-  transform: scale(1.5);
+  transform: scale(1.2);
 }
 
+.menu__icon-container {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .boton-nav {
+    display: none;
+  }
+  .menu__icon-container {
+    display: block;
+  }
+  .menu {
+    width: 100%;
+    max-width: 500px;
+    background-color: #fff;
+    font-family: "Quicksand", Arial, sans-serif;
+    border-radius: 20px;
+    padding: 25px;
+    box-sizing: border-box;
+    position: fixed;
+    left: -100%;
+    top: 0;
+    bottom: 0;
+    overflow-y: auto;
+    box-shadow: -19px -1px 22px -15px rgba(0, 0, 0, 0.3);
+    z-index: 1100;
+    transition: left 0.5s ease;
+  }
+  .menu .no-bullets {
+    padding: 0; /* Eliminar el relleno por defecto */
+    margin: 0; /* Eliminar el margen por defecto */
+  }
+  .menu--open {
+    left: 0;
+  }
+  .menu__title {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 25px 0;
+    box-sizing: border-box;
+  }
+  .menu p {
+    margin: 0;
+  }
+  .menu .menu-item {
+    border-bottom: 1px solid #333;
+    display: flex;
+    justify-content: left;
+    padding: 20px 0 20px 20px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+  }
+  .menu .menu-item a {
+    text-decoration: none;
+    color: #333;
+    transform: scale(1.2);
+  }
+  .menu__close-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 25px;
+    padding: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  .menu__close-icon:hover {
+    transform: scale(1.2);
+  }
+}
+@media screen and (min-width: 600px) {
+  .menu {
+    display: none;
+  }
+}
 .toggle--cart {
+  cursor: pointer;
+}
+.toggle--menu {
   cursor: pointer;
 }
 
@@ -506,7 +595,7 @@ header {
   z-index: 1000;
   background-color: #fff;
   color: #fff;
-  padding: 15px 0;
+  padding: 15px 0 10px 0;
   height: auto;
 }
 header nav {

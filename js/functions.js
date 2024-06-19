@@ -144,6 +144,17 @@ document.getElementById('cart-close').addEventListener('click', function() {
     document.querySelector('.cart').classList.remove('cart--open');
 });
 
+// Menú a la izquierda
+document.getElementById('menu-toggle').addEventListener('click', () => {
+    console.log("Clic en el icono de menu");
+    document.querySelector('.menu').classList.toggle('menu--open');
+});
+
+document.getElementById('menu-close').addEventListener('click', () => {
+    console.log("Clic en el icono de cerrar menu");
+    document.querySelector('.menu').classList.remove('menu--open');
+});
+
 // Selecciona todos los botones "Agregar al carrito" y agrega un evento de clic a cada uno
 const addToCartButtons = document.querySelectorAll('.add-to-cart');
 addToCartButtons.forEach(button => {
