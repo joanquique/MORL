@@ -32,13 +32,11 @@
     flex-wrap: wrap;
     justify-content: center;
   }
-  .nav-mobile {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 15px;
+  nav #menu-icon {
+    padding: 15px 0 0 20px;
   }
-  .panel-nav {
-    display: none; /* Oculta el panel de navegación en dispositivos pequeños */
+  nav #cart-icon {
+    padding: 15px 20px 0 0;
   }
   body img {
     max-width: 20rem;
@@ -53,12 +51,6 @@
   }
   .cart__item {
     max-width: 23.75rem;
-  }
-  #cart-icon {
-    padding: 15px 20px 0 0;
-  }
-  #menu-icon {
-    padding: 15px 0 0 20px;
   }
   footer {
     flex-direction: column;
@@ -442,9 +434,6 @@ small {
   }
 }
 .toggle--cart {
-  cursor: pointer;
-}
-.toggle--menu {
   cursor: pointer;
 }
 

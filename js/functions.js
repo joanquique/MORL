@@ -1,8 +1,6 @@
 //Efecto de header
 window.addEventListener('scroll', function() {
     var header = document.querySelector('header');
-    var logo = document.getElementById('logo');
-    var cartIcon = document.querySelector('.header__icon'); // Selecciona el ícono del carrito
     var scrollPosition = window.scrollY;
     scrollPosition > 50 ? header.classList.add('scrolled') : header.classList.remove('scrolled');
 });

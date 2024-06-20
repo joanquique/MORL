@@ -48,16 +48,14 @@ $font-family: "Quicksand", Arial, sans-serif;
             flex-wrap: wrap;
             justify-content: center;
         }
-    }
-    
-    .nav-mobile {
-        display: flex;
-        justify-content: space-between;
-        padding-top: 15px;
-    }
 
-    .panel-nav {
-        display: none; /* Oculta el panel de navegación en dispositivos pequeños */
+        #menu-icon {
+            padding: 15px 0 0 20px;
+        }
+
+        #cart-icon {
+            padding: 15px 20px 0 0;
+        }
     }
 
     body {
@@ -79,18 +77,11 @@ $font-family: "Quicksand", Arial, sans-serif;
     .cart__item {
         max-width: 23.75rem;
     }
-
-    #cart-icon {
-        padding: 15px 20px 0 0;
-    }
-
-    #menu-icon {
-        padding: 15px 0 0 20px;
-    }
     
     footer {
         flex-direction: column;
     }
+    
 }
 
 // Transición de botones 
