@@ -1,6 +1,6 @@
 // Boton buscar
 .busqueda-boton {
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     form {
         input[type="text"] {
             padding: 10px;
@@ -11,22 +11,6 @@
             font-size: 14px;
             font-family: $font-family;
         }
-
-        // button[type="submit"] {
-        //     padding: 8px 12px;
-        //     border: none;
-        //     border-radius: 500px;
-        //     background-color: $color-primario;
-        //     color: $color-secundario;
-        //     font-size: 14px;
-        //     font-family: $font-family;
-        //     cursor: pointer;
-        //     @extend %transition-button;
-        //     &:hover {
-        //         background-color: darken($color-primario, 10%);
-        //         scale: 1.1;
-        //     }
-        // }
     }
 }
 
@@ -272,13 +256,13 @@ small { // Pie de pagina de modal copyright
         box-shadow: -19px -1px 22px -15px rgba(0, 0, 0, 0.3);
         z-index: 1100;
         transition: left 0.5s ease;
-        
+
         .no-bullets {
             //list-style-type: none; /* Quitar viñetas */
             padding: 0; /* Eliminar el relleno por defecto */
             margin: 0; /* Eliminar el margen por defecto */
         }
-        
+
         &--open {
             left: 0;
         }

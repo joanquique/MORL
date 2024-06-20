@@ -29,12 +29,6 @@ $font-family: "Quicksand", Arial, sans-serif;
         padding: 5px 0; 
     }
 
-    nav .logo {
-        padding-left: 10px;
-        width: 60px; 
-        height: auto; 
-    }
-
     .login {
         padding: 4px 6px;
         border-radius: 500px;
@@ -60,11 +54,6 @@ $font-family: "Quicksand", Arial, sans-serif;
         display: flex;
         justify-content: space-between;
         padding-top: 15px;
-        
-        .logo-morl {
-            width: 150px;
-        }
-
     }
 
     .panel-nav {
@@ -101,10 +90,6 @@ $font-family: "Quicksand", Arial, sans-serif;
     
     footer {
         flex-direction: column;
-    }
-    .p-footer {
-        text-align: left; /* Cambiado de center a left */
-        width: 100%; /* Asegura que el elemento ocupe el 100% del ancho disponible */
     }
 }
 

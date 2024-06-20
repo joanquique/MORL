@@ -16,11 +16,6 @@
   .texto-bienvenida, nav {
     padding: 5px 0;
   }
-  nav .logo {
-    padding-left: 10px;
-    width: 60px;
-    height: auto;
-  }
   .login {
     padding: 4px 6px;
     border-radius: 500px;
@@ -41,9 +36,6 @@
     display: flex;
     justify-content: space-between;
     padding-top: 15px;
-  }
-  .nav-mobile .logo-morl {
-    width: 150px;
   }
   .panel-nav {
     display: none; /* Oculta el panel de navegación en dispositivos pequeños */
@@ -71,14 +63,8 @@
   footer {
     flex-direction: column;
   }
-  .p-footer {
-    text-align: left; /* Cambiado de center a left */
-    width: 100%; /* Asegura que el elemento ocupe el 100% del ancho disponible */
-  }
 }
 .items .item .boton-info, .items .item-single .boton-ficha, .submit, .login, .items .item .add-to-cart, .items .item-single .add-to-cart {
-}
-.items .item .boton-info, .items .item-single .boton-ficha, .submit, .login, .busqueda-boton form button[type=submit], .items .item .add-to-cart, .items .item-single .add-to-cart {
   transition: all 0.2s linear;
 }
 
@@ -171,7 +157,7 @@ main #telefono {
   }
 }
 .busqueda-boton {
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 .busqueda-boton form input[type=text] {
   padding: 10px;
