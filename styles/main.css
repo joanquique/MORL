@@ -319,6 +319,7 @@ small {
   align-items: center;
   padding: 10px 0;
   box-sizing: border-box;
+  justify-content: space-between;
 }
 .cart__item img {
   width: 15%;
