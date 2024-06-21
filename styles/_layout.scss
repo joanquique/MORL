@@ -225,13 +225,13 @@ main {
         background-color: #259356;
         color: #fff;
         padding: 15px 30px;
-        border-radius: 5px;
+        border-radius: 25px;
         z-index: 1000;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         opacity: 0;
         transition: top 0.5s ease, opacity 0.5s ease;
         text-align: center;
-        width: 270px;
+        width: 55%;
     }
     
     .notification.visible {
