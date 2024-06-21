@@ -216,6 +216,34 @@ main {
         margin: 10px; 
         border-radius: 35px;
     }
+
+    .notification {
+        position: fixed;
+        top: -50px; /* Inicia fuera de la vista */
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #259356;
+        color: #fff;
+        padding: 15px 30px;
+        border-radius: 5px;
+        border-color: $color-primario;
+        z-index: 1000;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        opacity: 0;
+        transition: top 0.5s ease, opacity 0.5s ease;
+        text-align: center;
+        width: 270px;
+    }
+    
+    .notification.visible {
+        top: 20px; /* Posición visible */
+        opacity: 1;
+    }
+    
+    .hidden {
+        display: none;
+    }
+
 }
 
 /* Estilos para la sección de productos */

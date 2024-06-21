@@ -4,6 +4,7 @@ window.addEventListener('scroll', function() {
     var scrollPosition = window.scrollY;
     scrollPosition > 50 ? header.classList.add('scrolled') : header.classList.remove('scrolled');
 });
+
 // Función para filtrar los productos
 function filtrarProductos() {
     // Obtener el texto ingresado en el cuadro de búsqueda
@@ -22,11 +23,13 @@ function filtrarProductos() {
         }
     });
 }
+
 // Escuchar el evento de cambio en el cuadro de búsqueda
 document.querySelector('input[name="q"]').addEventListener('input', function() {
     // Filtrar los productos al cambiar el texto en el cuadro de búsqueda
     filtrarProductos();
 });
+
 // Funciones de carrito de compras
 document.getElementById('cart-toggle').addEventListener('click', function() {
     console.log("Clic en el icono de carrito");
@@ -42,7 +45,6 @@ document.getElementById('menu-toggle').addEventListener('click', () => {
     console.log("Clic en el icono de menu");
     document.querySelector('.menu').classList.toggle('menu--open');
 });
-
 document.getElementById('menu-close').addEventListener('click', () => {
     console.log("Clic en el icono de cerrar menu");
     document.querySelector('.menu').classList.remove('menu--open');
@@ -59,14 +61,17 @@ addToCartButtons.forEach(button => {
         addToCart(productName, productPrice, imgSrc);
     });
 });
+
 function addToCart(name, price, imgSrc) {
     const cartItem = document.createElement('div');
     cartItem.classList.add('cart__item');
+
     // Imagen del producto
     const img = document.createElement('img');
     img.src = imgSrc;
     img.alt = name;
     cartItem.appendChild(img);
+
     // Nombre y precio del producto
     const itemName = document.createElement('p');
     itemName.textContent = name;
@@ -74,9 +79,11 @@ function addToCart(name, price, imgSrc) {
     const itemPrice = document.createElement('p');
     itemPrice.textContent = price;
     cartItem.appendChild(itemPrice);
+
     // Botones de incrementar y eliminar
     const quantityControls = document.createElement('div');
     quantityControls.classList.add('cart__quantity-controls');
+
     const decrementButton = document.createElement('button');
     decrementButton.textContent = '-';
     decrementButton.classList.add('cart__quantity-decrement');
@@ -84,10 +91,12 @@ function addToCart(name, price, imgSrc) {
         updateCartItemQuantity(cartItem, -1);
     });
     quantityControls.appendChild(decrementButton);
+
     const itemCount = document.createElement('span');
     itemCount.textContent = '1';
     itemCount.classList.add('cart__item-count');
     quantityControls.appendChild(itemCount);
+
     const incrementButton = document.createElement('button');
     incrementButton.textContent = '+';
     incrementButton.classList.add('cart__quantity-increment');
@@ -101,7 +110,30 @@ function addToCart(name, price, imgSrc) {
     const cart = document.querySelector('.cart');
     cart.appendChild(cartItem);
     updateCartItemCount(1); // Aumenta el contador de productos
+
+    // Mostrar notificación
+    showNotification();
 }
+
+function showNotification() {
+    const notification = document.getElementById('notification');
+    notification.classList.remove('hidden');
+
+    // Forzar el reflujo para reiniciar la animación
+    void notification.offsetWidth;
+
+    notification.classList.add('visible');
+
+    // Ocultar notificación después de 3 segundos
+    setTimeout(() => {
+        notification.classList.remove('visible');
+        setTimeout(() => {
+            notification.classList.add('hidden');
+        }, 500); // Espera a que la transición termine antes de agregar la clase 'hidden'
+    }, 2000);
+}
+
+
 function updateCartItemCount(change) {
     const itemCountElements = document.querySelectorAll('.cart__item-count');
     itemCountElements.forEach(element => {
@@ -111,6 +143,7 @@ function updateCartItemCount(change) {
         element.style.display = currentCount > 0 ? 'inline-block' : 'none'; // Mostrar el contador sólo si hay artículos en el carrito
     });
 }
+
 function updateCartItemQuantity(cartItem, change) {
     const itemCountElement = cartItem.querySelector('.cart__item-count');
     let currentCount = parseInt(itemCountElement.textContent);
@@ -122,3 +155,4 @@ function updateCartItemQuantity(cartItem, change) {
         itemCountElement.textContent = currentCount;
     }
 }
+
