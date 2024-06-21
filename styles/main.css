@@ -868,7 +868,6 @@ main .notification {
   color: #fff;
   padding: 15px 30px;
   border-radius: 5px;
-  border-color: #0465b0;
   z-index: 1000;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   opacity: 0;
