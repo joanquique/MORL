@@ -55,7 +55,7 @@ const addToCartButtons = document.querySelectorAll('.add-to-cart');
 addToCartButtons.forEach(button => {
     button.addEventListener('click', () => {
         const product = button.parentNode;
-        const productName = product.querySelector('h3').textContent;
+        const productName = product.querySelector('h2').textContent;
         const productPrice = product.querySelector('span').textContent;
         const imgSrc = product.querySelector('img').getAttribute('src');
         addToCart(productName, productPrice, imgSrc);
