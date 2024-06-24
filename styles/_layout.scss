@@ -91,6 +91,19 @@ header {
             align-self: center;
         }
     }
+    .logo-link {
+        padding: 0; /* Elimina padding */
+        border: none; /* Sin bordes */
+        border-radius: 0; /* Sin bordes redondeados */
+        background-color: transparent; /* Fondo transparente */
+        transition: none; /* Sin transición */
+    }
+    
+    .logo-link:hover {
+        background-color: transparent; /* Sin cambio de fondo al pasar el cursor */
+        transform: none; /* Sin transformación */
+        color: inherit; /* Heredar color del padre */
+    }
 
     //transition: background-color 0.5s linear;
 }

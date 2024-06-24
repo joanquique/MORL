@@ -626,6 +626,18 @@ header nav .panel-nav {
 header nav .boton-nav {
   align-self: center;
 }
+header .logo-link {
+  padding: 0; /* Elimina padding */
+  border: none; /* Sin bordes */
+  border-radius: 0; /* Sin bordes redondeados */
+  background-color: transparent; /* Fondo transparente */
+  transition: none; /* Sin transición */
+}
+header .logo-link:hover {
+  background-color: transparent; /* Sin cambio de fondo al pasar el cursor */
+  transform: none; /* Sin transformación */
+  color: inherit; /* Heredar color del padre */
+}
 
 header.scrolled {
   position: fixed; /* Fija el header en la parte superior */
