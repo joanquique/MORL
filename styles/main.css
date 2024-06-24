@@ -88,7 +88,7 @@ main #telefono {
   /* Estilos para el precio del producto */
   /* Estilos para el botón de comprar */
 }
-.items .item h3, .items .item-single h3 {
+.items .item h2, .items .item-single h2 {
   text-align: center;
   margin-top: 10px;
   font-size: 1.2em;
@@ -130,6 +130,11 @@ main #telefono {
 }
 .items .item .img-item:hover, .items .item-single .img-item:hover {
   transform: scale(1.6);
+}
+
+main h3, main .head-text-container {
+  text-align: center;
+  font-weight: 600;
 }
 
 @media (min-width: 650px) {
@@ -793,10 +798,6 @@ main .text-containers .text-container-3 p {
 main h2 {
   text-align: center;
   font-weight: 400;
-}
-main h3 {
-  text-align: center;
-  font-weight: 600;
 }
 main .encabezado {
   font-weight: 500;

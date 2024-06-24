@@ -186,7 +186,7 @@ $font-family: "Quicksand", Arial, sans-serif;
     transition: transform 0.3s ease;
 
     /* Estilos para el título del producto */
-    h3 {
+    h2 {
         text-align: center;
         margin-top: 10px;
         font-size: 1.2em;
@@ -221,6 +221,11 @@ $font-family: "Quicksand", Arial, sans-serif;
     .img-item:hover {
         transform: scale(1.6);
     }
+}
+
+%title-style {
+    text-align: center;
+    font-weight: 600;
 }
 
 @media (min-width: 650px) {

@@ -132,10 +132,12 @@ main {
         text-align: center;
         font-weight: 400;
     }
-
+    .head-text-container{
+        @extend %title-style;
+    }
+    
     h3 {
-        text-align: center;
-        font-weight: 600;
+        @extend %title-style;
     }
 
     .encabezado {
