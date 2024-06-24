@@ -627,7 +627,7 @@ header nav .boton-nav {
   align-self: center;
 }
 header .logo-link {
-  padding: 0; /* Elimina padding */
+  padding-left: 36px; /* Elimina padding */
   border: none; /* Sin bordes */
   border-radius: 0; /* Sin bordes redondeados */
   background-color: transparent; /* Fondo transparente */
