@@ -106,7 +106,7 @@ main #telefono {
   text-align: center;
   font-size: 1.1em;
   font-weight: bold;
-  color: #259356;
+  color: #1B6E3A;
 }
 .items .item .add-to-cart, .items .item-single .add-to-cart {
   margin: 15px auto;
@@ -957,14 +957,14 @@ main .hidden {
   padding: 8px 15px;
   border: none;
   border-radius: 50px;
-  background-color: #259356;
+  background-color: #1B6E3A;
   color: #fff;
   font-size: 1em;
   font-family: "Quicksand";
   cursor: pointer;
 }
 .items .item .boton-info:hover {
-  background-color: #1b6a3e;
+  background-color: #114524;
   transform: scale(1.1);
 }
 
