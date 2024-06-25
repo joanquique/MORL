@@ -106,7 +106,7 @@ main #telefono {
   text-align: center;
   font-size: 1.1em;
   font-weight: bold;
-  color: #1B6E3A;
+  color: #218748;
 }
 .items .item .add-to-cart, .items .item-single .add-to-cart {
   margin: 15px auto;
@@ -878,7 +878,7 @@ main .notification {
   top: -50px; /* Inicia fuera de la vista */
   left: 50%;
   transform: translateX(-50%);
-  background-color: #259356;
+  background-color: #218748;
   color: #fff;
   padding: 15px 30px;
   border-radius: 25px;
