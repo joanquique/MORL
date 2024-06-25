@@ -7,23 +7,23 @@ body {
 
 // Estilos del banner
 .banner {
-    @include banner-style(url('../img/banner-about-us.jpg'));
+    @include banner-style(url('../img/banner-about-us.webp'));
 }
 
 .banner-items {
-    @include banner-style(url('../img/banner_items.jpg'));
+    @include banner-style(url('../img/banner_items.webp'));
 }
 
 .banner-sign-up {
-    @include banner-style(url('../img/banner-sign-up.jpg'));
+    @include banner-style(url('../img/banner-sign-up.webp'));
 }
 
 .banner-about-of {
-    @include banner-style(url('../img/banner_morl.jpg'));
+    @include banner-style(url('../img/banner_morl.webp'));
 }
 
 .banner-item {
-    @include banner-style(url('../img/banner-producto.jpg'));
+    @include banner-style(url('../img/banner-producto.webp'));
 }
 
 // Encabezado
@@ -123,20 +123,19 @@ main {
         justify-content: space-between;
 
         .text-container {
-            @include background-gradient(rgba(3, 74, 126, 0.7), rgba(5, 128, 230, 0.3), '../img/AC.jpg');
+            @include background-gradient(rgba(3, 74, 126, 0.7), rgba(5, 128, 230, 0.3), '../img/AC.webp');
         }
-
         .text-container-other {
-            @include background-gradient(rgba(133, 131, 131, 0.7), rgba(5, 128, 230, 0.3), '../img/AC-residencial.jpg');
+            @include background-gradient(rgba(133, 131, 131, 0.7), rgba(5, 128, 230, 0.3), '../img/AC-residencial.webp');
         }
         .text-container-1 {
-            @include background-gradient(rgba(0, 51, 102, 0.7), rgba(0, 153, 255, 0.3), '../img/AC-img.jpg');
+            @include background-gradient(rgba(0, 51, 102, 0.7), rgba(0, 153, 255, 0.3), '../img/AC-img.webp');
         }
         .text-container-2 {
-            @include background-gradient(rgba(49, 0, 51, 0.7), rgba(171, 52, 84, 0.3), '../img/AC-mision.jpg');
+            @include background-gradient(rgba(49, 0, 51, 0.7), rgba(171, 52, 84, 0.3), '../img/AC-mision.webp');
         }
         .text-container-3 {
-            @include background-gradient(rgba(133, 131, 131, 0.7), rgba(5, 128, 230, 0.3), '../img/morl-autos.jpg');
+            @include background-gradient(rgba(133, 131, 131, 0.7), rgba(5, 128, 230, 0.3), '../img/morl-autos.webp');
         }
     }
 

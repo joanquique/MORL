@@ -483,7 +483,7 @@ body {
 }
 
 .banner {
-  background: url("../img/banner-about-us.jpg") center/cover;
+  background: url("../img/banner-about-us.webp") center/cover;
   color: #fff;
   text-align: center;
   padding: 3rem 0;
@@ -501,7 +501,7 @@ body {
 }
 
 .banner-items {
-  background: url("../img/banner_items.jpg") center/cover;
+  background: url("../img/banner_items.webp") center/cover;
   color: #fff;
   text-align: center;
   padding: 3rem 0;
@@ -519,7 +519,7 @@ body {
 }
 
 .banner-sign-up {
-  background: url("../img/banner-sign-up.jpg") center/cover;
+  background: url("../img/banner-sign-up.webp") center/cover;
   color: #fff;
   text-align: center;
   padding: 3rem 0;
@@ -537,7 +537,7 @@ body {
 }
 
 .banner-about-of {
-  background: url("../img/banner_morl.jpg") center/cover;
+  background: url("../img/banner_morl.webp") center/cover;
   color: #fff;
   text-align: center;
   padding: 3rem 0;
@@ -555,7 +555,7 @@ body {
 }
 
 .banner-item {
-  background: url("../img/banner-producto.jpg") center/cover;
+  background: url("../img/banner-producto.webp") center/cover;
   color: #fff;
   text-align: center;
   padding: 3rem 0;
@@ -659,7 +659,7 @@ main .text-containers .text-container {
   margin: 20px auto;
   padding: 2rem;
   color: #fff;
-  background: linear-gradient(rgba(3, 74, 126, 0.7), rgba(5, 128, 230, 0.3)), url("../img/AC.jpg") no-repeat center center;
+  background: linear-gradient(rgba(3, 74, 126, 0.7), rgba(5, 128, 230, 0.3)), url("../img/AC.webp") no-repeat center center;
   background-size: cover;
   border-radius: 20px;
   font-weight: 400;
@@ -690,7 +690,7 @@ main .text-containers .text-container-other {
   margin: 20px auto;
   padding: 2rem;
   color: #fff;
-  background: linear-gradient(rgba(133, 131, 131, 0.7), rgba(5, 128, 230, 0.3)), url("../img/AC-residencial.jpg") no-repeat center center;
+  background: linear-gradient(rgba(133, 131, 131, 0.7), rgba(5, 128, 230, 0.3)), url("../img/AC-residencial.webp") no-repeat center center;
   background-size: cover;
   border-radius: 20px;
   font-weight: 400;
@@ -721,7 +721,7 @@ main .text-containers .text-container-1 {
   margin: 20px auto;
   padding: 2rem;
   color: #fff;
-  background: linear-gradient(rgba(0, 51, 102, 0.7), rgba(0, 153, 255, 0.3)), url("../img/AC-img.jpg") no-repeat center center;
+  background: linear-gradient(rgba(0, 51, 102, 0.7), rgba(0, 153, 255, 0.3)), url("../img/AC-img.webp") no-repeat center center;
   background-size: cover;
   border-radius: 20px;
   font-weight: 400;
@@ -752,7 +752,7 @@ main .text-containers .text-container-2 {
   margin: 20px auto;
   padding: 2rem;
   color: #fff;
-  background: linear-gradient(rgba(49, 0, 51, 0.7), rgba(171, 52, 84, 0.3)), url("../img/AC-mision.jpg") no-repeat center center;
+  background: linear-gradient(rgba(49, 0, 51, 0.7), rgba(171, 52, 84, 0.3)), url("../img/AC-mision.webp") no-repeat center center;
   background-size: cover;
   border-radius: 20px;
   font-weight: 400;
@@ -783,7 +783,7 @@ main .text-containers .text-container-3 {
   margin: 20px auto;
   padding: 2rem;
   color: #fff;
-  background: linear-gradient(rgba(133, 131, 131, 0.7), rgba(5, 128, 230, 0.3)), url("../img/morl-autos.jpg") no-repeat center center;
+  background: linear-gradient(rgba(133, 131, 131, 0.7), rgba(5, 128, 230, 0.3)), url("../img/morl-autos.webp") no-repeat center center;
   background-size: cover;
   border-radius: 20px;
   font-weight: 400;
