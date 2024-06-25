@@ -14,7 +14,7 @@ function filtrarProductos() {
     // Recorrer todos los productos y mostrar u ocultar según coincidan con el texto de búsqueda
     productos.forEach(function(producto) {
         // Obtener el texto del título del producto
-        var titulo = producto.querySelector('h3').textContent.toLowerCase();
+        var titulo = producto.querySelector('h2').textContent.toLowerCase();
         // Mostrar u ocultar el producto según coincida con el texto de búsqueda
         if (titulo.includes(textoBusqueda)) {
             producto.style.display = 'block';
