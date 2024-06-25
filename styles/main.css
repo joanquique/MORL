@@ -957,14 +957,14 @@ main .hidden {
   padding: 8px 15px;
   border: none;
   border-radius: 50px;
-  background-color: #218846;
+  background-color: #218748;
   color: #fff;
   font-size: 1em;
   font-family: "Quicksand";
   cursor: pointer;
 }
 .items .item .boton-info:hover {
-  background-color: #175f31;
+  background-color: #175e32;
   transform: scale(1.1);
 }
 
