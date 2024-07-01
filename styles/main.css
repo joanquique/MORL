@@ -382,7 +382,7 @@ small {
     box-sizing: border-box;
     position: fixed;
     left: -100%;
-    top: 145px;
+    top: 160px;
     bottom: 0;
     overflow-y: auto;
     box-shadow: -19px -1px 22px -15px rgba(0, 0, 0, 0.3);
