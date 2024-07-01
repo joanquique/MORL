@@ -155,12 +155,12 @@ small { // Pie de pagina de modal copyright
     max-width: 500px;
     background-color: #fff;
     font-family: $font-family;
-    border-radius: 20px;
+    border-radius: 15px;
     padding: 25px;
     box-sizing: border-box;
     position: fixed;
     right: -100%;
-    top: 0;
+    top: 160px;
     bottom: 0;
     overflow-y: auto;
     box-shadow: -19px -1px 22px -15px rgba(0, 0, 0, 0.3);
@@ -299,7 +299,8 @@ small { // Pie de pagina de modal copyright
         display: none; // Ocultar el ícono de X por defecto
     }
     
-    #menu-icon {
+    #menu-icon,
+    #cart-icon {
         transition: transform 0.3s ease; // Transición solo para la transformación (escala)
         transform-origin: center center;
     }

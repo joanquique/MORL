@@ -296,12 +296,12 @@ small {
   max-width: 500px;
   background-color: #fff;
   font-family: "Quicksand", Arial, sans-serif;
-  border-radius: 20px;
+  border-radius: 15px;
   padding: 25px;
   box-sizing: border-box;
   position: fixed;
   right: -100%;
-  top: 0;
+  top: 160px;
   bottom: 0;
   overflow-y: auto;
   box-shadow: -19px -1px 22px -15px rgba(0, 0, 0, 0.3);
@@ -424,7 +424,8 @@ small {
   .menu__close-icon {
     display: none;
   }
-  #menu-icon {
+  #menu-icon,
+  #cart-icon {
     transition: transform 0.3s ease;
     transform-origin: center center;
   }

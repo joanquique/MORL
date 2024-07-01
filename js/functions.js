@@ -31,21 +31,12 @@ document.querySelector('input[name="q"]').addEventListener('input', function() {
 });
 
 // Funciones de carrito de compras
-document.getElementById('cart-toggle').addEventListener('click', function() {
-    console.log("Clic en el icono de carrito");
-    document.querySelector('.cart').classList.toggle('cart--open');
-});
-document.getElementById('cart-close').addEventListener('click', function() {
-    console.log("Clic en el icono de cerrar carrito");
-    document.querySelector('.cart').classList.remove('cart--open');
-});
-
-// Menú a la izquierda
 document.addEventListener('DOMContentLoaded', function() {
     const menuIcon = document.getElementById('menu-icon');
-    const menuIconClose = document.getElementById('menu-icon-close');
+    const cartIcon = document.getElementById('cart-icon');
 
-    if (menuIcon && menuIconClose) {
+    if (menuIcon && cartIcon) {
+        // Menú
         document.getElementById('menu-toggle').addEventListener('click', () => {
             console.log("Clic en el icono de menu");
             const menu = document.querySelector('.menu');
@@ -79,34 +70,59 @@ document.addEventListener('DOMContentLoaded', function() {
                 menuIcon.style.transform = 'scale(1)'; // Restaurar tamaño
             }, 300); // Tiempo de espera igual a la duración de la transición en milisegundos
         });
+
+        // Carrito
+        document.getElementById('cart-toggle').addEventListener('click', function() {
+            console.log("Clic en el icono de carrito");
+            const cart = document.querySelector('.cart');
+            cart.classList.toggle('cart--open');
+
+            // Aplicar animación de escala al ícono del carrito
+            cartIcon.style.transform = cart.classList.contains('cart--open') ? 'scale(0.8)' : 'scale(1)';
+            setTimeout(() => {
+                cartIcon.style.transform = 'scale(1)'; // Restaurar tamaño
+            }, 300); // Tiempo de espera igual a la duración de la transición en milisegundos
+        });
+
+        document.getElementById('cart-close').addEventListener('click', function() {
+            console.log("Clic en el icono de cerrar carrito");
+            const cart = document.querySelector('.cart');
+            cart.classList.remove('cart--open');
+
+            // Aplicar animación de escala al ícono del carrito
+            cartIcon.style.transform = 'scale(0.8)'; // Reducir tamaño
+            setTimeout(() => {
+                cartIcon.style.transform = 'scale(1)'; // Restaurar tamaño
+            }, 300); // Tiempo de espera igual a la duración de la transición en milisegundos
+        });
+
+        // Añadir al carrito
+        const addToCartButtons = document.querySelectorAll('.add-to-cart');
+        addToCartButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const product = button.parentNode;
+                const productName = product.querySelector('h2').textContent;
+                const productPrice = product.querySelector('span').textContent;
+                const imgSrc = product.querySelector('img').getAttribute('src');
+                addToCart(productName, productPrice, imgSrc);
+            });
+        });
     } else {
         console.error('No se encontraron elementos con los IDs especificados.');
     }
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
 // Selecciona todos los botones "Agregar al carrito" y agrega un evento de clic a cada uno
-const addToCartButtons = document.querySelectorAll('.add-to-cart');
-addToCartButtons.forEach(button => {
-    button.addEventListener('click', () => {
-        const product = button.parentNode;
-        const productName = product.querySelector('h2').textContent;
-        const productPrice = product.querySelector('span').textContent;
-        const imgSrc = product.querySelector('img').getAttribute('src');
-        addToCart(productName, productPrice, imgSrc);
-    });
-});
+// const addToCartButtons = document.querySelectorAll('.add-to-cart');
+// addToCartButtons.forEach(button => {
+//     button.addEventListener('click', () => {
+//         const product = button.parentNode;
+//         const productName = product.querySelector('h2').textContent;
+//         const productPrice = product.querySelector('span').textContent;
+//         const imgSrc = product.querySelector('img').getAttribute('src');
+//         addToCart(productName, productPrice, imgSrc);
+//     });
+// });
 
 function addToCart(name, price, imgSrc) {
     const cartItem = document.createElement('div');
