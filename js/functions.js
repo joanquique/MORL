@@ -41,14 +41,60 @@ document.getElementById('cart-close').addEventListener('click', function() {
 });
 
 // Menú a la izquierda
-document.getElementById('menu-toggle').addEventListener('click', () => {
-    console.log("Clic en el icono de menu");
-    document.querySelector('.menu').classList.toggle('menu--open');
+document.addEventListener('DOMContentLoaded', function() {
+    const menuIcon = document.getElementById('menu-icon');
+    const menuIconClose = document.getElementById('menu-icon-close');
+
+    if (menuIcon && menuIconClose) {
+        document.getElementById('menu-toggle').addEventListener('click', () => {
+            console.log("Clic en el icono de menu");
+            const menu = document.querySelector('.menu');
+            menu.classList.toggle('menu--open');
+
+            // Cambiar ícono al abrir/cerrar menú con animación de escala desde el centro
+            if (menu.classList.contains('menu--open')) {
+                menuIcon.style.transform = 'scale(0.8)'; // Reducir tamaño
+                setTimeout(() => {
+                    menuIcon.src = 'img/x.svg'; // Cambiar ícono
+                    menuIcon.style.transform = 'scale(1)'; // Restaurar tamaño
+                }, 300); // Tiempo de espera igual a la duración de la transición en milisegundos
+            } else {
+                menuIcon.style.transform = 'scale(0.8)'; // Reducir tamaño
+                setTimeout(() => {
+                    menuIcon.src = 'img/menu.svg'; // Cambiar ícono
+                    menuIcon.style.transform = 'scale(1)'; // Restaurar tamaño
+                }, 300); // Tiempo de espera igual a la duración de la transición en milisegundos
+            }
+        });
+
+        document.getElementById('menu-close').addEventListener('click', () => {
+            console.log("Clic en el icono de cerrar menu");
+            const menu = document.querySelector('.menu');
+            menu.classList.remove('menu--open');
+
+            // Restaurar ícono al cerrar menú con animación de escala desde el centro
+            menuIcon.style.transform = 'scale(0.8)'; // Reducir tamaño
+            setTimeout(() => {
+                menuIcon.src = 'img/menu.svg'; // Cambiar ícono
+                menuIcon.style.transform = 'scale(1)'; // Restaurar tamaño
+            }, 300); // Tiempo de espera igual a la duración de la transición en milisegundos
+        });
+    } else {
+        console.error('No se encontraron elementos con los IDs especificados.');
+    }
 });
-document.getElementById('menu-close').addEventListener('click', () => {
-    console.log("Clic en el icono de cerrar menu");
-    document.querySelector('.menu').classList.remove('menu--open');
-});
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Selecciona todos los botones "Agregar al carrito" y agrega un evento de clic a cada uno
 const addToCartButtons = document.querySelectorAll('.add-to-cart');
