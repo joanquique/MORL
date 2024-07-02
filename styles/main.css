@@ -338,6 +338,7 @@ small {
 }
 .cart__item p {
   margin: 0;
+  font-weight: 500;
 }
 .cart__item .cart__item-delete-icon {
   width: 20px;
@@ -368,6 +369,12 @@ small {
 #cart-icon {
   transition: transform 0.3s ease;
   transform-origin: center center;
+}
+
+.cart__item-text,
+.cart__item-count {
+  font-weight: 600;
+  font-size: 16px;
 }
 
 @media screen and (max-width: 600px) {
