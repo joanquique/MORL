@@ -231,6 +231,10 @@ small { // Pie de pagina de modal copyright
 .menu__icon-container {
     display: none;
 }
+#cart-icon {
+        transition: transform 0.3s ease; // Transición solo para la transformación (escala)
+        transform-origin: center center;
+    }
 
 @media screen and (max-width: 600px) {
     // Menu a la izquierda

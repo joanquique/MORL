@@ -365,6 +365,11 @@ small {
   display: none;
 }
 
+#cart-icon {
+  transition: transform 0.3s ease;
+  transform-origin: center center;
+}
+
 @media screen and (max-width: 600px) {
   .boton-nav {
     display: none;
