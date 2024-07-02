@@ -105,6 +105,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 const productPrice = product.querySelector('span').textContent;
                 const imgSrc = product.querySelector('img').getAttribute('src');
                 addToCart(productName, productPrice, imgSrc);
+                // Aplicar animación de escala al ícono del carrito
+                cartIcon.style.transform = 'scale(0.8)'; // Reducir tamaño
+                setTimeout(() => {
+                    cartIcon.style.transform = 'scale(1)'; // Restaurar tamaño
+                }, 300);
             });
         });
     } else {
