@@ -306,7 +306,7 @@ main {
 
         /* Estilos para el botón de información */
         .boton-info {
-            @include custom-button(#218748);
+            @include custom-button($color-primario);
         }
     }
 }

@@ -213,7 +213,7 @@ $font-family: "Quicksand", Arial, sans-serif;
 
     /* Estilos para el botón de comprar */
     .add-to-cart {
-        @include custom-button($color-primario);
+        @include custom-button(#218748);
     }
     .btn-link {
         text-decoration: none;
