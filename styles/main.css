@@ -954,6 +954,7 @@ main .hidden {
   max-width: 15rem;
   border-radius: 35px;
   height: auto;
+  transition: all 0.2s linear;
 }
 .items .item p {
   padding: 20px;

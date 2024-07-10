@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Encuentra los mejores minisplits en Climaclick. Ofrecemos una amplia selección de minisplits eficientes y de alta calidad para mantener tu hogar o negocio fresco. Compra hoy y disfruta de precios competitivos y envío rápido.">
+    <meta name="description" content="Explora la amplia variedad de productos de aire acondicionado en Climaclick. Desde minisplits hasta aires acondicionados portátiles, tenemos todo lo que necesitas para mantener tu espacio fresco y confortable. Compra ahora y disfruta de precios competitivos y envío rápido.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-    <link rel="icon" href="img/CARRITO_AZUL_PNG-02.png" type="image/png" alt="favicon">
-    <title>Minisplit</title>
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon" href="img/CARRITO_AZUL_PNG-02.png" type="image/png">
+    <title>Productos</title>
     <script src="js/functions.js" defer></script>
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
     <header> <!-- Barra de navegación -->
@@ -69,66 +69,43 @@
         </div>
     </div>
     <main>
-        <div class="banner-item">
+        <div class="banner-items">
             <div class="texto-bienvenida">
-                <h1>Producto de calidad</h1>
+                <h1>Conoce todos nuestros productos</h1>
             </div>
         </div>
-        <div class="product-container">
-            <section class="items">
-                <article class="item">
-                    <!-- <div class="img-product">
-                    </div> -->
-                    <img class="img-item" src="img/hisense ac122ck.jpeg" alt="imagen Minisplit">
-                    <h2 id="product-title">Minisplit Hisense AC122CK Sólo Frío 12000 BTU</h2>
-                    <p>Disfruta del confort y la frescura con el aire acondicionado Hisense 
-                        AC122CK. Con una capacidad de enfriamiento de 12000 BTU/h (1440W), 
-                        este minisplit, diseñado para montaje en pared y acabado en blanco, 
-                        es perfecto para mantener tu espacio a la temperatura ideal. Incluye 
-                        modo sueño confortable, temporizador y pantalla LED.</p>
-                    <span class="precio">$6,100.00</span>
-                    <a class="btn-link" href="pdf/Ficha-tecnica-minisplit.pdf" target="_blank"><button class="boton-info" style="background-color: #df2828;">Ver Ficha Técnica</button></a>
-                    <button class="add-to-cart">Agregar al carrito</button>
-                </article>
-            </section>
-            <section class="items">
-                <article class="item-single">
-                    <h3>Características principales</h3>
-                    <ul>
-                        <li>
-                            <p><b>Rendimiento Óptimo</b>: Tecnología de refrigeración de vanguardia para un 
-                                ambiente siempre perfectamente climatizado.</p>
-                        </li>
-                        <li>
-                            <p><b>Diseño Elegante</b>: Integración armoniosa en cualquier espacio con un diseño 
-                                minimalista y sofisticado.</p>
-                        </li>
-                        <li>
-                            <p><b>Funcionalidad Avanzada</b>: Características inteligentes como ahorro de energía, 
-                                programación de horarios y control remoto.</p>
-                        </li>
-                        <li>
-                            <p><b>Silencioso y eficiente</b>: Operación silenciosa y eficiente gracias a su tecnología 
-                                avanzada de compresor.</p>
-                        </li>
-                    </ul>
-                </article>
-            </section>
-        </div>
+        <section class="items">
+            <article class="item"> <!-- Hisense Portátil -->
+                <a href="hisense_portatil.html"><img class="img-item" src="img/hisense portatil.jpeg" alt="Hisense Portátil"></a>
+                <h2>Aire Acondicionado Portátil Hisense 1 Ton 110 V</h2>
+                <p>La solución perfecta para mantener tu espacio fresco en los días calurosos 
+                    de verano. Con una potencia de 110W y eficiencia energética A, podrás 
+                    disfrutar de un ambiente agradable sin preocuparte por el consumo de energía. 
+                    Este modelo Portail cuenta con 3 velocidades de ventilación para adaptarse a 
+                    tus necesidades.</p>
+                <span class="precio">$7,999.00</span>
+                <a class="btn-link" href="hisense_portatil.html"><button class="boton-info">Ver producto</button></a>
+                <button class="add-to-cart">Agregar al carrito</button>
+            </article>
+        </section>
         <section class="cart cart--container"> <!-- Carrito de compras-->
             <h2 class="cart__title">CARRITO</h2>
             <i id="cart-close"><img src="img/x.svg" class="cart__close-icon" alt="ícono cerrar carrito" width="25"></i> 
             <div class="cart__item">
+            </div>
+            <div class="cart__item-count-container">
+                <span id="cart-item-count" class="cart__item-count"></span>
+                <span class="cart__item-text">Artículos</span>
             </div>
         </section>
         <section class="menu menu--container"> <!-- Menú a la izquierda (móvil)-->
             <h2 class="menu__title">MENU</h2>
             <i id="menu-close"><img src="img/x.svg" class="menu__close-icon" alt="ícono cerrar menú" width="25"></i> 
             <ul class="no-bullets">
-                <li class="menu-item"><a href="productos.html">Productos</a></li>
-                <li class="menu-item"><a href="#">Servicios</a></li>
-                <li class="menu-item"><a href="nosotros.html">Nosotros</a></li>
-                <li class="menu-item"><a href="#">Contacto</a></li>
+                <li class="menu-item"><a href="minisplit.html">Minisplit</a></li>
+                <li class="menu-item"><a href="inverter.html">Inverter</a></li>
+                <li class="menu-item"><a href="portatil.html">Portátil</a></li>
+                <li class="menu-item"><a href="refrigerante.html">Gas Refrigerante</a></li>
             </ul>
         </section>
         <!-- Contenedor para la notificación -->
