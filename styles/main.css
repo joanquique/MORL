@@ -13,6 +13,10 @@
   .banner, header {
     padding: 50px 0;
   }
+  .banner {
+    width: 100%;
+    height: auto;
+  }
   .texto-bienvenida, nav {
     padding: 5px 0;
   }
@@ -52,6 +56,9 @@
   .cart__item {
     max-width: 23.75rem;
   }
+  .marca {
+    display: block;
+  }
   footer {
     flex-direction: column;
   }
@@ -61,7 +68,7 @@
 }
 
 main #nombre, main #correo,
-main #passwrd, main #direccion,
+main #passwrd, main #mensaje,
 main #telefono {
   padding: 8px;
   border: 2px solid #0465b0;
@@ -92,13 +99,13 @@ main #telefono {
   text-align: center;
   margin-top: 10px;
   font-size: 1.2em;
-  font-weight: bold;
 }
 .items .item p, .items .item-single p {
   padding: 20px 5px 10px;
   margin: 7px 0;
   font-size: 0.9em;
   color: #333;
+  font-family: "Montserrat", Arial;
 }
 .items .item .precio, .items .item-single .precio {
   display: block;
@@ -118,7 +125,7 @@ main #telefono {
   background-color: #218748;
   color: #fff;
   font-size: 1em;
-  font-family: "Quicksand";
+  font-family: "Archivo Black";
   cursor: pointer;
 }
 .items .item .add-to-cart:hover, .items .item-single .add-to-cart:hover {
@@ -134,7 +141,7 @@ main #telefono {
 
 main h3, main .head-text-container {
   text-align: center;
-  font-weight: 600;
+  font-weight: 200;
 }
 
 @media (min-width: 650px) {
@@ -163,7 +170,7 @@ main h3, main .head-text-container {
   margin-right: 10px;
   width: 200px;
   font-size: 14px;
-  font-family: "Quicksand", Arial, sans-serif;
+  font-family: "Montserrat";
 }
 
 .login {
@@ -173,7 +180,7 @@ main h3, main .head-text-container {
   background-color: #145483;
   color: #fff;
   font-size: 14px;
-  font-family: "Quicksand", Arial, sans-serif;
+  font-family: "Montserrat";
   cursor: pointer;
 }
 .login:hover {
@@ -228,8 +235,8 @@ main h3, main .head-text-container {
 .submit {
   padding: 8px 12px;
   border: none;
-  width: 200px;
-  border-radius: 500px;
+  width: 400px;
+  border-radius: 50px;
   background-color: #0465b0;
   color: #fff;
   font-size: 14px;
@@ -295,7 +302,7 @@ small {
   width: 100%;
   max-width: 500px;
   background-color: #fff;
-  font-family: "Quicksand", Arial, sans-serif;
+  font-family: "Archivo Black", Arial, sans-serif;
   border-radius: 15px;
   padding: 25px;
   box-sizing: border-box;
@@ -388,7 +395,7 @@ small {
     width: 100%;
     max-width: 500px;
     background-color: #fff;
-    font-family: "Quicksand", Arial, sans-serif;
+    font-family: "Archivo Black", Arial, sans-serif;
     border-radius: 15px;
     padding: 25px;
     box-sizing: border-box;
@@ -485,17 +492,16 @@ small {
 }
 
 body {
-  font-family: "Quicksand", Arial, sans-serif;
+  font-family: "Archivo Black", Arial, sans-serif, Arial, sans serif;
   margin: 0;
   padding: 0;
 }
 
 .banner {
-  background: url("../img/banner-about-us.webp") center/cover;
+  background: url("../img/BANNER.jpg") center/cover;
   color: #fff;
   text-align: center;
-  padding: 3rem 0;
-  height: 8rem;
+  padding: 9rem 0;
   font-size: 1rem;
 }
 .banner h1, .banner .texto-bienvenida {
@@ -503,7 +509,24 @@ body {
 }
 .banner .texto-bienvenida {
   background-color: rgba(0, 0, 0, 0.5);
-  padding: 20px;
+  padding: 10px;
+  border-radius: 8px;
+  margin: 10px;
+}
+
+.banner-marcas {
+  background: url("../img/MARCAS.png") center/cover;
+  color: #fff;
+  text-align: center;
+  padding: 9rem 0;
+  font-size: 1rem;
+}
+.banner-marcas h1, .banner-marcas .texto-bienvenida {
+  animation: slideIn 1.3s cubic-bezier(0, 0, 0, 1);
+}
+.banner-marcas .texto-bienvenida {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
   border-radius: 8px;
   margin: 10px;
 }
@@ -512,8 +535,7 @@ body {
   background: url("../img/banner_items.webp") center/cover;
   color: #fff;
   text-align: center;
-  padding: 3rem 0;
-  height: 8rem;
+  padding: 9rem 0;
   font-size: 1rem;
 }
 .banner-items h1, .banner-items .texto-bienvenida {
@@ -521,7 +543,7 @@ body {
 }
 .banner-items .texto-bienvenida {
   background-color: rgba(0, 0, 0, 0.5);
-  padding: 20px;
+  padding: 10px;
   border-radius: 8px;
   margin: 10px;
 }
@@ -530,8 +552,7 @@ body {
   background: url("../img/banner-sign-up.webp") center/cover;
   color: #fff;
   text-align: center;
-  padding: 3rem 0;
-  height: 8rem;
+  padding: 9rem 0;
   font-size: 1rem;
 }
 .banner-sign-up h1, .banner-sign-up .texto-bienvenida {
@@ -539,7 +560,7 @@ body {
 }
 .banner-sign-up .texto-bienvenida {
   background-color: rgba(0, 0, 0, 0.5);
-  padding: 20px;
+  padding: 10px;
   border-radius: 8px;
   margin: 10px;
 }
@@ -548,8 +569,7 @@ body {
   background: url("../img/banner_morl.webp") center/cover;
   color: #fff;
   text-align: center;
-  padding: 3rem 0;
-  height: 8rem;
+  padding: 9rem 0;
   font-size: 1rem;
 }
 .banner-about-of h1, .banner-about-of .texto-bienvenida {
@@ -557,7 +577,7 @@ body {
 }
 .banner-about-of .texto-bienvenida {
   background-color: rgba(0, 0, 0, 0.5);
-  padding: 20px;
+  padding: 10px;
   border-radius: 8px;
   margin: 10px;
 }
@@ -566,8 +586,7 @@ body {
   background: url("../img/banner-producto.webp") center/cover;
   color: #fff;
   text-align: center;
-  padding: 3rem 0;
-  height: 8rem;
+  padding: 9rem 0;
   font-size: 1rem;
 }
 .banner-item h1, .banner-item .texto-bienvenida {
@@ -575,7 +594,7 @@ body {
 }
 .banner-item .texto-bienvenida {
   background-color: rgba(0, 0, 0, 0.5);
-  padding: 20px;
+  padding: 10px;
   border-radius: 8px;
   margin: 10px;
 }
@@ -616,6 +635,7 @@ header nav ul li a {
   border-radius: 500px;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
+  font-family: "Montserrat";
 }
 header nav ul li a:hover {
   background-color: #03487e;
@@ -817,7 +837,19 @@ main .text-containers .text-container-3 p {
 }
 main h2 {
   text-align: center;
-  font-weight: 400;
+  font-weight: 200;
+}
+main .img-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 50px;
+}
+main .img-container .img-link {
+  width: 500px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  padding: 0;
 }
 main .encabezado {
   font-weight: 500;
@@ -835,6 +867,15 @@ main p {
   padding: 0 6%;
   text-align: justify;
   margin-top: 20px;
+}
+main .text-archivo-black {
+  font-family: "Archivo Black", Arial, serif;
+  text-align: center;
+}
+main .text-montserrat {
+  font-family: "Montserrat", Arial, serif;
+  text-align: center;
+  font-weight: 400;
 }
 main img {
   width: 40rem;
@@ -858,6 +899,19 @@ main .form-group {
 }
 main label {
   font-weight: bold;
+}
+main .meses-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+main .meses-container .img-meses {
+  display: flex;
+  width: 30%;
+  height: 150px;
+  padding: 20px;
+  margin: 30px;
+  align-items: center;
+  justify-content: center;
 }
 main button {
   background-color: #0465b0;
@@ -932,7 +986,7 @@ main .hidden {
   background-color: #ee5e5e;
   color: #fff;
   font-size: 1em;
-  font-family: "Quicksand";
+  font-family: "Archivo Black";
   cursor: pointer;
 }
 .items .item-single .boton-ficha:hover {
@@ -969,7 +1023,7 @@ main .hidden {
   background-color: #0465b0;
   color: #fff;
   font-size: 1em;
-  font-family: "Quicksand";
+  font-family: "Archivo Black";
   cursor: pointer;
 }
 .items .item .boton-info:hover {
@@ -977,47 +1031,79 @@ main .hidden {
   transform: scale(1.1);
 }
 
+.marcas .marca {
+  display: flex;
+  justify-content: space-evenly;
+}
+.marcas .marca .img-marca {
+  display: flex;
+  width: 350px;
+  align-items: center;
+}
+.marcas .marca .text-marcas {
+  display: flex;
+  font-size: 26px;
+  font-weight: 400;
+  align-items: center;
+}
+
 footer {
   background-color: #0465b0;
   color: #fff;
   padding: 10px 0;
-  display: flex;
-  flex-wrap: nowrap; /* Evita que los elementos se envuelvan */
-  justify-content: space-between; /* Alinea los elementos al inicio, centro y final del contenedor */
-  height: auto;
+  text-align: left;
 }
-footer p {
+footer .footer-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+}
+footer .footer-list li {
   margin: 5px 0;
   font-size: 12px;
   display: flex;
   align-items: center;
   padding: 5px;
   box-sizing: border-box;
-  text-align: left;
 }
-footer .icon {
+footer .footer-list .icon {
   width: 20px;
   margin-right: 10px;
   filter: invert(1);
 }
-footer .mail {
+footer .footer-list .mail {
   color: #fff;
   text-decoration-line: none;
 }
-footer a[href^=tel] { /* Solo para enlaces telefónicos */
-  margin-right: 5px; /* Ajusta según sea necesario */
+footer .footer-list a[href^=tel] {
+  margin-right: 5px;
 }
-footer .social-icons {
+footer .footer-list .social-icons {
   display: flex;
   align-items: center;
-  justify-content: right;
 }
-footer .social-icons .social-icon {
+footer .footer-list .social-icons .social-icon {
   width: 20px;
   margin-right: 10px;
   filter: invert(1);
   transition: transform 0.3s ease;
 }
-footer .social-icons .social-icon:hover {
+footer .footer-list .social-icons .social-icon:hover {
   transform: scale(1.2);
+}
+
+.h1-politicas {
+  font-weight: 400;
+  font-family: "Montserrat", serif;
+  text-align: center;
+}
+
+.text-politicas {
+  font-family: serif;
+  font-size: 12px;
+  color: #6c6c6c;
+  text-align: justify;
 }/*# sourceMappingURL=main.css.map */

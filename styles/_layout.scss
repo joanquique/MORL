@@ -1,13 +1,17 @@
 // Estilos generales
 body {
-    font-family: $font-family;
+    font-family: $font-family, Arial, sans serif;
     margin: 0;
     padding: 0;
 }
 
 // Estilos del banner
 .banner {
-    @include banner-style(url('../img/banner-about-us.webp'));
+    @include banner-style(url('../img/BANNER.jpg'));
+}
+
+.banner-marcas {
+    @include banner-style(url('../img/MARCAS.png'));
 }
 
 .banner-items {
@@ -65,6 +69,7 @@ header {
                     //background-color: $color-primario;
                     cursor: pointer;
                     transition: background-color 0.3s ease, transform 0.3s ease;
+                    font-family: "Montserrat";
 
                     &:hover {
                         background-color: darken($color-primario, 10%);
@@ -142,7 +147,7 @@ main {
     padding: auto;
     h2 {
         text-align: center;
-        font-weight: 400;
+        font-weight: 200;
     }
     .head-text-container{
         @extend %title-style;
@@ -150,6 +155,19 @@ main {
     
     h3 {
         @extend %title-style;
+    }
+
+    .img-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 50px;
+        .img-link {
+            width: 500px;
+            border: 1px solid #ccc;
+            border-radius: 25px;
+            padding: 0;
+        }
     }
 
     .encabezado {
@@ -170,6 +188,18 @@ main {
         text-align: justify;
         margin-top: 20px;
     }
+
+    .text-archivo-black {
+        font-family: "Archivo Black", Arial, serif;
+        text-align: center;
+    }
+
+    .text-montserrat {
+        font-family: "Montserrat", Arial, serif;
+        text-align: center;
+        font-weight: 400;
+    }
+
     img {
         width: 40rem;
         display: block;
@@ -199,9 +229,24 @@ main {
     }
 
     #nombre, #correo,
-    #passwrd, #direccion,
+    #passwrd, #mensaje,
     #telefono {
         @extend %input-styles;
+    }
+
+    .meses-container {
+        display: flex;
+        justify-content: space-evenly;
+        .img-meses {
+            display: flex;
+            width: 30%; 
+            height: 150px;
+            padding: 20px;
+            margin: 30px;
+            // margin-top: 120px;
+            align-items: center;
+            justify-content: center;
+        }
     }
     
     button {
@@ -311,52 +356,95 @@ main {
         }
     }
 }
+
+.marcas {
+    
+    .marca {
+        display: flex;
+        justify-content: space-evenly;
+
+        .img-marca {
+            display: flex;
+            width: 350px;
+            align-items: center;
+        }
+    
+        .text-marcas {
+            display: flex;
+            font-size: 26px;
+            font-weight: 400;
+            align-items: center;
+        }
+        
+    }
+
+}
 // Pie de página
 footer {
     background-color: $color-primario;
     color: $color-secundario;
     padding: 10px 0;
-    display: flex;
-    flex-wrap: nowrap; /* Evita que los elementos se envuelvan */
-    justify-content: space-between; /* Alinea los elementos al inicio, centro y final del contenedor */
-    height: auto;
-    p {
-        margin: 5px 0;
-        font-size: 12px;
-        display: flex;
-        align-items: center; 
-        padding: 5px;
-        box-sizing: border-box;
-        text-align: left;
-    }
-         
-    .icon { // Iconos generales
-        width: 20px;
-        margin-right: 10px; 
-        filter: invert(1);
-    }
+    text-align: left;
 
-    .mail { // Texto de mail
-        color: $color-secundario;
-        text-decoration-line: none;
-    }
-    a[href^="tel"] { /* Solo para enlaces telefónicos */
-        margin-right: 5px; /* Ajusta según sea necesario */
-    }
-    .social-icons {
-        display: flex;
-        align-items: center;
-        justify-content: right;
+    .footer-list {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 10px;
 
-        .social-icon {
+        li {
+            margin: 5px 0;
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+        
+        .icon {
             width: 20px;
             margin-right: 10px;
             filter: invert(1);
-            transition: transform 0.3s ease;
+        }
 
-            &:hover {
-                transform: scale(1.2);
+        .mail {
+            color: $color-secundario;
+            text-decoration-line: none;
+        }
+
+        a[href^="tel"] {
+            margin-right: 5px;
+        }
+
+        .social-icons {
+            display: flex;
+            align-items: center;
+
+            .social-icon {
+                width: 20px;
+                margin-right: 10px;
+                filter: invert(1);
+                transition: transform 0.3s ease;
+
+                &:hover {
+                    transform: scale(1.2);
+                }
             }
         }
     }
 }
+
+.h1-politicas {
+    font-weight: 400;
+    font-family: "Montserrat", serif;
+    text-align: center ;
+}
+.text-politicas {
+    font-family: serif;
+    font-size: 12px;
+    color: #6c6c6c;
+    text-align: justify;
+}    
+

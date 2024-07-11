@@ -5,7 +5,7 @@ $color-secundario: #fff;
 // $gradient-end: rgba(5, 128, 230, 0.3);
 
 //Tipografia
-$font-family: "Quicksand", Arial, sans-serif;
+$font-family: "Archivo Black", Arial, sans-serif;
 
 // Animación de entrada de modal
 @keyframes slideIn {
@@ -23,6 +23,10 @@ $font-family: "Quicksand", Arial, sans-serif;
 @media screen and (max-width: 600px) {
     .banner, header {
         padding: 50px 0; 
+    }
+    .banner {
+        width: 100%;
+        height: auto;
     }
 
     .texto-bienvenida, nav {
@@ -77,6 +81,10 @@ $font-family: "Quicksand", Arial, sans-serif;
     .cart__item {
         max-width: 23.75rem;
     }
+
+    .marca {
+        display: block;
+    }
     
     footer {
         flex-direction: column;
@@ -107,8 +115,7 @@ $font-family: "Quicksand", Arial, sans-serif;
     background: $background-image center/cover;
     color: $color-secundario;
     text-align: center;
-    padding: 3rem 0;
-    height: 8rem;
+    padding: 9rem 0;
     font-size: 1rem;
     
     h1, .texto-bienvenida {
@@ -117,7 +124,7 @@ $font-family: "Quicksand", Arial, sans-serif;
 
     .texto-bienvenida {
         background-color: rgba(0, 0, 0, 0.5);
-        padding: 20px;
+        padding: 10px;
         border-radius: 8px;
         margin: 10px;
     }
@@ -134,7 +141,7 @@ $font-family: "Quicksand", Arial, sans-serif;
     background-color: $color; 
     color: $color-secundario;
     font-size: 1em;
-    font-family: "Quicksand";
+    font-family: "Archivo Black";
     cursor: pointer;
     @extend %transition-button;
     
@@ -190,7 +197,6 @@ $font-family: "Quicksand", Arial, sans-serif;
         text-align: center;
         margin-top: 10px;
         font-size: 1.2em;
-        font-weight: bold;
     }
 
     /* Estilos para la descripción del producto */
@@ -199,6 +205,7 @@ $font-family: "Quicksand", Arial, sans-serif;
         margin: 7px 0;
         font-size: 0.9em;
         color: #333;
+        font-family: "Montserrat", Arial,;
     }
 
     /* Estilos para el precio del producto */
@@ -225,7 +232,7 @@ $font-family: "Quicksand", Arial, sans-serif;
 
 %title-style {
     text-align: center;
-    font-weight: 600;
+    font-weight: 200;
 }
 
 @media (min-width: 650px) {

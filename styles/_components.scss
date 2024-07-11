@@ -9,7 +9,7 @@
             margin-right: 10px;
             width: 200px;
             font-size: 14px;
-            font-family: $font-family;
+            font-family: "Montserrat";
         }
     }
 }
@@ -22,7 +22,7 @@
     background-color: #145483;
     color: $color-secundario;
     font-size: 14px;
-    font-family: $font-family;
+    font-family: "Montserrat";
     cursor: pointer;
     @extend %transition-button;
 
@@ -83,8 +83,8 @@
 .submit {
     padding: 8px 12px;
     border: none;
-    width: 200px;
-    border-radius: 500px;
+    width: 400px;
+    border-radius: 50px;
     background-color: $color-primario;
     color: $color-secundario;
     font-size: 14px;
