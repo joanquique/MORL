@@ -7,11 +7,31 @@ body {
 
 // Estilos del banner
 .banner {
-    @include banner-style(url('../img/BANNER.jpg'));
+    background: url('../img/BANNER.jpg') center/cover;
+    height: 12.5rem;
+    padding: 9rem 0;
+}
+@media screen and (max-width: 768px){
+    .banner {
+        background: url('../img/BANNER-CEL.png') center/cover;
+        height: auto;
+    }
 }
 
 .banner-marcas {
-    @include banner-style(url('../img/MARCAS.png'));
+    background: url('../img/MARCAS.png') center/cover;
+    height: 6rem;
+    padding: 3rem 0;
+    width: 100%;
+}
+
+@media screen and (max-width: 600px){
+    .banner-marcas {
+    background: url('../img/MARCAS--CEL.png') center/cover;
+    height: 48rem;
+    width: 23.7rem;
+    padding: 1rem;
+    }
 }
 
 .banner-items {
@@ -66,7 +86,6 @@ header {
                     text-decoration: none;
                     border: 1px solid $color-primario;
                     border-radius: 500px;
-                    //background-color: $color-primario;
                     cursor: pointer;
                     transition: background-color 0.3s ease, transform 0.3s ease;
                     font-family: "Montserrat";
@@ -159,14 +178,16 @@ main {
 
     .img-container {
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
         justify-content: space-evenly;
-        padding: 50px;
+        //padding: 50px;
         .img-link {
             width: 500px;
             border: 1px solid #ccc;
             border-radius: 25px;
             padding: 0;
+            margin: 25px 0;
         }
     }
 
@@ -239,7 +260,7 @@ main {
         justify-content: space-evenly;
         .img-meses {
             display: flex;
-            width: 30%; 
+            width: 430px; 
             height: 150px;
             padding: 20px;
             margin: 30px;
@@ -437,6 +458,7 @@ footer {
             margin: 5px 0;
             display: flex;
             align-items: center;
+            justify-content: center;
 
             .icon {
                 width: 20px;
@@ -453,7 +475,7 @@ footer {
         .social-icons {
             display: flex;
             align-items: center;
-            justify-content: left;
+            justify-content: center;
             margin-top: 10px;
 
             .social-icon {

@@ -17,6 +17,10 @@
     width: 100%;
     height: auto;
   }
+  .banner-marcas {
+    width: 100%;
+    height: auto;
+  }
   .texto-bienvenida, nav {
     padding: 5px 0;
   }
@@ -59,8 +63,15 @@
   .marca {
     display: block;
   }
+  .img-meses {
+    justify-content: center;
+    width: 100%;
+  }
   footer {
     flex-direction: column;
+  }
+  footer img {
+    display: inline;
   }
 }
 .items .item .boton-info, .items .item-single .boton-ficha, .submit, .login, .items .item .add-to-cart, .items .item-single .add-to-cart {
@@ -125,7 +136,7 @@ main #telefono {
   background-color: #218748;
   color: #fff;
   font-size: 1em;
-  font-family: "Archivo Black";
+  font-family: "Montserrat";
   cursor: pointer;
 }
 .items .item .add-to-cart:hover, .items .item-single .add-to-cart:hover {
@@ -499,38 +510,31 @@ body {
 
 .banner {
   background: url("../img/BANNER.jpg") center/cover;
-  color: #fff;
-  text-align: center;
+  height: 12.5rem;
   padding: 9rem 0;
-  font-size: 1rem;
-}
-.banner h1, .banner .texto-bienvenida {
-  animation: slideIn 1.3s cubic-bezier(0, 0, 0, 1);
-}
-.banner .texto-bienvenida {
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 10px;
-  border-radius: 8px;
-  margin: 10px;
 }
 
+@media screen and (max-width: 768px) {
+  .banner {
+    background: url("../img/BANNER-CEL.png") center/cover;
+    height: auto;
+  }
+}
 .banner-marcas {
   background: url("../img/MARCAS.png") center/cover;
-  color: #fff;
-  text-align: center;
-  padding: 9rem 0;
-  font-size: 1rem;
-}
-.banner-marcas h1, .banner-marcas .texto-bienvenida {
-  animation: slideIn 1.3s cubic-bezier(0, 0, 0, 1);
-}
-.banner-marcas .texto-bienvenida {
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 10px;
-  border-radius: 8px;
-  margin: 10px;
+  height: 6rem;
+  padding: 3rem 0;
+  width: 100%;
 }
 
+@media screen and (max-width: 600px) {
+  .banner-marcas {
+    background: url("../img/MARCAS--CEL.png") center/cover;
+    height: 48rem;
+    width: 23.7rem;
+    padding: 1rem;
+  }
+}
 .banner-items {
   background: url("../img/banner_items.webp") center/cover;
   color: #fff;
@@ -841,15 +845,16 @@ main h2 {
 }
 main .img-container {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
-  padding: 50px;
 }
 main .img-container .img-link {
   width: 500px;
   border: 1px solid #ccc;
   border-radius: 25px;
   padding: 0;
+  margin: 25px 0;
 }
 main .encabezado {
   font-weight: 500;
@@ -906,7 +911,7 @@ main .meses-container {
 }
 main .meses-container .img-meses {
   display: flex;
-  width: 30%;
+  width: 430px;
   height: 150px;
   padding: 20px;
   margin: 30px;
@@ -986,7 +991,7 @@ main .hidden {
   background-color: #ee5e5e;
   color: #fff;
   font-size: 1em;
-  font-family: "Archivo Black";
+  font-family: "Montserrat";
   cursor: pointer;
 }
 .items .item-single .boton-ficha:hover {
@@ -1023,7 +1028,7 @@ main .hidden {
   background-color: #0465b0;
   color: #fff;
   font-size: 1em;
-  font-family: "Archivo Black";
+  font-family: "Montserrat";
   cursor: pointer;
 }
 .items .item .boton-info:hover {
@@ -1096,6 +1101,7 @@ footer .footer-content .footer-column p {
   margin: 5px 0;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 footer .footer-content .footer-column p .icon {
   width: 20px;
@@ -1109,7 +1115,7 @@ footer .footer-content .footer-column p .mail {
 footer .footer-content .footer-column .social-icons {
   display: flex;
   align-items: center;
-  justify-content: left;
+  justify-content: center;
   margin-top: 10px;
 }
 footer .footer-content .footer-column .social-icons .social-icon {
