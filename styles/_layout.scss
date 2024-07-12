@@ -11,6 +11,7 @@ body {
     height: 12.5rem;
     padding: 9rem 0;
 }
+
 @media screen and (max-width: 768px){
     .banner {
         background: url('../img/BANNER-CEL.png') center/cover;
@@ -37,44 +38,92 @@ body {
 .banner-hogar {
     background: url('../img/CABECERA-HOGAR.png') center/cover;
     height: 6rem;
-    padding: 7rem 0;
+    padding: 5.5rem 0;
     width: 100%;
     margin: 15px 0;
 }
+
 @media screen and (max-width: 600px) {
     .banner-hogar {
-        background: url('../img/CABECERA-HOGAR.png') center/cover;
+        background: url('../img/CABECERA-HOGAR-MOVIL.jpg') center/cover;
         height: 3.6rem;
-        padding: 1rem 0 0 1rem;
     }
 }
 
 .banner-negocio {
     background: url('../img/CABECERA-NEGOCIO.png') center/cover;
     height: 6rem;
-    padding: 7rem 0;
+    padding: 5.5rem 0;
     width: 100%;
     margin: 15px 0;
 }
-@media screen and (max-width: 600px) {
+
+@media screen and (max-width: 1020px) {
     .banner-negocio {
-        background: url('../img/CABECERA-NEGOCIO.png') center/cover;
-        height: 3.6rem;
-        padding: 1rem 0 0 1rem;
+        background: url('../img/CABECERA-NEGOCIO-MOVIL.jpg') center/cover;
+        height: 0.2rem;
     }
 }
 
-.banner-items {
-    @include banner-style(url('../img/banner_items.webp'));
+.banner-minisplit {
+    background: url('../img/CABECERA-MINISPLIT.jpg') center/cover;
+    height: 6rem;
+    padding: 5rem 0;
+    width: 100%;
+    margin: 15px 0;
 }
 
-.banner-sign-up {
-    @include banner-style(url('../img/banner-sign-up.webp'));
+@media screen and (max-width: 800px) {
+    .banner-minisplit {
+        background: url('../img/CABECERA-MINISPLIT-MOVIL.jpg') center/cover;
+        height: 3.6rem;
+    }
 }
 
-.banner-about-of {
-    @include banner-style(url('../img/banner_morl.webp'));
+.banner-inverter {
+    background: url('../img/CABECERA-INVERTER.jpg') center/cover;
+    height: 6rem;
+    padding: 5rem 0;
+    width: 100%;
+    margin: 15px 0;
 }
+
+@media screen and (max-width: 800px) {
+    .banner-inverter {
+        background: url('../img/CABECERA-INVERTER-MOVIL.jpg') center/cover;
+        height: 3.6rem;
+    }
+}
+
+.banner-portatil {
+    background: url('../img/CABECERA-PORTATIL.jpg') center/cover;
+    height: 6rem;
+    padding: 5rem 0;
+    width: 100%;
+    margin: 15px 0;
+}
+
+@media screen and (max-width: 800px) {
+    .banner-portatil {
+        background: url('../img/CABECERA-PORTATIL-MOVIL.jpg') center/cover;
+        height: 3.6rem;
+    }
+}
+
+.banner-refrigerante {
+    background: url('../img/CABECERA-gas.jpg') center/cover;
+    height: 6rem;
+    padding: 5rem 0;
+    width: 100%;
+    margin: 15px 0;
+}
+@media screen and (max-width: 800px) {
+    .banner-refrigerante {
+        background: url('../img/CABECERA-GAS-MOVIL.jpg') center/cover;
+        height: 3.6rem;
+    }
+}
+
 
 .banner-item {
     @include banner-style(url('../img/banner-producto.webp'));
