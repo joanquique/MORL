@@ -356,7 +356,6 @@ small {
 }
 .cart__item p {
   margin: 0;
-  font-weight: 500;
 }
 .cart__item .cart__item-delete-icon {
   width: 20px;
@@ -503,7 +502,7 @@ small {
 }
 
 body {
-  font-family: "Archivo Black", Arial, sans-serif, Arial, sans serif;
+  font-family: "Montserrat", Arial, sans-serif, Arial, sans serif;
   margin: 0;
   padding: 0;
 }
@@ -871,7 +870,6 @@ main .text-containers .text-container-3 p {
 }
 main h2 {
   text-align: center;
-  font-weight: 200;
 }
 main .img-container {
   display: flex;

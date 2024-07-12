@@ -196,7 +196,6 @@ main {
     padding: auto;
     h2 {
         text-align: center;
-        font-weight: 200;
     }
     .head-text-container{
         @extend %title-style;
@@ -458,8 +457,8 @@ footer {
         .footer-column {
             width: 45%; /* Ajusta el ancho de las columnas */
             text-align: left;
-        margin-bottom: 20px;
-        text-align: center;
+            margin-bottom: 20px;
+            text-align: center;
   
         h3 {
             margin-bottom: 10px;
