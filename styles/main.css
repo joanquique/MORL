@@ -1047,6 +1047,9 @@ main .item-design .right-side span.text-montserrat {
   color: #120255;
   font-weight: 800;
 }
+main .item-design .right-side ul {
+  margin-bottom: 30px;
+}
 main .item-design .right-side .img-meses {
   width: 25rem;
 }
