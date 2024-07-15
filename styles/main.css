@@ -976,7 +976,7 @@ main .item-design {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-main .item-design .left-side {
+main .item-design .top-side {
   width: 50%;
   padding: 20px;
   padding-left: 120px;
@@ -985,34 +985,32 @@ main .item-design .left-side {
   flex-direction: column;
   align-items: center;
 }
-main .item-design .left-side img.img-item {
+main .item-design .top-side img.img-item {
   width: 100%;
   height: auto;
   margin-bottom: 20px;
 }
-main .item-design .left-side .left-content {
+main .item-design .top-side section.items {
   width: 100%;
+  text-align: center; /* Centra el contenido dentro de section */
 }
-main .item-design .left-side .left-content h2 {
-  margin-top: 20px;
-  margin-bottom: 10px;
+main .item-design .top-side img {
+  width: 70%; /* Ajusta el ancho según necesites */
+  max-width: 100%; /* Asegura que no exceda el ancho del contenedor */
+  margin-top: 20px; /* Ajusta el margen superior según necesites */
 }
-main .item-design .left-side .left-content h2 span.text-archivo-black {
+main .item-design .top-side ul {
+  text-align: left;
+  margin-bottom: 35px;
+}
+main .item-design .top-side span.text-archivo-black {
+  color: #2599e8;
+}
+main .item-design .top-side span.text-montserrat {
   color: #120255;
+  font-weight: 800;
 }
-main .item-design .left-side .left-content ul {
-  list-style-type: disc;
-  padding-left: 20px;
-  margin-bottom: 20px;
-  padding-left: 4rem;
-}
-main .item-design .left-side .left-content ul li {
-  margin-bottom: 5px;
-}
-main .item-design .left-side .left-content p {
-  line-height: 1.6;
-}
-main .item-design .right-side {
+main .item-design .bottom-side {
   width: 50%;
   padding: 20px;
   box-sizing: border-box;
@@ -1020,36 +1018,51 @@ main .item-design .right-side {
   flex-direction: column;
   align-items: center; /* Centra los elementos horizontalmente */
 }
-main .item-design .right-side section.items {
+main .item-design .bottom-side .bottom-content {
   width: 100%;
-  text-align: center; /* Centra el contenido dentro de section */
 }
-main .item-design .right-side img {
-  width: 70%; /* Ajusta el ancho según necesites */
-  max-width: 100%; /* Asegura que no exceda el ancho del contenedor */
-  margin-top: 20px; /* Ajusta el margen superior según necesites */
+main .item-design .bottom-side .bottom-content h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
-main .item-design .right-side ul {
-  text-align: left;
-  margin-bottom: 35px;
-}
-main .item-design .right-side span.text-archivo-black {
-  color: #2599e8;
-}
-main .item-design .right-side span.text-montserrat {
+main .item-design .bottom-side .bottom-content h2 span.text-archivo-black {
   color: #120255;
-  font-weight: 800;
+}
+main .item-design .bottom-side .bottom-content ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 20px;
+  padding-left: 4rem;
+}
+main .item-design .bottom-side .bottom-content ul li {
+  margin-bottom: 5px;
+}
+main .item-design .bottom-side .bottom-content p {
+  line-height: 1.6;
 }
 @media screen and (max-width: 768px) {
-  main .item-design .left-side,
-  main .item-design .right-side {
+  main .item-design .top-side,
+  main .item-design .bottom-side {
     width: 100%;
     padding: 10px;
   }
-  main .item-design .left-content section.items article.item,
-  main .item-design .right-side section.items article.item {
+  main .item-design .bottom-content section.items article.item,
+  main .item-design .bottom-side section.items article.item {
     width: 100%;
   }
+}
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+main .img-item {
+  animation: slideIn 0.8s ease-out forwards; /* forwards mantiene el estado final de la animación */
 }
 main .notification {
   position: fixed;
