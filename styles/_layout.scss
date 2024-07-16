@@ -528,6 +528,10 @@ main {
         }
     
         @media screen and (max-width: 768px) {
+            p {
+                line-height: 1.6;
+                font-size: 16px;
+             }
             .left-side,
             .right-side {
                 width: 100%;
@@ -541,6 +545,19 @@ main {
                         width: 100%;
                     }
                 }
+            }
+            .left-side {
+                order: 1; /* Cambiamos el orden en móviles */
+                padding: 10px; /* Ajuste adicional para móviles */
+            }
+    
+            .right-side {
+                order: 2; /* Cambiamos el orden en móviles */
+                padding: 10px; /* Ajuste adicional para móviles */
+            }
+    
+            .img-meses {
+                order: 5; /* Cambiamos el orden en móviles */
             }
         }
     }

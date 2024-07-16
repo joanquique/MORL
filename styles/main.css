@@ -1107,6 +1107,10 @@ main .item-design .right-side ul {
   margin-bottom: 30px;
 }
 @media screen and (max-width: 768px) {
+  main .item-design p {
+    line-height: 1.6;
+    font-size: 16px;
+  }
   main .item-design .left-side,
   main .item-design .right-side {
     width: 100%;
@@ -1115,6 +1119,17 @@ main .item-design .right-side ul {
   main .item-design .right-content section.items article.item,
   main .item-design .right-side section.items article.item {
     width: 100%;
+  }
+  main .item-design .left-side {
+    order: 1; /* Cambiamos el orden en móviles */
+    padding: 10px; /* Ajuste adicional para móviles */
+  }
+  main .item-design .right-side {
+    order: 2; /* Cambiamos el orden en móviles */
+    padding: 10px; /* Ajuste adicional para móviles */
+  }
+  main .item-design .img-meses {
+    order: 5; /* Cambiamos el orden en móviles */
   }
 }
 @keyframes slideIn {

@@ -200,3 +200,30 @@ function updateCartItemCount(change) {
     totalItemCountElement.style.display = currentTotal > 0 ? 'inline-block' : 'none'; // Mostrar el contador solo si hay artículos en el carrito
 }
 
+// Función para verificar si es dispositivo móvil
+function esDispositivoMovil() {
+    return window.innerWidth <= 795; // Cambia este valor según tus necesidades
+}
+
+// Cambiar contenido visible en función del dispositivo
+function ajustarContenidoSegunDispositivo() {
+    if (esDispositivoMovil()) {
+        // Mostrar contenido móvil y ocultar contenido desktop
+        document.querySelector('.left-content.desktop').style.display = 'none';
+        document.querySelector('.left-content.mobile').style.display = 'block';
+    } else {
+        // Mostrar contenido desktop y ocultar contenido móvil
+        document.querySelector('.left-content.desktop').style.display = 'block';
+        document.querySelector('.left-content.mobile').style.display = 'none';
+    }
+}
+
+// Llamar a la función al cargar la página
+window.onload = function() {
+    ajustarContenidoSegunDispositivo(); // Ajustar contenido al cargar la página
+}
+
+// Llamar a la función al redimensionar la ventana
+window.onresize = function() {
+    ajustarContenidoSegunDispositivo(); // Ajustar contenido al cambiar el tamaño de la ventana
+}
