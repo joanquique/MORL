@@ -560,6 +560,11 @@ main {
     flex-wrap: wrap;
     justify-content: space-around;
     margin-top: 20px;
+    
+    a {
+        text-decoration: none;
+        color: #000;
+    }
 
 /* Estilos para cada producto */
     .item-single { // Articulo individual

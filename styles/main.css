@@ -1124,6 +1124,10 @@ main .hidden {
   margin-top: 20px;
   /* Estilos para cada producto */
 }
+.items a {
+  text-decoration: none;
+  color: #000;
+}
 .items .item-single {
   width: 20rem;
   padding: 20px;
