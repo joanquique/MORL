@@ -35,6 +35,22 @@ body {
     }
 }
 
+.banner-marcas-nosotros {
+    background: url('../img/MARCAS.png') center/cover;
+    height: auto;
+    padding: 6rem 0;
+    width: 100%;
+}
+
+@media screen and (max-width: 600px){
+    .banner-marcas-nosotros {
+        background: url('../img/MARCAS--CEL.png') center/cover;
+        height: 28rem;
+        width: 23.7rem;
+        padding: 1rem;
+    }
+}
+
 .banner-instalacion {
     background: url('../img/BANNER-INSTALACION.jpg') center/cover;
     height: auto;
@@ -136,6 +152,20 @@ body {
 @media screen and (max-width: 800px) {
     .banner-refrigerante {
         background: url('../img/CABECERA-GAS-MOVIL.jpg') center/cover;
+        height: 3.6rem;
+    }
+}
+
+.banner-nosotros {
+    background: url('../img/CABECERA-NOSOTROS.jpg') center/cover;
+    height: 6rem;
+    padding: 5rem 0;
+    width: 100%;
+    margin: 15px 0;
+}
+@media screen and (max-width: 800px) {
+    .banner-nosotros {
+        background: url('../img/CABECERA-NOSOTROS-MOVIL.jpg') center/cover;
         height: 3.6rem;
     }
 }
