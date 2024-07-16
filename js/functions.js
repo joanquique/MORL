@@ -207,14 +207,15 @@ function esDispositivoMovil() {
 
 // Cambiar contenido visible en función del dispositivo
 function ajustarContenidoSegunDispositivo() {
+    var contenidoDesktop = document.querySelector('.left-content.desktop');
+    var contenidoMovil = document.querySelector('.left-content.mobile');
+    
     if (esDispositivoMovil()) {
-        // Mostrar contenido móvil y ocultar contenido desktop
-        document.querySelector('.left-content.desktop').style.display = 'none';
-        document.querySelector('.left-content.mobile').style.display = 'block';
+        if (contenidoDesktop) contenidoDesktop.style.display = 'none';
+        if (contenidoMovil) contenidoMovil.style.display = 'block';
     } else {
-        // Mostrar contenido desktop y ocultar contenido móvil
-        document.querySelector('.left-content.desktop').style.display = 'block';
-        document.querySelector('.left-content.mobile').style.display = 'none';
+        if (contenidoDesktop) contenidoDesktop.style.display = 'block';
+        if (contenidoMovil) contenidoMovil.style.display = 'none';
     }
 }
 
@@ -227,3 +228,4 @@ window.onload = function() {
 window.onresize = function() {
     ajustarContenidoSegunDispositivo(); // Ajustar contenido al cambiar el tamaño de la ventana
 }
+
