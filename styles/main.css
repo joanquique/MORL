@@ -955,14 +955,18 @@ main .meses-container {
   display: flex;
   justify-content: space-evenly;
 }
-main .meses-container .img-meses {
+main .img-meses {
   display: flex;
-  width: 430px;
-  height: 150px;
-  padding: 20px;
-  margin: 30px;
+  width: 75%;
+  height: auto;
   align-items: center;
   justify-content: center;
+  padding: 0;
+}
+@media screen and (max-width: 600px) {
+  main .img-meses {
+    width: 100%;
+  }
 }
 main button {
   background-color: #0465b0;
@@ -1064,9 +1068,6 @@ main .item-design .right-side span.text-montserrat {
 }
 main .item-design .right-side ul {
   margin-bottom: 30px;
-}
-main .item-design .right-side .img-meses {
-  width: 25rem;
 }
 @media screen and (max-width: 768px) {
   main .item-design .left-side,
