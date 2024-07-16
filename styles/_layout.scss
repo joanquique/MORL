@@ -181,13 +181,14 @@ header {
     color: $color-secundario;
     padding: 15px 0 10px 0;
     height: auto;
+    width: 100%; /* Asegura que el header ocupe toda la anchura */
 
     nav {
         display: flex;
         align-items: center;
 
         .logo-morl {
-            padding: 0 3px 0 28px; 
+            padding: 0 3px 0 28px;
             width: 150px;
             height: auto;
         }
@@ -197,7 +198,7 @@ header {
             margin: 0;
             padding: 0;
             display: flex;
-            justify-content: right;
+            justify-content: flex-end; /* Alinea los elementos a la derecha */
             align-items: center;
             flex-grow: 1;
 
@@ -231,7 +232,7 @@ header {
         }
 
         .panel-nav {
-            justify-content: space-evenly; // Default behavior for smaller screens
+            justify-content: space-evenly; // Comportamiento predeterminado para pantallas más pequeñas
         }
 
         .boton-nav {
@@ -239,6 +240,7 @@ header {
             align-self: center;
         }
     }
+
     .logo-link {
         padding-left: 36px; /* Elimina padding */
         border: none; /* Sin bordes */
@@ -246,21 +248,27 @@ header {
         background-color: transparent; /* Fondo transparente */
         transition: none; /* Sin transición */
     }
-    
+
     .logo-link:hover {
         background-color: transparent; /* Sin cambio de fondo al pasar el cursor */
         transform: none; /* Sin transformación */
         color: inherit; /* Heredar color del padre */
     }
-
-    //transition: background-color 0.5s linear;
 }
 
 header.scrolled {
-    //background-color: $color-secundario; /* Cambia el color de fondo al hacer scroll */
     position: fixed; /* Fija el header en la parte superior */
+    top: 0; /* Asegura que esté al principio de la ventana */
+    left: 0; /* Asegura que esté a la izquierda de la ventana */
     width: 100%; /* Opcional: asegura que el header ocupe toda la anchura */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave para resaltar el header */
+    transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
+
+    nav {
+        justify-content: flex-end; /* Alinea los elementos a la derecha cuando se hace scroll */
+    }
 }
+
 
 // Contenedor principal
 main {

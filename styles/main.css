@@ -685,6 +685,7 @@ header {
   color: #fff;
   padding: 15px 0 10px 0;
   height: auto;
+  width: 100%; /* Asegura que el header ocupe toda la anchura */
 }
 header nav {
   display: flex;
@@ -700,7 +701,7 @@ header nav ul {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: right;
+  justify-content: flex-end; /* Alinea los elementos a la derecha */
   align-items: center;
   flex-grow: 1;
 }
@@ -749,7 +750,14 @@ header .logo-link:hover {
 
 header.scrolled {
   position: fixed; /* Fija el header en la parte superior */
+  top: 0; /* Asegura que esté al principio de la ventana */
+  left: 0; /* Asegura que esté a la izquierda de la ventana */
   width: 100%; /* Opcional: asegura que el header ocupe toda la anchura */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave para resaltar el header */
+  transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
+}
+header.scrolled nav {
+  justify-content: flex-end; /* Alinea los elementos a la derecha cuando se hace scroll */
 }
 
 main {
