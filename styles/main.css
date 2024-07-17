@@ -1291,10 +1291,9 @@ main .hidden {
 .items .item .img-item {
   width: 100%;
   max-width: 15rem;
-  border-radius: 35px;
   height: auto;
   transition: all 0.2s linear;
-  margin: auto;
+  margin: 15px auto;
 }
 .items .item p {
   padding: 20px;
