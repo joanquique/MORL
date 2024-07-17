@@ -229,3 +229,35 @@ window.onresize = function() {
     ajustarContenidoSegunDispositivo(); // Ajustar contenido al cambiar el tamaño de la ventana
 }
 
+//Script de carrusel de imágenes
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+    let slides = document.getElementsByClassName("mySlides");
+    if (slides.length === 0) return; // Verificar si hay elementos de carrusel
+    showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+    let slides = document.getElementsByClassName("mySlides");
+    if (slides.length === 0) return; // Verificar si hay elementos de carrusel
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (slides.length === 0 || dots.length === 0) return; // Verificar si hay elementos de carrusel
+
+    if (n > slides.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length }
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (let i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+}

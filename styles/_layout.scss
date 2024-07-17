@@ -474,7 +474,7 @@ main {
             img.img-item {
                 width: 100%;
                 height: auto;
-                margin-bottom: 20px;
+                margin-bottom: 1px;
             }
     
             section.items {
@@ -484,8 +484,7 @@ main {
     
             img {
                 width: 70%; /* Ajusta el ancho según necesites */
-                max-width: 100%; /* Asegura que no exceda el ancho del contenedor */
-                margin-top: 20px; /* Ajusta el margen superior según necesites */
+                max-width: 100%; /* Ajusta el margen superior según necesites */
             }
 
             ul {
@@ -574,6 +573,7 @@ main {
     }
     
     .img-item {
+        padding: 0;
         animation: slideIn 0.8s ease-out forwards; /* forwards mantiene el estado final de la animación */
     }
     
@@ -647,6 +647,7 @@ main {
             border-radius: 35px;
             height: auto;
             transition: all 0.2s linear;
+            margin: auto;
         }
 
         /* Estilos para la descripción del producto */

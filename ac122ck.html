@@ -71,7 +71,32 @@
     <main>
         <div class="item-design">
             <div class="left-side">
-                <img class="img-item" src="img/HISENSE-CLASSIC.png" alt="Hisense Classic">
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <img class="img-item" src="img/HISENSE-CLASSIC.png" style="width:100%">
+                    </div>
+            
+                    <div class="mySlides fade">
+                        <img class="img-item" src="/img/DUVENTUS-CLASICO.png" style="width:100%">
+                    </div>
+            
+                    <div class="mySlides fade">
+                        <img class="img-item" src="img/Hisense-Inverter-At242cbw01.png" style="width:100%">
+                    </div>
+            
+                    <!-- Botones izquierda y derecha -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+            
+                <br>
+            
+                <!-- Círculos -->
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
                 <!-- Contenido visible en escritorio -->
                 <div class="left-content desktop">
                     <h2><span class="text-archivo-black">Descripción detallada</span></h2>
