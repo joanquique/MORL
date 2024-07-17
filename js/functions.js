@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 const product = button.parentNode;
                 const productName = product.querySelector('span.text-archivo-black').textContent;
                 const productPrice = product.querySelector('span.precio').textContent;
-                const imgSrc = product.querySelector('img').getAttribute('src');
+                const imgSrc = product.querySelector('img.img-item').getAttribute('src');
                 addToCart(productName, productPrice, imgSrc);
                 animateIcon(cartIcon);
             });
