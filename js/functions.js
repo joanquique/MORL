@@ -83,6 +83,8 @@ document.addEventListener('DOMContentLoaded', function() {
     } else {
         console.error('No se encontraron elementos con los IDs especificados.');
     }
+    // Cargar el carrito desde localStorage al cargar la página
+    loadCartFromLocalStorage();
 });
 
 function animateIcon(iconElement, newSrc = null) {
@@ -95,26 +97,43 @@ function animateIcon(iconElement, newSrc = null) {
     }, 300); // Tiempo de espera igual a la duración de la transición en milisegundos
 }
 
-function addToCart(name, price, imgSrc) {
+// Función para guardar el carrito en localStorage
+function saveCartToLocalStorage(cartItems) {
+    localStorage.setItem('cart', JSON.stringify(cartItems));
+}
+
+// Función para cargar el carrito desde localStorage
+function loadCartFromLocalStorage() {
+    const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+    cartItems.forEach(item => {
+        addToCart(item.name, item.price, item.imgSrc, item.quantity, false);
+    });
+}
+
+// Modifica la función addToCart para actualizar el localStorage
+function addToCart(name, price, imgSrc, quantity = 1, updateLocalStorage = true) {
     const existingCartItem = document.querySelector(`.cart__item[data-name="${name}"]`);
+    let cartItems = JSON.parse(localStorage.getItem('cart')) || [];
 
     if (existingCartItem) {
         const itemCountElement = existingCartItem.querySelector('.cart__item-count');
         let currentCount = parseInt(itemCountElement.textContent);
-        currentCount += 1;
+        currentCount += quantity;
         itemCountElement.textContent = currentCount;
+
+        // Actualiza el objeto del carrito en localStorage
+        const itemIndex = cartItems.findIndex(item => item.name === name);
+        cartItems[itemIndex].quantity = currentCount;
     } else {
         const cartItem = document.createElement('div');
         cartItem.classList.add('cart__item');
         cartItem.setAttribute('data-name', name);
 
-        // Imagen del producto
         const img = document.createElement('img');
         img.src = imgSrc;
         img.alt = name;
         cartItem.appendChild(img);
 
-        // Nombre y precio del producto
         const itemName = document.createElement('p');
         itemName.textContent = name;
         cartItem.appendChild(itemName);
@@ -122,7 +141,6 @@ function addToCart(name, price, imgSrc) {
         itemPrice.textContent = price;
         cartItem.appendChild(itemPrice);
 
-        // Botones de incrementar y eliminar
         const quantityControls = document.createElement('div');
         quantityControls.classList.add('cart__quantity-controls');
 
@@ -135,7 +153,7 @@ function addToCart(name, price, imgSrc) {
         quantityControls.appendChild(decrementButton);
 
         const itemCount = document.createElement('span');
-        itemCount.textContent = '1'; // Inicializa en 1
+        itemCount.textContent = quantity;
         itemCount.classList.add('cart__item-count');
         quantityControls.appendChild(itemCount);
 
@@ -148,15 +166,18 @@ function addToCart(name, price, imgSrc) {
         quantityControls.appendChild(incrementButton);
         cartItem.appendChild(quantityControls);
         
-        // Agrega el elemento del producto al carrito
         const cart = document.querySelector('.cart');
         cart.appendChild(cartItem);
+
+        // Agrega el nuevo artículo al array de localStorage
+        cartItems.push({ name, price, imgSrc, quantity });
     }
 
-    // Actualizar el contador total del carrito
-    updateCartItemCount(1);
+    if (updateLocalStorage) {
+        saveCartToLocalStorage(cartItems);
+    }
 
-    // Mostrar notificación
+    updateCartItemCount(quantity);
     showNotification();
 }
 
@@ -183,13 +204,21 @@ function updateCartItemQuantity(cartItem, change) {
     let currentCount = parseInt(itemCountElement.textContent);
     currentCount += change;
 
+    let cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+
     if (currentCount < 1) {
-        cartItem.remove(); // Elimina el elemento del carrito si la cantidad es cero o negativa
-        updateCartItemCount(-1); // Disminuye el contador global
+        const itemName = cartItem.getAttribute('data-name');
+        cartItems = cartItems.filter(item => item.name !== itemName);
+        cartItem.remove();
+        updateCartItemCount(-1);
     } else {
         itemCountElement.textContent = currentCount;
-        updateCartItemCount(change); // Actualiza el contador global según el cambio (+1 o -1)
+        const itemIndex = cartItems.findIndex(item => item.name === cartItem.getAttribute('data-name'));
+        cartItems[itemIndex].quantity = currentCount;
+        updateCartItemCount(change);
     }
+
+    saveCartToLocalStorage(cartItems);
 }
 
 function updateCartItemCount(change) {
