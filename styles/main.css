@@ -695,7 +695,7 @@ body {
   }
 }
 .banner-inverter {
-  background: url("../img/CABECERA-INVERTER.jpg") center/cover;
+  background: url("../img/CABECERA-INVERTER.webp") center/cover;
   height: 6rem;
   padding: 5rem 0;
   width: 100%;
@@ -704,7 +704,7 @@ body {
 
 @media screen and (max-width: 800px) {
   .banner-inverter {
-    background: url("../img/CABECERA-INVERTER-MOVIL.jpg") center/cover;
+    background: url("../img/CABECERA-INVERTER-MOVIL.webp") center/cover;
     height: 3.6rem;
   }
 }
