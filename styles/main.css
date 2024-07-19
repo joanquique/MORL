@@ -723,7 +723,7 @@ body {
   }
 }
 .banner-refrigerante {
-  background: url("../img/CABECERA-gas.jpg") center/cover;
+  background: url("../img/CABECERA-gas.webp") center/cover;
   height: 6rem;
   padding: 5rem 0;
   width: 100%;
@@ -732,7 +732,7 @@ body {
 
 @media screen and (max-width: 800px) {
   .banner-refrigerante {
-    background: url("../img/CABECERA-GAS-MOVIL.jpg") center/cover;
+    background: url("../img/CABECERA-GAS-MOVIL.webp") center/cover;
     height: 3.6rem;
   }
 }
