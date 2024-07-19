@@ -128,7 +128,7 @@ body {
 }
 
 .banner-portatil {
-    background: url('../img/CABECERA-PORTATIL.jpg') center/cover;
+    background: url('../img/CABECERA-PORTATIL.webp') center/cover;
     height: 6rem;
     padding: 5rem 0;
     width: 100%;
@@ -137,7 +137,7 @@ body {
 
 @media screen and (max-width: 800px) {
     .banner-portatil {
-        background: url('../img/CABECERA-PORTATIL-MOVIL.jpg') center/cover;
+        background: url('../img/CABECERA-PORTATIL-MOVIL.webp') center/cover;
         height: 3.6rem;
     }
 }
