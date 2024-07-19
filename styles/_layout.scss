@@ -98,7 +98,7 @@ body {
 }
 
 .banner-minisplit {
-    background: url('../img/CABECERA-MINISPLIT.jpg') center/cover;
+    background: url('../img/CABECERA-MINISPLIT.webp') center/cover;
     height: 6rem;
     padding: 5rem 0;
     width: 100%;
@@ -107,7 +107,7 @@ body {
 
 @media screen and (max-width: 800px) {
     .banner-minisplit {
-        background: url('../img/CABECERA-MINISPLIT-MOVIL.jpg') center/cover;
+        background: url('../img/CABECERA-MINISPLIT-MOVIL.webp') center/cover;
         height: 3.6rem;
     }
 }
