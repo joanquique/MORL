@@ -596,19 +596,19 @@ body {
 }
 
 .banner {
-  background: url("../img/BANNER.jpg") center/cover;
+  background: url("../img/BANNER.webp") center/cover;
   height: 12.5rem;
   padding: 9rem 0;
 }
 
 @media screen and (max-width: 768px) {
   .banner {
-    background: url("../img/BANNER-CEL.png") center/cover;
+    background: url("../img/BANNER-CEL.webp") center/cover;
     height: auto;
   }
 }
 .banner-marcas {
-  background: url("../img/BANNER-ACTUALIZADO.jpg") center/cover;
+  background: url("../img/BANNER-ACTUALIZADO.webp") center/cover;
   height: auto;
   padding: 16rem 0;
   width: 100%;
@@ -616,7 +616,7 @@ body {
 
 @media screen and (max-width: 600px) {
   .banner-marcas {
-    background: url("../img/MARCAS--CEL.png") center/cover;
+    background: url("../img/MARCAS--CEL.webp") center/cover;
     height: 28rem;
     width: 23.7rem;
     padding: 1rem;
@@ -631,14 +631,14 @@ body {
 
 @media screen and (max-width: 600px) {
   .banner-marcas-nosotros {
-    background: url("../img/MARCAS--CEL.png") center/cover;
+    background: url("../img/MARCAS--CEL.webp") center/cover;
     height: 28rem;
     width: 23.7rem;
     padding: 1rem;
   }
 }
 .banner-instalacion {
-  background: url("../img/BANNER-INSTALACION.jpg") center/cover;
+  background: url("../img/BANNER-INSTALACION.webp") center/cover;
   height: auto;
   padding: 16rem 0;
   width: 100%;
@@ -646,7 +646,7 @@ body {
 
 @media screen and (max-width: 600px) {
   .banner-instalacion {
-    background: url("../img/BANNER-INSTALACION-MOVIL.jpg") center/cover;
+    background: url("../img/BANNER-INSTALACION-MOVIL.webp") center/cover;
     height: 28rem;
     width: 23.7rem;
     padding: 1rem;
