@@ -231,6 +231,7 @@ function updateCartItemCount(change) {
     totalItemCountElement.textContent = currentTotal;
     totalItemCountElement.style.display = currentTotal > 0 ? 'inline-block' : 'none'; // Mostrar el contador solo si hay artículos en el carrito
     verificarCarrito(); // Verificar la cantidad de artículos en el carrito
+    updateCartTotal();
 }   
 
 // Función para calcular y actualizar el total a pagar

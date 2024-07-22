@@ -72,7 +72,7 @@
     </div>
     <main>
         <div class="container">
-            <h2>Registro de Nuevo Usuario</h2>
+            <h2>Ingresa tus datos para completar tu registro de compra</h2>
             <form action="#" method="POST" class="registration-form">
                 <div class="form-group">
                     <label for="nombre">Nombre:</label>
@@ -83,16 +83,12 @@
                     <input type="email" id="correo" name="correo" required>
                 </div>
                 <div class="form-group">
-                    <label for="passwrd">Contraseña:</label>
-                    <input type="password" id="passwrd" name="passwrd" required>
+                    <label for="telefono">Teléfono de contacto:</label>
+                    <input type="tel" id="telefono" name="telefono" required>
                 </div>
                 <div class="form-group">
-                    <label for="telefono">Teléfono:</label>
-                    <input type="tel" id="telefono" name="telefono">
-                </div>
-                <div class="form-group">
-                    <label for="direccion">Dirección:</label>
-                    <textarea id="direccion" name="direccion"></textarea>
+                    <label for="direccion">Dirección de entrega:</label>
+                    <textarea id="direccion" name="direccion" required></textarea>
                 </div>
                 <div class="terms">
                     <input type="checkbox" id="termsCheckbox" required>
@@ -100,7 +96,7 @@
                         Al registrarte, aceptas los <a href="politicas.html"><b>Términos y Condiciones</b></a> y las <b>Políticas de Privacidad de Datos Personales</b></a>.
                     </label>
                 </div>                
-                <button class="submit" type="submit">Registrarse</button>
+                <button class="boton-seguir-pago" type="submit">Proceder al pago</button>
             </form>
         </div>
         <section class="cart cart--container"> <!-- Carrito de compras-->
@@ -130,8 +126,6 @@
                 <li class="menu-item"><a href="herramientas.html">Herramientas</a></li>
             </ul>
         </section>
-        <!-- Contenedor para la notificación -->
-        <div id="notification" class="notification hidden">Artículo agregado al carrito</div>
     </main>
     <hr>
     <footer>

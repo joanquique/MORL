@@ -74,7 +74,7 @@
     display: inline;
   }
 }
-.items .item .boton-ficha, .items .item .boton-info, .cart a .boton-comprar, .submit, .login, .items .item .add-to-cart, .items .item-single .add-to-cart {
+.items .item .boton-ficha, .items .item .boton-info, main .boton-seguir-pago, .cart a .boton-comprar, .submit, .login, .items .item .add-to-cart, .items .item-single .add-to-cart {
   transition: all 0.2s linear;
 }
 
@@ -1121,6 +1121,23 @@ main .form-group {
 }
 main label {
   font-weight: bold;
+}
+main .boton-seguir-pago {
+  margin: 15px auto;
+  display: flex;
+  justify-content: center;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 50px;
+  background-color: #0465b0;
+  color: #fff;
+  font-size: 1em;
+  font-family: "Montserrat";
+  cursor: pointer;
+}
+main .boton-seguir-pago:hover {
+  background-color: #03487e;
+  transform: scale(1.1);
 }
 main .meses-container {
   display: flex;
