@@ -77,6 +77,10 @@
 .terms { // Terminos y condiciones
     padding: 5%;
     text-align: justify;
+    a {
+        text-decoration: none;
+        color: #000;
+    }
 }
 
 // Botón de inicio de sesión dentro de modal

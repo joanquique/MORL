@@ -396,7 +396,7 @@ main {
 
     #nombre, #correo,
     #passwrd, #mensaje,
-    #telefono {
+    #telefono, #direccion {
         @extend %input-styles;
     }
 

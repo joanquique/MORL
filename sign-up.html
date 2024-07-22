@@ -71,11 +71,6 @@
         </div>
     </div>
     <main>
-        <div class="banner-sign-up">
-            <div class="texto-bienvenida">
-                <h1>Aquí empezamos nuestra historia</h1>
-            </div>
-        </div>
         <div class="container">
             <h2>Registro de Nuevo Usuario</h2>
             <form action="#" method="POST" class="registration-form">
@@ -101,8 +96,8 @@
                 </div>
                 <div class="terms">
                     <input type="checkbox" id="termsCheckbox" required>
-                    <label for="termsCheckbox">
-                        Al registrarte, aceptas los Términos y Condiciones y las Políticas de Privacidad de Datos Personales</a>.
+                    <label for="termsCheckbox" style="font-weight: 400;">
+                        Al registrarte, aceptas los <a href="politicas.html"><b>Términos y Condiciones</b></a> y las <b>Políticas de Privacidad de Datos Personales</b></a>.
                     </label>
                 </div>                
                 <button class="submit" type="submit">Registrarse</button>
@@ -111,7 +106,13 @@
         <section class="cart cart--container"> <!-- Carrito de compras-->
             <h2 class="cart__title">CARRITO</h2>
             <i id="cart-close"><img src="img/x.svg" class="cart__close-icon" alt="ícono cerrar carrito" width="25"></i> 
-            <div class="cart__item">
+            <div class="cart__item"></div>
+            <div class="cart__item-count-container">
+                <span id="cart-item-count" class="cart__item-count"></span>
+                <span class="cart__item-text">Artículos</span>
+            </div>
+            <div class="cart__total-container">
+                <span class="cart__item-text">Total a pagar: $</span><b><span id="cart-total" class="cart__total"></b></span>
             </div>
         </section>
         <section class="menu menu--container"> <!-- Menú a la izquierda (móvil)-->

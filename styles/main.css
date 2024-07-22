@@ -80,7 +80,7 @@
 
 main #nombre, main #correo,
 main #passwrd, main #mensaje,
-main #telefono {
+main #telefono, main #direccion {
   padding: 8px;
   border: 2px solid #0465b0;
   border-radius: 50px;
@@ -241,6 +241,10 @@ main h3, main .head-text-container {
 .terms {
   padding: 5%;
   text-align: justify;
+}
+.terms a {
+  text-decoration: none;
+  color: #000;
 }
 
 .submit {
