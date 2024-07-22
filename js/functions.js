@@ -86,6 +86,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Cargar el carrito desde localStorage al cargar la página
     loadCartFromLocalStorage();
     updateCartTotal(); // Actualiza el total a pagar al cargar la página
+    verificarCarrito();
 });
 
 function animateIcon(iconElement, newSrc = null) {
@@ -138,7 +139,6 @@ function addToCart(name, price, imgSrc, quantity = 1, updateLocalStorage = true)
         const itemName = document.createElement('p');
         itemName.textContent = name;
         cartItem.appendChild(itemName);
-
         const itemPrice = document.createElement('p');
         itemPrice.textContent = price;
         cartItem.appendChild(itemPrice);
@@ -167,7 +167,7 @@ function addToCart(name, price, imgSrc, quantity = 1, updateLocalStorage = true)
         });
         quantityControls.appendChild(incrementButton);
         cartItem.appendChild(quantityControls);
-
+        
         const cart = document.querySelector('.cart');
         cart.appendChild(cartItem);
 
@@ -180,8 +180,7 @@ function addToCart(name, price, imgSrc, quantity = 1, updateLocalStorage = true)
     }
 
     updateCartItemCount(quantity);
-    updateCartTotal(); // Actualiza el total a pagar
-    showNotification();
+    showNotification(); // Mostrar notificación solo al agregar al carrito
 }
 
 function showNotification() {
@@ -231,7 +230,8 @@ function updateCartItemCount(change) {
     currentTotal += change;
     totalItemCountElement.textContent = currentTotal;
     totalItemCountElement.style.display = currentTotal > 0 ? 'inline-block' : 'none'; // Mostrar el contador solo si hay artículos en el carrito
-}
+    verificarCarrito(); // Verificar la cantidad de artículos en el carrito
+}   
 
 // Función para calcular y actualizar el total a pagar
 function updateCartTotal() {
@@ -245,6 +245,19 @@ function updateCartTotal() {
 
     const cartTotalElement = document.getElementById('cart-total');
     cartTotalElement.textContent = total.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,');
+}
+
+// Función para verificar la cantidad de artículos en el carrito
+function verificarCarrito() {
+    const totalItemCountElement = document.getElementById('cart-item-count');
+    const itemCount = parseInt(totalItemCountElement.textContent) || 0;
+    const buyButton = document.getElementById('buy-button');
+    
+    if (itemCount > 0) {
+        buyButton.style.display = 'block';
+    } else {
+        buyButton.style.display = 'none';
+    }
 }
 
 // Función para verificar si es dispositivo móvil

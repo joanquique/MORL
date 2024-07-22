@@ -179,7 +179,7 @@ small { // Pie de pagina de modal copyright
         text-align: center;
         font-size: 20px;
         font-weight: 600;
-        padding: 25px 0;
+        padding: 25px 0 0;
         box-sizing: border-box;
     }
 
@@ -217,6 +217,16 @@ small { // Pie de pagina de modal copyright
             }
         }
     }
+    // Estilos para el botón Comprar
+    a {
+        text-decoration: none;
+        .boton-comprar {
+            @include custom-button($color-primario);
+            display: flex;
+            margin: 18px auto 3px;
+            padding: 0.6rem 5rem;
+        }
+    }
 }
 
 .cart__close-icon {
@@ -243,6 +253,11 @@ small { // Pie de pagina de modal copyright
 .cart__item-count {
     font-weight: 600;
     font-size: 16px;
+}
+
+.cart__item-count-container,
+.cart__total-container {
+    text-align: center;
 }
 
 @media screen and (max-width: 600px) {
