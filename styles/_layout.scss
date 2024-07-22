@@ -286,29 +286,6 @@ header.scrolled {
 
 // Contenedor principal
 main {
-    .text-containers {
-
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-
-        .text-container {
-            @include background-gradient(rgba(3, 74, 126, 0.7), rgba(5, 128, 230, 0.3), '../img/AC.webp');
-        }
-        .text-container-other {
-            @include background-gradient(rgba(133, 131, 131, 0.7), rgba(5, 128, 230, 0.3), '../img/AC-residencial.webp');
-        }
-        .text-container-1 {
-            @include background-gradient(rgba(0, 51, 102, 0.7), rgba(0, 153, 255, 0.3), '../img/AC-img.webp');
-        }
-        .text-container-2 {
-            @include background-gradient(rgba(49, 0, 51, 0.7), rgba(171, 52, 84, 0.3), '../img/AC-mision.webp');
-        }
-        .text-container-3 {
-            @include background-gradient(rgba(133, 131, 131, 0.7), rgba(5, 128, 230, 0.3), '../img/morl-autos.webp');
-        }
-    }
-
     padding: auto;
     h2 {
         text-align: center;
@@ -334,19 +311,6 @@ main {
             padding: 0;
             margin: 25px 0;
         }
-    }
-
-    .encabezado {
-        font-weight: 500;
-        background-color: $color-primario;
-        border-radius: 20px;
-        color: $color-secundario;
-        height: 60px;
-        margin: 10px 10px;
-        display: flex;
-        align-items: center;
-        align-self: center;
-        justify-content: center;
     }
 
     p {
@@ -396,7 +360,11 @@ main {
 
     #nombre, #correo,
     #passwrd, #mensaje,
-    #telefono, #direccion {
+    #telefono, #direccion,
+    #calle, #num_ext, #cp,
+    #num_int, #colonia,
+    #city, #state, #pais,
+    #referencia {
         @extend %input-styles;
     }
 
@@ -621,88 +589,87 @@ main {
         display: none;
     }
 
-}
-
-/* Estilos para la sección de productos */
-.items {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-top: 20px;
-    
-    a {
-        text-decoration: none;
-        color: #000;
-    }
-
-/* Estilos para cada producto */
-    .item-single { // Articulo individual
-        @extend %item-styles;
-
-        width: 20rem;
-        padding: 20px;
-
-        /* Estilos para el precio del producto */
-        .precio {
-            padding: 15px;
-        }
-        
-        @media screen and (max-width: 600px){
-            width: 75%;
-        }
-    }
-
-    .item { // Artículos en productos.html
-        @extend %item-styles;
-
-        /* Estilos para la imagen del producto */
-        .img-item {
-            width: 100%;
-            max-width: 15rem;
-            //border-radius: 35px;
-            height: auto;
-            transition: all 0.2s linear;
-            margin: 15px auto;
-        }
-
-        /* Estilos para la descripción del producto */
-        p {
-            padding: 20px;
-        }
-
-        /* Estilos para el botón de información */
-        .boton-info {
-            @include custom-button($color-primario);
-        }
-        /* Estilos para el botón de la ficha técnica */
-        .boton-ficha {
-            @include custom-button(#df2828);
-        }
-    }   
-
-}
-
-.marcas {
-    
-    .marca {
+    /* Estilos para la sección de productos */
+    .items {
         display: flex;
-        justify-content: space-evenly;
-
-        .img-marca {
-            display: flex;
-            width: 350px;
-            align-items: center;
-        }
-    
-        .text-marcas {
-            display: flex;
-            font-size: 26px;
-            font-weight: 400;
-            align-items: center;
-        }
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 20px;
         
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+
+    /* Estilos para cada producto */
+        .item-single { // Articulo individual
+            @extend %item-styles;
+
+            width: 20rem;
+            padding: 20px;
+
+            /* Estilos para el precio del producto */
+            .precio {
+                padding: 15px;
+            }
+            
+            @media screen and (max-width: 600px){
+                width: 75%;
+            }
+        }
+
+        .item { // Artículos en productos.html
+            @extend %item-styles;
+
+            /* Estilos para la imagen del producto */
+            .img-item {
+                width: 100%;
+                max-width: 15rem;
+                //border-radius: 35px;
+                height: auto;
+                transition: all 0.2s linear;
+                margin: 15px auto;
+            }
+
+            /* Estilos para la descripción del producto */
+            p {
+                padding: 20px;
+            }
+
+            /* Estilos para el botón de información */
+            .boton-info {
+                @include custom-button($color-primario);
+            }
+            /* Estilos para el botón de la ficha técnica */
+            .boton-ficha {
+                @include custom-button(#df2828);
+            }
+        }   
+
     }
 
+    .marcas {
+        
+        .marca {
+            display: flex;
+            justify-content: space-evenly;
+
+            .img-marca {
+                display: flex;
+                width: 350px;
+                align-items: center;
+            }
+        
+            .text-marcas {
+                display: flex;
+                font-size: 26px;
+                font-weight: 400;
+                align-items: center;
+            }
+            
+        }
+
+    }
 }
 
 // Pie de página

@@ -74,13 +74,17 @@
     display: inline;
   }
 }
-.items .item .boton-ficha, .items .item .boton-info, main .boton-seguir-pago, .cart a .boton-comprar, .submit, .login, .items .item .add-to-cart, .items .item-single .add-to-cart {
+main .items .item .boton-ficha, main .items .item .boton-info, main .boton-seguir-pago, .cart a .boton-comprar, .submit, .login, main .items .item .add-to-cart, main .items .item-single .add-to-cart {
   transition: all 0.2s linear;
 }
 
 main #nombre, main #correo,
 main #passwrd, main #mensaje,
-main #telefono, main #direccion {
+main #telefono, main #direccion,
+main #calle, main #num_ext, main #cp,
+main #num_int, main #colonia,
+main #city, main #state, main #pais,
+main #referencia {
   padding: 8px;
   border: 2px solid #0465b0;
   border-radius: 50px;
@@ -92,7 +96,7 @@ main #telefono, main #direccion {
   box-sizing: border-box;
 }
 
-.items .item, .items .item-single {
+main .items .item, main .items .item-single {
   width: 300px;
   margin-bottom: 30px;
   padding: 20px;
@@ -106,19 +110,19 @@ main #telefono, main #direccion {
   /* Estilos para el precio del producto */
   /* Estilos para el botón de comprar */
 }
-.items .item h2, .items .item-single h2 {
+main .items .item h2, main .items .item-single h2 {
   text-align: center;
   margin-top: 10px;
   font-size: 1.2em;
 }
-.items .item p, .items .item-single p {
+main .items .item p, main .items .item-single p {
   padding: 20px 5px 10px;
   margin: 7px 0;
   font-size: 0.9em;
   color: #333;
   font-family: "Montserrat", Arial;
 }
-.items .item .precio, .items .item-single .precio {
+main .items .item .precio, main .items .item-single .precio {
   display: block;
   margin: 5px 0 20px;
   text-align: center;
@@ -126,7 +130,7 @@ main #telefono, main #direccion {
   font-weight: bold;
   color: #186332;
 }
-.items .item .add-to-cart, .items .item-single .add-to-cart {
+main .items .item .add-to-cart, main .items .item-single .add-to-cart {
   margin: 15px auto;
   display: flex;
   justify-content: center;
@@ -139,14 +143,14 @@ main #telefono, main #direccion {
   font-family: "Montserrat";
   cursor: pointer;
 }
-.items .item .add-to-cart:hover, .items .item-single .add-to-cart:hover {
+main .items .item .add-to-cart:hover, main .items .item-single .add-to-cart:hover {
   background-color: #175e32;
   transform: scale(1.1);
 }
-.items .item .btn-link, .items .item-single .btn-link {
+main .items .item .btn-link, main .items .item-single .btn-link {
   text-decoration: none;
 }
-.items .item .img-item:hover, .items .item-single .img-item:hover {
+main .items .item .img-item:hover, main .items .item-single .img-item:hover {
   transform: scale(1.6);
 }
 
@@ -239,7 +243,7 @@ main h3, main .head-text-container {
 }
 
 .terms {
-  padding: 5%;
+  padding: 0 5% 5%;
   text-align: justify;
 }
 .terms a {
@@ -896,166 +900,7 @@ header.scrolled nav {
 
 main {
   padding: auto;
-}
-main .text-containers {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-main .text-containers .text-container {
-  position: relative;
-  max-width: 650px;
-  height: 500px;
-  margin: 20px auto;
-  padding: 2rem;
-  color: #fff;
-  background: linear-gradient(rgba(3, 74, 126, 0.7), rgba(5, 128, 230, 0.3)), url("../img/AC.webp") no-repeat center center;
-  background-size: cover;
-  border-radius: 20px;
-  font-weight: 400;
-  letter-spacing: 0.5px;
-}
-@media screen and (max-width: 600px) {
-  main .text-containers .text-container {
-    margin: 10px;
-  }
-}
-main .text-containers .text-container h3 {
-  font-weight: 600;
-}
-main .text-containers .text-container p {
-  font-size: 1rem;
-  text-align: justify;
-  padding: 5rem 1rem;
-}
-@media screen and (max-width: 600px) {
-  main .text-containers .text-container p {
-    padding: 0 0.5rem;
-  }
-}
-main .text-containers .text-container-other {
-  position: relative;
-  max-width: 650px;
-  height: 500px;
-  margin: 20px auto;
-  padding: 2rem;
-  color: #fff;
-  background: linear-gradient(rgba(133, 131, 131, 0.7), rgba(5, 128, 230, 0.3)), url("../img/AC-residencial.webp") no-repeat center center;
-  background-size: cover;
-  border-radius: 20px;
-  font-weight: 400;
-  letter-spacing: 0.5px;
-}
-@media screen and (max-width: 600px) {
-  main .text-containers .text-container-other {
-    margin: 10px;
-  }
-}
-main .text-containers .text-container-other h3 {
-  font-weight: 600;
-}
-main .text-containers .text-container-other p {
-  font-size: 1rem;
-  text-align: justify;
-  padding: 5rem 1rem;
-}
-@media screen and (max-width: 600px) {
-  main .text-containers .text-container-other p {
-    padding: 0 0.5rem;
-  }
-}
-main .text-containers .text-container-1 {
-  position: relative;
-  max-width: 650px;
-  height: 500px;
-  margin: 20px auto;
-  padding: 2rem;
-  color: #fff;
-  background: linear-gradient(rgba(0, 51, 102, 0.7), rgba(0, 153, 255, 0.3)), url("../img/AC-img.webp") no-repeat center center;
-  background-size: cover;
-  border-radius: 20px;
-  font-weight: 400;
-  letter-spacing: 0.5px;
-}
-@media screen and (max-width: 600px) {
-  main .text-containers .text-container-1 {
-    margin: 10px;
-  }
-}
-main .text-containers .text-container-1 h3 {
-  font-weight: 600;
-}
-main .text-containers .text-container-1 p {
-  font-size: 1rem;
-  text-align: justify;
-  padding: 5rem 1rem;
-}
-@media screen and (max-width: 600px) {
-  main .text-containers .text-container-1 p {
-    padding: 0 0.5rem;
-  }
-}
-main .text-containers .text-container-2 {
-  position: relative;
-  max-width: 650px;
-  height: 500px;
-  margin: 20px auto;
-  padding: 2rem;
-  color: #fff;
-  background: linear-gradient(rgba(49, 0, 51, 0.7), rgba(171, 52, 84, 0.3)), url("../img/AC-mision.webp") no-repeat center center;
-  background-size: cover;
-  border-radius: 20px;
-  font-weight: 400;
-  letter-spacing: 0.5px;
-}
-@media screen and (max-width: 600px) {
-  main .text-containers .text-container-2 {
-    margin: 10px;
-  }
-}
-main .text-containers .text-container-2 h3 {
-  font-weight: 600;
-}
-main .text-containers .text-container-2 p {
-  font-size: 1rem;
-  text-align: justify;
-  padding: 5rem 1rem;
-}
-@media screen and (max-width: 600px) {
-  main .text-containers .text-container-2 p {
-    padding: 0 0.5rem;
-  }
-}
-main .text-containers .text-container-3 {
-  position: relative;
-  max-width: 650px;
-  height: 500px;
-  margin: 20px auto;
-  padding: 2rem;
-  color: #fff;
-  background: linear-gradient(rgba(133, 131, 131, 0.7), rgba(5, 128, 230, 0.3)), url("../img/morl-autos.webp") no-repeat center center;
-  background-size: cover;
-  border-radius: 20px;
-  font-weight: 400;
-  letter-spacing: 0.5px;
-}
-@media screen and (max-width: 600px) {
-  main .text-containers .text-container-3 {
-    margin: 10px;
-  }
-}
-main .text-containers .text-container-3 h3 {
-  font-weight: 600;
-}
-main .text-containers .text-container-3 p {
-  font-size: 1rem;
-  text-align: justify;
-  padding: 5rem 1rem;
-}
-@media screen and (max-width: 600px) {
-  main .text-containers .text-container-3 p {
-    padding: 0 0.5rem;
-  }
+  /* Estilos para la sección de productos */
 }
 main h2 {
   text-align: center;
@@ -1072,18 +917,6 @@ main .img-container .img-link {
   border-radius: 25px;
   padding: 0;
   margin: 25px 0;
-}
-main .encabezado {
-  font-weight: 500;
-  background-color: #0465b0;
-  border-radius: 20px;
-  color: #fff;
-  height: 60px;
-  margin: 10px 10px;
-  display: flex;
-  align-items: center;
-  align-self: center;
-  justify-content: center;
 }
 main p {
   padding: 0 6%;
@@ -1319,49 +1152,47 @@ main .notification.visible {
 main .hidden {
   display: none;
 }
-
-/* Estilos para la sección de productos */
-.items {
+main .items {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   margin-top: 20px;
   /* Estilos para cada producto */
 }
-.items a {
+main .items a {
   text-decoration: none;
   color: #000;
 }
-.items .item-single {
+main .items .item-single {
   width: 20rem;
   padding: 20px;
   /* Estilos para el precio del producto */
 }
-.items .item-single .precio {
+main .items .item-single .precio {
   padding: 15px;
 }
 @media screen and (max-width: 600px) {
-  .items .item-single {
+  main .items .item-single {
     width: 75%;
   }
 }
-.items .item {
+main .items .item {
   /* Estilos para la imagen del producto */
   /* Estilos para la descripción del producto */
   /* Estilos para el botón de información */
   /* Estilos para el botón de la ficha técnica */
 }
-.items .item .img-item {
+main .items .item .img-item {
   width: 100%;
   max-width: 15rem;
   height: auto;
   transition: all 0.2s linear;
   margin: 15px auto;
 }
-.items .item p {
+main .items .item p {
   padding: 20px;
 }
-.items .item .boton-info {
+main .items .item .boton-info {
   margin: 15px auto;
   display: flex;
   justify-content: center;
@@ -1374,11 +1205,11 @@ main .hidden {
   font-family: "Montserrat";
   cursor: pointer;
 }
-.items .item .boton-info:hover {
+main .items .item .boton-info:hover {
   background-color: #03487e;
   transform: scale(1.1);
 }
-.items .item .boton-ficha {
+main .items .item .boton-ficha {
   margin: 15px auto;
   display: flex;
   justify-content: center;
@@ -1391,21 +1222,20 @@ main .hidden {
   font-family: "Montserrat";
   cursor: pointer;
 }
-.items .item .boton-ficha:hover {
+main .items .item .boton-ficha:hover {
   background-color: #b91b1b;
   transform: scale(1.1);
 }
-
-.marcas .marca {
+main .marcas .marca {
   display: flex;
   justify-content: space-evenly;
 }
-.marcas .marca .img-marca {
+main .marcas .marca .img-marca {
   display: flex;
   width: 350px;
   align-items: center;
 }
-.marcas .marca .text-marcas {
+main .marcas .marca .text-marcas {
   display: flex;
   font-size: 26px;
   font-weight: 400;
