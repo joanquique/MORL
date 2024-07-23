@@ -97,7 +97,7 @@ body {
 }
 
 .banner-vrf {
-    @include banner-general ('../img/GAS-HERRAMIENTAS.webp');
+    @include banner-general ('../img/CABECERAS-VRF.webp');
 }
 
 // Banners Generales Móviles
@@ -124,7 +124,7 @@ body {
         @include banner-general-movil('../img/CABECERA-NOSOTROS-MOVIL.webp');
     }
     .banner-vrf {
-        @include banner-general-movil('../img/GAS-HERRAMIENTAS-MOVIL.webp');
+        @include banner-general-movil('../img/CABECERAS-VRFMOVIL.webp');
     }
 }
 

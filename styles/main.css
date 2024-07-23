@@ -745,7 +745,7 @@ body {
 }
 
 .banner-vrf {
-  background: url("../img/GAS-HERRAMIENTAS.webp") center/cover;
+  background: url("../img/CABECERAS-VRF.webp") center/cover;
   height: 6rem;
   padding: 5.5rem 0;
   width: 100%;
@@ -782,7 +782,7 @@ body {
     height: 3.6rem;
   }
   .banner-vrf {
-    background: url("../img/GAS-HERRAMIENTAS-MOVIL.webp") center/cover;
+    background: url("../img/CABECERAS-VRFMOVIL.webp") center/cover;
     height: 3.6rem;
   }
 }
