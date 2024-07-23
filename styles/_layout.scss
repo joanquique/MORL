@@ -88,12 +88,12 @@ body {
     @include banner-general ('../img/CABECERA-INVERTER.webp');
 }
 
-.banner-refrigerante {
-    @include banner-general ('../img/CABECERA-gas.webp');
-}
+// .banner-refrigerante {
+//     @include banner-general ('../img/CABECERA-gas.webp');
+// }
 
-.banner-tools {
-    @include banner-general ('../img/CABECERA-GAS-MOVIL.webp');
+.banner-tools-gas {
+    @include banner-general ('../img/CABECERAS-HERRAMIENTAS.webp');
 }
 
 .banner-nosotros {
@@ -120,7 +120,7 @@ body {
     .banner-refrigerante {
         @include banner-general-movil('../img/CABECERAS-HERRAMIENTAS.webp');
     }
-    .banner-tools {
+    .banner-tools-gas {
         @include banner-general-movil('../img/CABECERAS-HERRAMIENTAS-MOVIL.webp');
     }
     .banner-nosotros {

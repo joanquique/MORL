@@ -728,16 +728,8 @@ body {
   margin: 15px 0;
 }
 
-.banner-refrigerante {
-  background: url("../img/CABECERA-gas.webp") center/cover;
-  height: 6rem;
-  padding: 5.5rem 0;
-  width: 100%;
-  margin: 15px 0;
-}
-
-.banner-tools {
-  background: url("../img/CABECERA-GAS-MOVIL.webp") center/cover;
+.banner-tools-gas {
+  background: url("../img/CABECERAS-HERRAMIENTAS.webp") center/cover;
   height: 6rem;
   padding: 5.5rem 0;
   width: 100%;
@@ -777,7 +769,7 @@ body {
     background: url("../img/CABECERAS-HERRAMIENTAS.webp") center/cover;
     height: 3.6rem;
   }
-  .banner-tools {
+  .banner-tools-gas {
     background: url("../img/CABECERAS-HERRAMIENTAS-MOVIL.webp") center/cover;
     height: 3.6rem;
   }
