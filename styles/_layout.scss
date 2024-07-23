@@ -88,16 +88,16 @@ body {
     @include banner-general ('../img/CABECERA-INVERTER.webp');
 }
 
-// .banner-refrigerante {
-//     @include banner-general ('../img/CABECERA-gas.webp');
-// }
-
 .banner-tools-gas {
-    @include banner-general ('../img/CABECERAS-HERRAMIENTAS.webp');
+    @include banner-general ('../img/GAS-HERRAMIENTAS.webp');
 }
 
 .banner-nosotros {
     @include banner-general ('../img/CABECERA-NOSOTROS.webp');
+}
+
+.banner-vrf {
+    @include banner-general ('../img/GAS-HERRAMIENTAS.webp');
 }
 
 // Banners Generales Móviles
@@ -117,16 +117,15 @@ body {
     .banner-portatil {
         @include banner-general-movil('../img/CABECERA-PORTATIL-MOVIL.webp');
     }
-    .banner-refrigerante {
-        @include banner-general-movil('../img/CABECERAS-HERRAMIENTAS.webp');
-    }
     .banner-tools-gas {
-        @include banner-general-movil('../img/CABECERAS-HERRAMIENTAS-MOVIL.webp');
+        @include banner-general-movil('../img/GAS-HERRAMIENTAS-MOVIL.webp');
     }
     .banner-nosotros {
         @include banner-general-movil('../img/CABECERA-NOSOTROS-MOVIL.webp');
     }
-
+    .banner-vrf {
+        @include banner-general-movil('../img/GAS-HERRAMIENTAS-MOVIL.webp');
+    }
 }
 
 // Encabezado

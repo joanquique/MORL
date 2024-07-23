@@ -729,7 +729,7 @@ body {
 }
 
 .banner-tools-gas {
-  background: url("../img/CABECERAS-HERRAMIENTAS.webp") center/cover;
+  background: url("../img/GAS-HERRAMIENTAS.webp") center/cover;
   height: 6rem;
   padding: 5.5rem 0;
   width: 100%;
@@ -738,6 +738,14 @@ body {
 
 .banner-nosotros {
   background: url("../img/CABECERA-NOSOTROS.webp") center/cover;
+  height: 6rem;
+  padding: 5.5rem 0;
+  width: 100%;
+  margin: 15px 0;
+}
+
+.banner-vrf {
+  background: url("../img/GAS-HERRAMIENTAS.webp") center/cover;
   height: 6rem;
   padding: 5.5rem 0;
   width: 100%;
@@ -765,16 +773,16 @@ body {
     background: url("../img/CABECERA-PORTATIL-MOVIL.webp") center/cover;
     height: 3.6rem;
   }
-  .banner-refrigerante {
-    background: url("../img/CABECERAS-HERRAMIENTAS.webp") center/cover;
-    height: 3.6rem;
-  }
   .banner-tools-gas {
-    background: url("../img/CABECERAS-HERRAMIENTAS-MOVIL.webp") center/cover;
+    background: url("../img/GAS-HERRAMIENTAS-MOVIL.webp") center/cover;
     height: 3.6rem;
   }
   .banner-nosotros {
     background: url("../img/CABECERA-NOSOTROS-MOVIL.webp") center/cover;
+    height: 3.6rem;
+  }
+  .banner-vrf {
+    background: url("../img/GAS-HERRAMIENTAS-MOVIL.webp") center/cover;
     height: 3.6rem;
   }
 }
