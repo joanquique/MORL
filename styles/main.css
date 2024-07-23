@@ -659,7 +659,7 @@ body {
   }
 }
 .banner-marcas-nosotros {
-  background: url("../img/MARCAS.png") center/cover;
+  background: url("../img/MARCAS.webp") center/cover;
   height: auto;
   padding: 6rem 0;
   width: 100%;
@@ -689,7 +689,7 @@ body {
   }
 }
 .banner-hogar {
-  background: url("../img/CABECERA-HOGAR.png") center/cover;
+  background: url("../img/CABECERA-HOGAR.webp") center/cover;
   height: 6rem;
   padding: 5.5rem 0;
   width: 100%;
@@ -697,7 +697,7 @@ body {
 }
 
 .banner-negocio {
-  background: url("../img/CABECERA-NEGOCIO.png") center/cover;
+  background: url("../img/CABECERA-NEGOCIO.webp") center/cover;
   height: 6rem;
   padding: 5.5rem 0;
   width: 100%;
@@ -745,7 +745,7 @@ body {
 }
 
 .banner-nosotros {
-  background: url("../img/CABECERA-NOSOTROS.jpg") center/cover;
+  background: url("../img/CABECERA-NOSOTROS.webp") center/cover;
   height: 6rem;
   padding: 5.5rem 0;
   width: 100%;
@@ -754,11 +754,11 @@ body {
 
 @media screen and (max-width: 600px) {
   .banner-hogar {
-    background: url("../img/CABECERA-HOGAR-MOVIL.jpg") center/cover;
+    background: url("../img/CABECERA-HOGAR-MOVIL.webp") center/cover;
     height: 3.6rem;
   }
   .banner-negocio {
-    background: url("../img/CABECERA-NEGOCIO-MOVIL.jpg") center/cover;
+    background: url("../img/CABECERA-NEGOCIO-MOVIL.webp") center/cover;
     height: 3.6rem;
   }
   .banner-minsplit {
@@ -782,7 +782,7 @@ body {
     height: 3.6rem;
   }
   .banner-nosotros {
-    background: url("../img/CABECERA-NOSOTROS-MOVIL.jpg") center/cover;
+    background: url("../img/CABECERA-NOSOTROS-MOVIL.webp") center/cover;
     height: 3.6rem;
   }
 }
