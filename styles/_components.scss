@@ -9,7 +9,7 @@
             margin-right: 10px;
             width: 200px;
             font-size: 14px;
-            font-family: "Montserrat";
+            font-family: $font-family;
         }
     }
 }
@@ -22,7 +22,7 @@
     background-color: #145483;
     color: $color-secundario;
     font-size: 14px;
-    font-family: "Montserrat";
+    font-family: $font-family;
     cursor: pointer;
     @extend %transition-button;
 
@@ -158,7 +158,7 @@ small { // Pie de pagina de modal copyright
     width: 100%;
     max-width: 500px;
     background-color: #fff;
-    font-family: "Montserrat";
+    font-family: $font-family;
     border-radius: 15px;
     padding: 25px;
     box-sizing: border-box;
@@ -273,7 +273,7 @@ small { // Pie de pagina de modal copyright
         width: 100%;
         max-width: 500px;
         background-color: #fff;
-        font-family: "Montserrat";
+        font-family: $font-family;
         border-radius: 15px;
         padding: 25px;
         box-sizing: border-box;

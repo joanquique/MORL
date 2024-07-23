@@ -67,125 +67,66 @@ body {
     }
 }
 
+// Banners Generales
 .banner-hogar {
-    background: url('../img/CABECERA-HOGAR.png') center/cover;
-    height: 6rem;
-    padding: 5.5rem 0;
-    width: 100%;
-    margin: 15px 0;
-}
-
-@media screen and (max-width: 600px) {
-    .banner-hogar {
-        background: url('../img/CABECERA-HOGAR-MOVIL.jpg') center/cover;
-        height: 3.6rem;
-    }
+    @include banner-general ('../img/CABECERA-HOGAR.png');
 }
 
 .banner-negocio {
-    background: url('../img/CABECERA-NEGOCIO.png') center/cover;
-    height: 6rem;
-    padding: 5.5rem 0;
-    width: 100%;
-    margin: 15px 0;
-}
-
-@media screen and (max-width: 1020px) {
-    .banner-negocio {
-        background: url('../img/CABECERA-NEGOCIO-MOVIL.jpg') center/cover;
-        height: 0.2rem;
-    }
+    @include banner-general ('../img/CABECERA-NEGOCIO.png');
 }
 
 .banner-minisplit {
-    background: url('../img/CABECERA-MINISPLIT.webp') center/cover;
-    height: 6rem;
-    padding: 5rem 0;
-    width: 100%;
-    margin: 15px 0;
-}
-
-@media screen and (max-width: 800px) {
-    .banner-minisplit {
-        background: url('../img/CABECERA-MINISPLIT-MOVIL.webp') center/cover;
-        height: 3.6rem;
-    }
+    @include banner-general ('../img/CABECERA-MINISPLIT.webp');
 }
 
 .banner-inverter {
-    background: url('../img/CABECERA-INVERTER.webp') center/cover;
-    height: 6rem;
-    padding: 5rem 0;
-    width: 100%;
-    margin: 15px 0;
-}
-
-@media screen and (max-width: 800px) {
-    .banner-inverter {
-        background: url('../img/CABECERA-INVERTER-MOVIL.webp') center/cover;
-        height: 3.6rem;
-    }
+    @include banner-general ('../img/CABECERA-INVERTER.webp');
 }
 
 .banner-portatil {
-    background: url('../img/CABECERA-PORTATIL.webp') center/cover;
-    height: 6rem;
-    padding: 5rem 0;
-    width: 100%;
-    margin: 15px 0;
-}
-
-@media screen and (max-width: 800px) {
-    .banner-portatil {
-        background: url('../img/CABECERA-PORTATIL-MOVIL.webp') center/cover;
-        height: 3.6rem;
-    }
+    @include banner-general ('../img/CABECERA-INVERTER.webp');
 }
 
 .banner-refrigerante {
-    background: url('../img/CABECERA-gas.webp') center/cover;
-    height: 6rem;
-    padding: 5rem 0;
-    width: 100%;
-    margin: 15px 0;
-}
-@media screen and (max-width: 800px) {
-    .banner-refrigerante {
-        background: url('../img/CABECERA-GAS-MOVIL.webp') center/cover;
-        height: 3.6rem;
-    }
+    @include banner-general ('../img/CABECERA-gas.webp');
 }
 
 .banner-tools {
-    background: url('../img/CABECERAS-HERRAMIENTAS.webp') center/cover;
-    height: 6rem;
-    padding: 5rem 0;
-    width: 100%;
-    margin: 15px 0;
-}
-@media screen and (max-width: 800px) {
-    .banner-tools {
-        background: url('../img/CABECERAS-HERRAMIENTAS-MOVIL.webp') center/cover;
-        height: 3.6rem;
-    }
+    @include banner-general ('../img/CABECERA-GAS-MOVIL.webp');
 }
 
 .banner-nosotros {
-    background: url('../img/CABECERA-NOSOTROS.jpg') center/cover;
-    height: 6rem;
-    padding: 5rem 0;
-    width: 100%;
-    margin: 15px 0;
-}
-@media screen and (max-width: 800px) {
-    .banner-nosotros {
-        background: url('../img/CABECERA-NOSOTROS-MOVIL.jpg') center/cover;
-        height: 3.6rem;
-    }
+    @include banner-general ('../img/CABECERA-NOSOTROS.jpg');
 }
 
-.banner-item {
-    @include banner-style(url('../img/banner-producto.webp'));
+// Banners Generales Móviles
+@media screen and (max-width: 600px) {
+    .banner-hogar {
+        @include banner-general-movil ('../img/CABECERA-HOGAR-MOVIL.jpg');
+    }
+    .banner-negocio {
+        @include banner-general-movil('../img/CABECERA-NEGOCIO-MOVIL.jpg');
+    }
+    .banner-minsplit {
+        @include banner-general-movil('../img/CABECERA-MINISPLIT-MOVIL.webp');
+    }
+    .banner-inverter {
+        @include banner-general-movil('../img/CABECERA-INVERTER-MOVIL.webp');
+    }
+    .banner-portatil {
+        @include banner-general-movil('../img/CABECERA-PORTATIL-MOVIL.webp');
+    }
+    .banner-refrigerante {
+        @include banner-general-movil('../img/CABECERAS-HERRAMIENTAS.webp');
+    }
+    .banner-tools {
+        @include banner-general-movil('../img/CABECERAS-HERRAMIENTAS-MOVIL.webp');
+    }
+    .banner-nosotros {
+        @include banner-general-movil('../img/CABECERA-NOSOTROS-MOVIL.jpg');
+    }
+
 }
 
 // Encabezado
@@ -227,7 +168,7 @@ header {
                     border-radius: 500px;
                     cursor: pointer;
                     transition: background-color 0.3s ease, transform 0.3s ease;
-                    font-family: "Montserrat";
+                    font-family: $font-family;
 
                     &:hover {
                         background-color: darken($color-primario, 10%);
@@ -282,7 +223,6 @@ header.scrolled {
         justify-content: flex-end; /* Alinea los elementos a la derecha cuando se hace scroll */
     }
 }
-
 
 // Contenedor principal
 main {
@@ -649,7 +589,6 @@ main {
     }
 
     .marcas {
-        
         .marca {
             display: flex;
             justify-content: space-evenly;
@@ -678,7 +617,7 @@ footer {
     color: #000; /* Texto negro */
     padding: 20px 0;
     text-align: center;
-    font-family: "Montserrat", sans-serif;
+    font-family: $font-family;
   
     h3 {
         text-align: center;
@@ -686,9 +625,8 @@ footer {
     
     .footer-logo {
         margin-bottom: 20px;
-
         img {
-        max-width: 120px; /* Ajusta el tamaño del logo según sea necesario */
+            max-width: 120px; /* Ajusta el tamaño del logo según sea necesario */
         }
     }
   
@@ -703,65 +641,65 @@ footer {
             margin-bottom: 20px;
             text-align: center;
   
-        h3 {
-            margin-bottom: 10px;
-        }
-  
-        ul {
-            list-style: none;
-            padding: 0;
-
-            li {
-                margin-bottom: 5px;
-                text-align: center;
+            h3 {
+                margin-bottom: 10px;
             }
+    
+            ul {
+                list-style: none;
+                padding: 0;
 
-            a {
-                color: #000; /* Color de texto secundario */
-                text-decoration: none;
+                li {
+                    margin-bottom: 5px;
+                    text-align: center;
+                }
 
-                &:hover {
-                    text-decoration: underline;
+                a {
+                    color: #000; /* Color de texto secundario */
+                    text-decoration: none;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+            
+            p {
+                margin: 5px 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .icon {
+                    width: 20px;
+                    margin-right: 10px;
+                    filter: invert(0);
+                }
+
+                .mail {
+                    color: #000; /* Color de texto secundario */
+                    text-decoration: none;
+                }
+            }
+    
+            .social-icons {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 10px;
+
+                .social-icon {
+                    width: 20px;
+                    margin-right: 10px;
+                    filter: invert(0);
+                    transition: transform 0.3s ease;
+
+                    &:hover {
+                        transform: scale(1.2);
+                    }
                 }
             }
         }
-        
-        p {
-            margin: 5px 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            .icon {
-                width: 20px;
-                margin-right: 10px;
-                filter: invert(0);
-            }
-
-            .mail {
-                color: #000; /* Color de texto secundario */
-                text-decoration: none;
-            }
-        }
-  
-        .social-icons {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-top: 10px;
-
-            .social-icon {
-                width: 20px;
-                margin-right: 10px;
-                filter: invert(0);
-                transition: transform 0.3s ease;
-
-                &:hover {
-                    transform: scale(1.2);
-                }
-            }
-        }
-    }
     }
   
     .copyright {
@@ -773,7 +711,7 @@ footer {
 // Políticas
 .h1-politicas {
     font-weight: 400;
-    font-family: "Montserrat", serif;
+    font-family: $font-family;
     text-align: center ;
 }
 .text-politicas {

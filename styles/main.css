@@ -120,7 +120,7 @@ main .items .item p, main .items .item-single p {
   margin: 7px 0;
   font-size: 0.9em;
   color: #333;
-  font-family: "Montserrat", Arial;
+  font-family: "Montserrat", Arial, sans-serif;
 }
 main .items .item .precio, main .items .item-single .precio {
   display: block;
@@ -140,7 +140,7 @@ main .items .item .add-to-cart, main .items .item-single .add-to-cart {
   background-color: #218748;
   color: #fff;
   font-size: 1em;
-  font-family: "Montserrat";
+  font-family: "Montserrat", Arial, sans-serif;
   cursor: pointer;
 }
 main .items .item .add-to-cart:hover, main .items .item-single .add-to-cart:hover {
@@ -185,7 +185,7 @@ main h3, main .head-text-container {
   margin-right: 10px;
   width: 200px;
   font-size: 14px;
-  font-family: "Montserrat";
+  font-family: "Montserrat", Arial, sans-serif;
 }
 
 .login {
@@ -195,7 +195,7 @@ main h3, main .head-text-container {
   background-color: #145483;
   color: #fff;
   font-size: 14px;
-  font-family: "Montserrat";
+  font-family: "Montserrat", Arial, sans-serif;
   cursor: pointer;
 }
 .login:hover {
@@ -321,7 +321,7 @@ small {
   width: 100%;
   max-width: 500px;
   background-color: #fff;
-  font-family: "Montserrat";
+  font-family: "Montserrat", Arial, sans-serif;
   border-radius: 15px;
   padding: 25px;
   box-sizing: border-box;
@@ -386,7 +386,7 @@ small {
   background-color: #0465b0;
   color: #fff;
   font-size: 1em;
-  font-family: "Montserrat";
+  font-family: "Montserrat", Arial, sans-serif;
   cursor: pointer;
   display: flex;
   margin: 18px auto 3px;
@@ -441,7 +441,7 @@ small {
     width: 100%;
     max-width: 500px;
     background-color: #fff;
-    font-family: "Montserrat";
+    font-family: "Montserrat", Arial, sans-serif;
     border-radius: 15px;
     padding: 25px;
     box-sizing: border-box;
@@ -696,12 +696,6 @@ body {
   margin: 15px 0;
 }
 
-@media screen and (max-width: 600px) {
-  .banner-hogar {
-    background: url("../img/CABECERA-HOGAR-MOVIL.jpg") center/cover;
-    height: 3.6rem;
-  }
-}
 .banner-negocio {
   background: url("../img/CABECERA-NEGOCIO.png") center/cover;
   height: 6rem;
@@ -710,113 +704,88 @@ body {
   margin: 15px 0;
 }
 
-@media screen and (max-width: 1020px) {
-  .banner-negocio {
-    background: url("../img/CABECERA-NEGOCIO-MOVIL.jpg") center/cover;
-    height: 0.2rem;
-  }
-}
 .banner-minisplit {
   background: url("../img/CABECERA-MINISPLIT.webp") center/cover;
   height: 6rem;
-  padding: 5rem 0;
+  padding: 5.5rem 0;
   width: 100%;
   margin: 15px 0;
 }
 
-@media screen and (max-width: 800px) {
-  .banner-minisplit {
-    background: url("../img/CABECERA-MINISPLIT-MOVIL.webp") center/cover;
-    height: 3.6rem;
-  }
-}
 .banner-inverter {
   background: url("../img/CABECERA-INVERTER.webp") center/cover;
   height: 6rem;
-  padding: 5rem 0;
+  padding: 5.5rem 0;
   width: 100%;
   margin: 15px 0;
 }
 
-@media screen and (max-width: 800px) {
+.banner-portatil {
+  background: url("../img/CABECERA-INVERTER.webp") center/cover;
+  height: 6rem;
+  padding: 5.5rem 0;
+  width: 100%;
+  margin: 15px 0;
+}
+
+.banner-refrigerante {
+  background: url("../img/CABECERA-gas.webp") center/cover;
+  height: 6rem;
+  padding: 5.5rem 0;
+  width: 100%;
+  margin: 15px 0;
+}
+
+.banner-tools {
+  background: url("../img/CABECERA-GAS-MOVIL.webp") center/cover;
+  height: 6rem;
+  padding: 5.5rem 0;
+  width: 100%;
+  margin: 15px 0;
+}
+
+.banner-nosotros {
+  background: url("../img/CABECERA-NOSOTROS.jpg") center/cover;
+  height: 6rem;
+  padding: 5.5rem 0;
+  width: 100%;
+  margin: 15px 0;
+}
+
+@media screen and (max-width: 600px) {
+  .banner-hogar {
+    background: url("../img/CABECERA-HOGAR-MOVIL.jpg") center/cover;
+    height: 3.6rem;
+  }
+  .banner-negocio {
+    background: url("../img/CABECERA-NEGOCIO-MOVIL.jpg") center/cover;
+    height: 3.6rem;
+  }
+  .banner-minsplit {
+    background: url("../img/CABECERA-MINISPLIT-MOVIL.webp") center/cover;
+    height: 3.6rem;
+  }
   .banner-inverter {
     background: url("../img/CABECERA-INVERTER-MOVIL.webp") center/cover;
     height: 3.6rem;
   }
-}
-.banner-portatil {
-  background: url("../img/CABECERA-PORTATIL.webp") center/cover;
-  height: 6rem;
-  padding: 5rem 0;
-  width: 100%;
-  margin: 15px 0;
-}
-
-@media screen and (max-width: 800px) {
   .banner-portatil {
     background: url("../img/CABECERA-PORTATIL-MOVIL.webp") center/cover;
     height: 3.6rem;
   }
-}
-.banner-refrigerante {
-  background: url("../img/CABECERA-gas.webp") center/cover;
-  height: 6rem;
-  padding: 5rem 0;
-  width: 100%;
-  margin: 15px 0;
-}
-
-@media screen and (max-width: 800px) {
   .banner-refrigerante {
-    background: url("../img/CABECERA-GAS-MOVIL.webp") center/cover;
+    background: url("../img/CABECERAS-HERRAMIENTAS.webp") center/cover;
     height: 3.6rem;
   }
-}
-.banner-tools {
-  background: url("../img/CABECERAS-HERRAMIENTAS.webp") center/cover;
-  height: 6rem;
-  padding: 5rem 0;
-  width: 100%;
-  margin: 15px 0;
-}
-
-@media screen and (max-width: 800px) {
   .banner-tools {
     background: url("../img/CABECERAS-HERRAMIENTAS-MOVIL.webp") center/cover;
     height: 3.6rem;
   }
-}
-.banner-nosotros {
-  background: url("../img/CABECERA-NOSOTROS.jpg") center/cover;
-  height: 6rem;
-  padding: 5rem 0;
-  width: 100%;
-  margin: 15px 0;
-}
-
-@media screen and (max-width: 800px) {
   .banner-nosotros {
     background: url("../img/CABECERA-NOSOTROS-MOVIL.jpg") center/cover;
     height: 3.6rem;
   }
 }
-.banner-item {
-  background: url("../img/banner-producto.webp") center/cover;
-  color: #fff;
-  text-align: center;
-  padding: 9rem 0;
-  font-size: 1rem;
-}
-.banner-item h1, .banner-item .texto-bienvenida {
-  animation: slideIn 1.3s cubic-bezier(0, 0, 0, 1);
-}
-.banner-item .texto-bienvenida {
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 10px;
-  border-radius: 8px;
-  margin: 10px;
-}
-
 header {
   z-index: 1000;
   background-color: #fff;
@@ -854,7 +823,7 @@ header nav ul li a {
   border-radius: 500px;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
-  font-family: "Montserrat";
+  font-family: "Montserrat", Arial, sans-serif;
 }
 header nav ul li a:hover {
   background-color: #03487e;
@@ -965,7 +934,7 @@ main .boton-seguir-pago {
   background-color: #0465b0;
   color: #fff;
   font-size: 1em;
-  font-family: "Montserrat";
+  font-family: "Montserrat", Arial, sans-serif;
   cursor: pointer;
 }
 main .boton-seguir-pago:hover {
@@ -1202,7 +1171,7 @@ main .items .item .boton-info {
   background-color: #0465b0;
   color: #fff;
   font-size: 1em;
-  font-family: "Montserrat";
+  font-family: "Montserrat", Arial, sans-serif;
   cursor: pointer;
 }
 main .items .item .boton-info:hover {
@@ -1219,7 +1188,7 @@ main .items .item .boton-ficha {
   background-color: #df2828;
   color: #fff;
   font-size: 1em;
-  font-family: "Montserrat";
+  font-family: "Montserrat", Arial, sans-serif;
   cursor: pointer;
 }
 main .items .item .boton-ficha:hover {
@@ -1247,7 +1216,7 @@ footer {
   color: #000; /* Texto negro */
   padding: 20px 0;
   text-align: center;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", Arial, sans-serif;
 }
 footer h3 {
   text-align: center;
@@ -1324,7 +1293,7 @@ footer .copyright {
 
 .h1-politicas {
   font-weight: 400;
-  font-family: "Montserrat", serif;
+  font-family: "Montserrat", Arial, sans-serif;
   text-align: center;
 }
 

@@ -1,8 +1,6 @@
 // Colores
 $color-primario: #0465b0;
 $color-secundario: #fff;
-// $gradient-start: rgba(3, 74, 126, 0.7); // Color inicial del degradado (más oscuro con 70% de opacidad)
-// $gradient-end: rgba(5, 128, 230, 0.3);
 
 //Tipografia
 $font-family: "Montserrat", Arial, sans-serif;
@@ -123,23 +121,17 @@ $font-family: "Montserrat", Arial, sans-serif;
 }
 
 //Estilo de banners
-@mixin banner-style($background-image) {
-    background: $background-image center/cover;
-    color: $color-secundario;
-    text-align: center;
-    padding: 9rem 0;
-    font-size: 1rem;
-    
-    h1, .texto-bienvenida {
-        animation: slideIn 1.3s cubic-bezier(0, 0, 0, 1);
-    }
+@mixin banner-general($background-image) {
+    background: url($background-image) center/cover;
+    height: 6rem;
+    padding: 5.5rem 0;
+    width: 100%;
+    margin: 15px 0;
+}
 
-    .texto-bienvenida {
-        background-color: rgba(0, 0, 0, 0.5);
-        padding: 10px;
-        border-radius: 8px;
-        margin: 10px;
-    }
+@mixin banner-general-movil($background-image-mobile) {
+    background: url($background-image-mobile) center/cover;
+    height: 3.6rem;
 }
 
 //Estilo de botones general
@@ -153,43 +145,13 @@ $font-family: "Montserrat", Arial, sans-serif;
     background-color: $color; 
     color: $color-secundario;
     font-size: 1em;
-    font-family: "Montserrat";
+    font-family: $font-family;
     cursor: pointer;
     @extend %transition-button;
     
     &:hover {
         background-color: darken($color, 10%);
         transform: scale(1.1);
-    }
-}
-
-//Mixin imágenes principal
-@mixin background-gradient($gradient-start, $gradient-end, $background-image) {
-    position: relative;
-    max-width: 650px;
-    height: 500px;
-    margin: 20px auto;
-    padding: 2rem;
-    color: $color-secundario;
-    background: linear-gradient($gradient-start, $gradient-end), url($background-image) no-repeat center center;
-    background-size: cover;
-    border-radius: 20px;
-    font-weight: 400;
-    letter-spacing: 0.5px;
-    
-    @media screen and (max-width: 600px){
-        margin: 10px;
-    }
-    h3 {
-        font-weight: 600;
-    }
-    p {
-        font-size: 1rem;
-        text-align: justify;
-        padding: 5rem 1rem;
-        @media screen and (max-width: 600px){
-            padding: 0 0.5rem;
-        }
     }
 }
 
@@ -217,7 +179,7 @@ $font-family: "Montserrat", Arial, sans-serif;
         margin: 7px 0;
         font-size: 0.9em;
         color: #333;
-        font-family: "Montserrat", Arial,;
+        font-family: $font-family;
     }
 
     /* Estilos para el precio del producto */
@@ -228,7 +190,7 @@ $font-family: "Montserrat", Arial, sans-serif;
         font-size: 1.4em;
         font-weight: bold;
         color: #186332;
-    } //redeploy
+    } 
 
     /* Estilos para el botón de comprar */
     .add-to-cart {
