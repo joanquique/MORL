@@ -185,6 +185,11 @@ function addToCart(name, price, imgSrc, quantity = 1, updateLocalStorage = true)
 
 function showNotification() {
     const notification = document.getElementById('notification');
+    
+    if (!notification) {
+        return;
+    }
+    
     notification.classList.remove('hidden');
 
     // Forzar el reflujo para reiniciar la animación
@@ -200,6 +205,7 @@ function showNotification() {
         }, 500); // Espera a que la transición termine antes de agregar la clase 'hidden'
     }, 2000);
 }
+
 
 function updateCartItemQuantity(cartItem, change) {
     const itemCountElement = cartItem.querySelector('.cart__item-count');
